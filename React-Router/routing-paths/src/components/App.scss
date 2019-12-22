@@ -1,0 +1,10 @@
+// Google Fonts 'LATO'
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap");
+// Font Variables
+$lato-font: "Lato", sans-serif;
+
+// Styles
+body {
+  font-family: $lato-font;
+  font-weight: normal;
+}
