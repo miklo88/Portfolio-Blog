@@ -11,7 +11,7 @@ import "./Nav-Router.scss";
 function NavRouter() {
   return (
     <BrowserRouter>
-      <div className='Nav'>
+      <div className='nav'>
         <ul>
           <li>
             <Link to='/home'>Home</Link>
