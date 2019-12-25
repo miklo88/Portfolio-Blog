@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div>
+    <div className='Home'>
       <h1>React Nav Dashboard.</h1>
     </div>
   );
