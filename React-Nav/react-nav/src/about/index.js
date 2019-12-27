@@ -1,7 +1,7 @@
 import React from "react";
 
 // styling
-import "./About.scss";
+import "./about.scss";
 
 function About() {
   return (
