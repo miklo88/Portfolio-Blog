@@ -7,4 +7,14 @@ $lato-font: "Lato", sans-serif;
 body {
   font-family: $lato-font;
   font-weight: normal;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
 }
