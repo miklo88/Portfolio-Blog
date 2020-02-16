@@ -9,15 +9,14 @@ const Login = () => {
       <form className='Login-Form'>
         <label className='Input-Label'>
           email:
-          <input id='email' type='text' text='email' />
+          <input className='Input-Field' type='text' text='email' />
         </label>
         <label className='Input-Label'>
           password:
-          <input id='password' type='text' text='password' />
+          <input className='Input-Field' type='text' text='password' />
         </label>
         <label className='Input-Label'>
-          submit:
-          <input type='submit' value='submit' />
+          <input className='Input-Field' type='submit' value='Submit' />
         </label>
       </form>
     </div>

@@ -14,7 +14,7 @@ const Routes = () => {
     <BrowserRouter>
       <div className='Routes-Container'>
         <h1 className='Main-Title'>
-          Carl Redding<br></br>Chicago, IL<br></br>Visual Design
+          Carl Redding<br></br>Visual Design<br></br>Chicago, IL
         </h1>
         <ul className='Nav-Container'>
           <li className='Nav-Link'>
