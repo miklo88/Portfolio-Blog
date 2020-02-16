@@ -5,7 +5,7 @@ import "../styles/Three.scss";
 const Three = () => {
   return (
     <div className='Third-Component'>
-      <h1 className='Page-Title'>COCKTAILS</h1>
+      <h1 className='Page-Title'>DESIGN</h1>
     </div>
   );
 };

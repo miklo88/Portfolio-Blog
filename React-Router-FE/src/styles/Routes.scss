@@ -12,41 +12,41 @@ $lato-font: "Lato", sans-serif;
   align-items: center;
   background-color: #1f2026;
   width: 100%;
-  height: 400px;
+  height: 200px;
   overflow: hidden;
-  // the kids containers
+  // child 1
   .Main-Title {
     color: white;
-    font-size: 5rem;
-    font-weight: 900;
-    font-style: italic;
-    width: 45%;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 30%;
     padding: 10px;
   }
-
+  // child 2
   .Nav-Container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 100px;
+    background-color: #f2ebe9;
+    height: 100%;
+    width: 60%;
     // padding: 10px;
     .Nav-Link {
-      background-color: #a6a4a5;
-      padding: 5px;
+      padding: 0.5%;
       width: 100%;
-      height: 100%;
-      margin: 1%;
+      height: 15%;
+      margin-top: 0.25%;
+      margin-bottom: 0.25%;
 
       .Link {
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        font-size: 14pt;
-        color: white;
-        padding: 25px 50px 25px 50px;
+        font-size: 12pt;
+        color: #1f2026;
+        padding: 5px;
       }
     }
   }
