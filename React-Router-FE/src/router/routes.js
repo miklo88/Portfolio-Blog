@@ -3,10 +3,9 @@ import React from "react";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 // separate route files being imported
 import { Login } from "../login/login";
-import { One } from "../components/one";
-import { Two } from "../components/two";
-import { Three } from "../components/three";
-import { Four } from "../components/four";
+import { About } from "../components/about";
+import { Design } from "../components/design";
+import { Photos } from "../components/photos";
 // stylez jeje
 import "../styles/Routes.scss";
 
@@ -18,32 +17,26 @@ const Routes = () => {
           Carl Redding<br></br>Chicago, IL<br></br>Visual Design
         </h1>
         <ul className='Nav-Container'>
-          <li className='Login-Link'>
+          <li className='Nav-Link'>
             <Link className='Link' to='/login'>
               Login
             </Link>
           </li>
           <li className='Nav-Link'>
-            <Link className='Link' to='/one'>
+            <Link className='Link' to='/about'>
               About
             </Link>
           </li>
 
           <li className='Nav-Link'>
-            <Link className='Link' to='/two'>
-              Chicago
-            </Link>
-          </li>
-
-          <li className='Nav-Link'>
-            <Link className='Link' to='/three'>
+            <Link className='Link' to='/design'>
               Design
             </Link>
           </li>
 
           <li className='Nav-Link'>
-            <Link className='Link' to='/four'>
-              Espana
+            <Link className='Link' to='/photos'>
+              Photography
             </Link>
           </li>
         </ul>
@@ -51,10 +44,9 @@ const Routes = () => {
 
       <Switch>
         <Route path='/login' component={Login} />
-        <Route path='/one' component={One} />
-        <Route path='/two' component={Two} />
-        <Route path='/three' component={Three} />
-        <Route path='/four' component={Four} />
+        <Route path='/about' component={About} />
+        <Route path='/design' component={Design} />
+        <Route path='/photos' component={Photos} />
       </Switch>
     </BrowserRouter>
   );

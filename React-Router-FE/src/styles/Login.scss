@@ -17,11 +17,26 @@ $lato-font: "Lato", sans-serif;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 50px;
-}
-
-.Page-Title {
-  font-size: 7rem;
-  padding-top: 50px;
-  opacity: 0.5;
-  color: #f2ebe9;
+  .Page-Title {
+    font-size: 7rem;
+    padding-top: 1%;
+    opacity: 0.5;
+    color: #f2ebe9;
+  }
+  .Login-Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 500px;
+    padding: 1%;
+    .Input-Label {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 5%;
+    }
+  }
 }

@@ -1,13 +1,13 @@
 import React from "react";
 // STYLES
-import "../styles/Three.scss";
+import "../styles/Design.scss";
 
-const Three = () => {
+const Design = () => {
   return (
-    <div className='Third-Component'>
+    <div className='Design-Component'>
       <h1 className='Page-Title'>DESIGN</h1>
     </div>
   );
 };
 
-export { Three };
+export { Design };
