@@ -1,0 +1,17 @@
+// Google Fonts 'LATO'
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap");
+// Font Variables
+$lato-font: "Lato", sans-serif;
+// Styles
+
+.Fourth-Component {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-image: url("../stockPhotos//v1.6.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

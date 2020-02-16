@@ -1,0 +1,21 @@
+// MEYERS RESET BONANZA
+@import "../styles/Reset.scss";
+// Google Fonts 'LATO'
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap");
+// Font Variables
+$lato-font: "Lato", sans-serif;
+// Styles
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 2000px;
+  // min-width: 400px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  // Font Variables
+  font-family: "Lato", sans-serif;
+}

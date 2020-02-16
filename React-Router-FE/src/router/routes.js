@@ -7,29 +7,42 @@ import { Two } from "../components/two";
 import { Three } from "../components/three";
 import { Four } from "../components/four";
 // stylez jeje
-import "./Routes.scss";
+import "../styles/Routes.scss";
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <div className='Routes-Container'>
-        <h1>Hola Bienvendidios!! Welcome to my React-Router!</h1>
-      </div>
+        <h1 className='Page-Title'>
+          Hola Bienvendidios!! Welcome to my React-Router!
+        </h1>
 
-      <ul>
-        <li>
-          <Link to='/one'>Page One</Link>
-        </li>
-        <li>
-          <Link to='/two'>Page Two</Link>
-        </li>
-        <li>
-          <Link to='/three'>Page Three</Link>
-        </li>
-        <li>
-          <Link to='/four'>Page Four</Link>
-        </li>
-      </ul>
+        <ul className='Nav-Container'>
+          <li className='Nav-Link'>
+            <Link className='Link' to='/one'>
+              Page One
+            </Link>
+          </li>
+
+          <li className='Nav-Link'>
+            <Link className='Link' to='/two'>
+              Page Two
+            </Link>
+          </li>
+
+          <li className='Nav-Link'>
+            <Link className='Link' to='/three'>
+              Page Three
+            </Link>
+          </li>
+
+          <li className='Nav-Link'>
+            <Link className='Link' to='/four'>
+              Page Four
+            </Link>
+          </li>
+        </ul>
+      </div>
 
       <Switch>
         <Route path='/one' component={One} />
