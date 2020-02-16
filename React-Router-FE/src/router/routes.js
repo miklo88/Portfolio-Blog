@@ -2,6 +2,7 @@ import React from "react";
 // depencies
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 // separate route files being imported
+import { Login } from "../login/login";
 import { One } from "../components/one";
 import { Two } from "../components/two";
 import { Three } from "../components/three";
@@ -17,6 +18,11 @@ const Routes = () => {
           Carl Redding<br></br>Chicago, IL<br></br>Visual Design
         </h1>
         <ul className='Nav-Container'>
+          <li className='Login-Link'>
+            <Link className='Link' to='/login'>
+              Login
+            </Link>
+          </li>
           <li className='Nav-Link'>
             <Link className='Link' to='/one'>
               About
@@ -44,6 +50,7 @@ const Routes = () => {
       </div>
 
       <Switch>
+        <Route path='/login' component={Login} />
         <Route path='/one' component={One} />
         <Route path='/two' component={Two} />
         <Route path='/three' component={Three} />
