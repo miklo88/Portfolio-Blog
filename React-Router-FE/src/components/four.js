@@ -4,7 +4,7 @@ import "../styles/Four.scss";
 const Four = () => {
   return (
     <div className='Fourth-Component'>
-      <h1 className='Main-Title'>Tenerife</h1>
+      <h1 className='Page-Title'>ESPANA</h1>
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import React from "react";
+import "../styles/One.scss";
 
 const One = () => {
   return (
-    <div>
-      <h1>Content of page one</h1>
+    <div className='First-Component'>
+      <h1 className='Main-Title'>ART</h1>
     </div>
   );
 };

@@ -13,10 +13,7 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <div className='Routes-Container'>
-        <h1 className='Page-Title'>
-          Hola Bienvendidios!! Welcome to my React-Router!
-        </h1>
-
+        <h1 className='Main-Title'>Hola! Bienvenidos to my React-Router!</h1>
         <ul className='Nav-Container'>
           <li className='Nav-Link'>
             <Link className='Link' to='/one'>

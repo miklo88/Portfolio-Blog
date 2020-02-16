@@ -1,9 +1,11 @@
 import React from "react";
+// STYLES
+import "../styles/Three.scss";
 
 const Three = () => {
   return (
-    <div>
-      <h1>Content of page three</h1>
+    <div className='Third-Component'>
+      <h1 className='Page-Title'>COCKTAILS</h1>
     </div>
   );
 };
