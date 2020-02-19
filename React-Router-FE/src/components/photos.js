@@ -5,8 +5,8 @@ import "../styles/Photos.scss";
 const Photos = () => {
   return (
     <div className='Photos-Component'>
-      <div classname='Photo-Container'>
-        <h1 className='Page-Title'>Photography</h1>
+      <div className='Photo-Container'>
+        <h1 className='Page-Title'>PHOTOGRAPHY</h1>
       </div>
     </div>
   );

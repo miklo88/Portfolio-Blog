@@ -43,7 +43,7 @@ const Routes = () => {
       </div>
 
       <Switch>
-        <Route path='/login' component={Login} />
+        <Route path='/login' exact component={Login} />
         <Route path='/about' component={About} />
         <Route path='/photos' component={Photos} />
         <Route path='/design' component={Design} />

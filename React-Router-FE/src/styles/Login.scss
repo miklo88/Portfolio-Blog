@@ -27,9 +27,10 @@ $lato-font: "Lato", sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 500px;
     width: 60%;
     height: 500px;
-    padding: 1%;
+    padding: 5%;
     margin: 1%;
     .Input-Label {
       display: flex;
@@ -37,11 +38,11 @@ $lato-font: "Lato", sans-serif;
       justify-content: center;
       align-items: center;
       color: #1f2026;
-      padding: 1%;
+      padding: 5%;
       margin: 1%;
     }
     .Input-Field {
-      padding: 1%;
+      padding: 3%;
       margin: 1%;
     }
   }
