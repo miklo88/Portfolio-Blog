@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "../styles/Login.scss";
 
 const Login = () => {
-  const [email, setEmail] = useState("email@email.com");
-  const [password, setPassword] = useState("test123");
+  const [email, setEmail] = useState(" ");
+  const [password, setPassword] = useState(" ");
 
   return (
     <div className='Login-Component'>
@@ -14,7 +14,8 @@ const Login = () => {
           email:
           <input
             className='Input-Field'
-            name='email'
+            type='text'
+            // name='email'
             value=''
             onChange={email}
           />
@@ -23,17 +24,22 @@ const Login = () => {
           password:
           <input
             className='Input-Field'
-            name='password'
+            type='text'
+            // name='password'
             value=''
             onChange={password}
           />
         </label>
-        <button
-          className='Button-Label'
-          onClick={(() => setEmail, setPassword)}
-        >
+        <label className='Input-Label'>
+          <input
+            className='Input-Field'
+            type='submit'
+            name='password'
+            value=''
+            onChange={(() => setEmail, setPassword)}
+          />
           Submit
-        </button>
+        </label>
       </form>
     </div>
   );

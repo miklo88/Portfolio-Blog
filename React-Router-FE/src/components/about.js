@@ -4,7 +4,9 @@ import "../styles/About.scss";
 const About = () => {
   return (
     <div className='About-Component'>
-      <h1 className='Page-Title'>About</h1>
+      <div className='About-Image'>
+        <h1 className='Page-Title'>ABOUT</h1>
+      </div>
     </div>
   );
 };

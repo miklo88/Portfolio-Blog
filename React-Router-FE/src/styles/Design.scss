@@ -12,27 +12,28 @@ $lato-font: "Lato", sans-serif;
   align-items: center;
   width: 100%;
   height: 100%;
-  max-width: 1000px;
-  max-height: 1000px;
+  min-width: 400px;
 
   .Image-Container {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: url("../stockPhotos/v1.11.JPG");
+    background-image: url("../stockPhotos/sangriav1.5.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     max-width: 100%;
     height: auto;
-    padding: 10%;
-    // margin-top: 10%;
+    padding: 20%;
+    margin-top: 10%;
 
     .Page-Title {
+      justify-content: center;
+      align-items: center;
       font-size: 7rem;
-      padding-top: 50px;
-      opacity: 0.5;
+      font-weight: 900;
+      opacity: 1;
       color: #f2ebe9;
     }
   }

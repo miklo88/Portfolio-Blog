@@ -29,14 +29,14 @@ const Routes = () => {
           </li>
 
           <li className='Nav-Link'>
-            <Link className='Link' to='/design'>
-              Design
+            <Link className='Link' to='/photos'>
+              Photography
             </Link>
           </li>
 
           <li className='Nav-Link'>
-            <Link className='Link' to='/photos'>
-              Photography
+            <Link className='Link' to='/design'>
+              Design
             </Link>
           </li>
         </ul>
@@ -45,8 +45,8 @@ const Routes = () => {
       <Switch>
         <Route path='/login' component={Login} />
         <Route path='/about' component={About} />
-        <Route path='/design' component={Design} />
         <Route path='/photos' component={Photos} />
+        <Route path='/design' component={Design} />
       </Switch>
     </BrowserRouter>
   );
