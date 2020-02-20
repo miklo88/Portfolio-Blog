@@ -19,7 +19,7 @@ $lato-font: "Lato", sans-serif;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: url("../stockPhotos/sangriav1.5.jpg");
+    background-image: url("../stockPhotos/PIv2.0\ copy.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -27,14 +27,15 @@ $lato-font: "Lato", sans-serif;
     height: auto;
     padding: 20%;
     margin-top: 10%;
-
+    transition-duration: 0.3s;
+    cursor: pointer;
     .Page-Title {
       justify-content: center;
       align-items: center;
       font-size: 7rem;
       font-weight: 900;
-      opacity: 1;
-      color: #f2ebe9;
+      color: #1f2026;
+      // color: #f2ebe9;
     }
   }
 }
