@@ -9,15 +9,17 @@ export default function Login(props) {
   function validateForm() {
     return email.length > 0 && password.length > 0;
   }
+  console.log("email and password were run.");
 
   function handleSubmit(event) {
     event.preventDefault();
   }
+  console.log("handleSubmit");
 
   return (
     <div className='Login-Component'>
-      <h1 className='Page-Title'>Login</h1>
       <form className='Login-Form' onSubmit={handleSubmit}>
+        <h1 className='Page-Title'>Login</h1>
         <label className='Input-Label'>
           email:
           <input
@@ -36,13 +38,14 @@ export default function Login(props) {
             onChange={e => setPassword(e.target.value)}
           />
         </label>
-        <label className='Input-Label'>
-          <input
-            className='Input-Field'
-            type='submit'
-            onChange={e => !validateForm()}
-          />
-        </label>
+
+        <button
+          className='Login-button'
+          onChange={e => validateForm(e.target.value)}
+          type='submit'
+        >
+          Login
+        </button>
       </form>
     </div>
   );

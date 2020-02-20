@@ -44,6 +44,12 @@ $lato-font: "Lato", sans-serif;
         text-decoration: none;
         font-size: 12pt;
         color: #1f2026;
+        padding: 10px 35px;
+        transition-duration: 0.7s;
+      }
+      .Link:hover {
+        background-color: #1f2026;
+        color: #f2ebe9;
       }
     }
   }

@@ -14,36 +14,42 @@ $lato-font: "Lato", sans-serif;
   height: 100%;
   min-width: 400px;
 
-  .Page-Title {
-    justify-content: center;
-    align-items: center;
-    font-size: 7rem;
-    font-weight: 900;
-    opacity: 1;
-    color: #f2ebe9;
-  }
-
   .Login-Form {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 500px;
-    width: 60%;
-    height: 500px;
-    padding: 5%;
-    margin: 1%;
+    width: 500px;
+    height: 400px;
+    .Page-Title {
+      justify-content: center;
+      align-items: center;
+      font-size: 7rem;
+      font-weight: 900;
+      opacity: 1;
+      color: #f2ebe9;
+      padding-bottom: 50px;
+    }
     .Input-Label {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: #1f2026;
-      padding: 5%;
+      padding: 2%;
       margin: 1%;
     }
-    .Input-Field {
-      padding: 3%;
+    .Login-button {
+      background-color: #f2ebe9;
+      color: #1f2026;
+      padding: 10px 35px;
       margin: 1%;
+      transition-duration: 0.4s;
+    }
+    .Login-button:hover {
+      background-color: #1f2026;
+      color: #f2ebe9;
     }
   }
 }

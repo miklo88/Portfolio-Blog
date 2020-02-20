@@ -1,6 +1,6 @@
 import React from "react";
 // depencies
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 // separate route files being imported
 import { Login } from "../login/login";
 import { About } from "../components/about";
@@ -11,7 +11,7 @@ import "../styles/Routes.scss";
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <>
       <div className='Routes-Container'>
         <h1 className='Main-Title'>
           Carl Redding<br></br>Visual Design<br></br>Chicago, IL
@@ -48,7 +48,7 @@ const Routes = () => {
         <Route path='/photos' component={Photos} />
         <Route path='/design' component={Design} />
       </Switch>
-    </BrowserRouter>
+    </>
   );
 };
 
