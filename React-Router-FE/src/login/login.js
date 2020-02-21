@@ -9,12 +9,10 @@ export default function Login(props) {
   function validateForm() {
     return email.length > 0 && password.length > 0;
   }
-  console.log("email and password were run.");
 
   function handleSubmit(event) {
     event.preventDefault();
   }
-  console.log("handleSubmit");
 
   return (
     <div className='Login-Component'>
@@ -41,7 +39,7 @@ export default function Login(props) {
 
         <button
           className='Login-button'
-          onChange={e => validateForm(e.target.value)}
+          disabled={!validateForm()}
           type='submit'
         >
           Login
@@ -51,4 +49,4 @@ export default function Login(props) {
   );
 }
 
-export { Login };
+// export { Login };

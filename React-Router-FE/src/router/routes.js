@@ -2,7 +2,7 @@ import React from "react";
 // depencies
 import { Route, Link, Switch } from "react-router-dom";
 // separate route files being imported
-import { Login } from "../login/login";
+import Login from "../login/login";
 import { About } from "../components/about";
 import { Design } from "../components/design";
 import { Photos } from "../components/photos";
