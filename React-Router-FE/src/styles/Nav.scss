@@ -1,0 +1,41 @@
+// child dos
+.Nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  // child uno
+  .Main-Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f2026;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 20%;
+    padding: 5px;
+  }
+  .Nav-Link {
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    .Link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 12pt;
+      color: #1f2026;
+      padding: 10px 35px;
+      transition-duration: 0.7s;
+    }
+    .Link:hover {
+      background-color: #1f2026;
+      color: #f2ebe9;
+    }
+  }
+}
