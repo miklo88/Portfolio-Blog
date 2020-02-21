@@ -5,15 +5,14 @@ import "../styles/Nav.scss";
 export default function Nav() {
   return (
     <div className='Nav'>
-      <h1 className='Main-Title'>
-        Miklo Inc.<br></br>Visual Design<br></br>Chicago, IL
-      </h1>
+      <h1 className='Main-Title'>MIKLO</h1>
       <ul className='Nav-Container'>
         <li className='Nav-Link'>
           <Link className='Link' to='/login'>
             Login
           </Link>
         </li>
+
         <li className='Nav-Link'>
           <Link className='Link' to='/about'>
             About

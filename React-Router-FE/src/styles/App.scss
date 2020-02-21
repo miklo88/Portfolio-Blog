@@ -7,6 +7,7 @@ $lato-font: "Lato", sans-serif;
 // GLOBAL STYLES
 
 .App {
+  box-sizing: border-box;
   max-width: 1024px;
   min-width: 400px;
   width: 100%;
