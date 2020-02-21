@@ -19,13 +19,13 @@ $lato-font: "Lato", sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
-    width: 500px;
+    width: 100%;
     height: 400px;
+    background-color: #1f2026;
     .Page-Title {
       justify-content: center;
       align-items: center;
-      font-size: 7rem;
+      font-size: 2rem;
       font-weight: 900;
       opacity: 1;
       color: #f2ebe9;
@@ -36,16 +36,18 @@ $lato-font: "Lato", sans-serif;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: #1f2026;
+      color: #f2ebe9;
       padding: 2%;
       margin: 1%;
     }
     .Login-button {
       background-color: #f2ebe9;
       color: #1f2026;
+      // color: #f2ebe9;
+      font-size: 12pt;
       padding: 10px 35px;
-      margin: 1%;
       transition-duration: 0.5s;
+      margin: 1%;
     }
     .Login-button:hover {
       background-color: #1f2026;
