@@ -51,19 +51,28 @@
         align-items: center;
         text-decoration: none;
         font-size: 16px;
-        color: $darktheme;
-        border-radius: 1rem;
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: $lightgrey;
+        color: $lightgrey;
         transition-duration: 0.7s;
-        padding: 20px;
+        padding: 10px 30px;
       }
       .Link:hover {
-        background-color: $lightgrey;
-        color: $offwhite;
         border-color: $darktheme;
+        border: 1px solid;
+        border-radius: 5px;
+        // background-color: $lightgrey;
+        // opacity: 0.3;
+        color: $darktheme;
       }
       .Link:active {
+        // border-color: $lightgrey;
+        // border: 1px solid;
+        border-radius: 5px;
         background-color: $lightgrey;
-        color: $darktheme;
+        opacity: 0.3;
+        color: $lightgrey;
       }
     }
   }
