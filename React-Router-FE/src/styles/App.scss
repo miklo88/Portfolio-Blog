@@ -1,7 +1,10 @@
 // GOOGLE FONTS 'LATO'
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap");
-// FONT VARIABLEs
-$lato-font: "Lato", sans-serif;
+// VARIABLEs
+@import "./Variables.scss";
+
+// colors
+
 // MEYERS RESET BONANZA
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
