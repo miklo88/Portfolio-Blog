@@ -7,24 +7,25 @@ export default function Nav() {
     <div className='Nav'>
       <h1 className='Main-Title'>MIKLO</h1>
       <ul className='Nav-Menu'>
+        {/* NAVIGATION LINKS AND NAV-LINK CONTAINERS */}
         <li className='Nav-Link'>
           <Link className='Link' to='/login'>
-            Login
+            LOGIN
           </Link>
         </li>
         <li className='Nav-Link'>
           <Link className='Link' to='/about'>
-            About
+            ABOUT
           </Link>
         </li>
         <li className='Nav-Link'>
           <Link className='Link' to='/photos'>
-            Photography
+            PHOTOGRAPHY
           </Link>
         </li>
         <li className='Nav-Link'>
           <Link className='Link' to='/design'>
-            Design
+            DESIGN
           </Link>
         </li>
       </ul>
