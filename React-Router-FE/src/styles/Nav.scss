@@ -1,14 +1,21 @@
 // Google Fonts 'LATO'
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap");
 // Font Variables
+@import "Variables.scss";
+// $offwhite: #f2ebe9 !default;
+// $darktheme: #1f2026 !default;
+// //media breakpoints
+$mobile: 400px;
+$tablet: 800px;
+$desktop: 1024px;
+
 $lato-font: "Lato", sans-serif;
 // Styles
 .Nav {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
   min-width: 400px;
-  max-width: 1500px;
+  max-width: 1024px;
   height: 100px;
   padding-bottom: 10px;
 
@@ -19,6 +26,7 @@ $lato-font: "Lato", sans-serif;
     color: #1f2026;
     font-size: 2rem;
     font-weight: 900;
+    max-width: 200px;
     width: 100%;
   }
 
@@ -29,27 +37,31 @@ $lato-font: "Lato", sans-serif;
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
-  .Nav-Link {
-    width: 100%;
-  }
 
-  .Link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 12pt;
-    color: #1f2026;
-    padding: 10px 35px;
-    transition-duration: 0.7s;
-  }
-  .Link:hover {
-    background-color: #1f2026;
-    color: #f2ebe9;
-  }
-  .Link:active {
-    background-color: #1f2026;
-    color: #f2ebe9;
+    .Nav-Link {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-width: 50px;
+      .Link {
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 16px;
+        color: #1f2026;
+        padding: 10px 35px;
+        transition-duration: 0.7s;
+      }
+      .Link:hover {
+        background-color: #1f2026;
+        color: #f2ebe9;
+      }
+      .Link:active {
+        background-color: #1f2026;
+        color: #f2ebe9;
+      }
+    }
   }
 }

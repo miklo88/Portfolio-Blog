@@ -19,6 +19,7 @@ $lato-font: "Lato", sans-serif;
   .P-Page {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -38,8 +39,11 @@ $lato-font: "Lato", sans-serif;
       max-height: 500px;
       width: auto;
       height: auto;
-      padding-top: 10px;
       margin: 5px;
+      opacity: 0.5;
+    }
+    .P-Image:hover {
+      opacity: 1;
     }
   }
 }

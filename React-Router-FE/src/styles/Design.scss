@@ -19,6 +19,7 @@ $lato-font: "Lato", sans-serif;
   .D-Page {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -29,7 +30,6 @@ $lato-font: "Lato", sans-serif;
       align-items: center;
       font-size: 2rem;
       font-weight: 900;
-      opacity: 1;
       color: #f2ebe9;
       padding: 10px;
       margin: 10px;
@@ -38,8 +38,11 @@ $lato-font: "Lato", sans-serif;
       max-height: 500px;
       width: auto;
       height: auto;
-      padding-top: 10px;
       margin: 5px;
+      opacity: 0.5;
+    }
+    .D-Image:hover {
+      opacity: 1;
     }
   }
 }
