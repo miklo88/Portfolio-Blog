@@ -7,7 +7,6 @@ import { About } from "../components/about";
 import { Design } from "../components/design";
 import { Photos } from "../components/photos";
 // stylez jeje
-import "../styles/Routes.scss";
 
 const Routes = () => {
   return (

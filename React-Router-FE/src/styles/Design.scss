@@ -1,8 +1,4 @@
-// Google Fonts 'LATO'
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap");
-// Font Variables
-$lato-font: "Lato", sans-serif;
-// Styles
+@import "../styles/Variables.scss";
 
 .D-Component {
   display: flex;
@@ -23,27 +19,24 @@ $lato-font: "Lato", sans-serif;
     align-items: center;
     width: 100%;
     height: auto;
-    overflow: hidden;
     // H1
     .Page-Title {
       justify-content: center;
       align-items: center;
       font-size: 2rem;
-      font-weight: 900;
-      color: #f2ebe9;
+      font-weight: 100;
+      opacity: 1;
+      color: $darktheme;
       padding: 10px;
       margin: 10px;
     }
     //PAGE-IMAGE
     .D-Image {
-      max-height: 500px;
-      width: 0 auto;
-      height: 0 auto;
-      margin: 5px;
-      opacity: 0.5;
-    }
-    .D-Image:hover {
-      opacity: 1;
+      max-height: 800px;
+      max-width: 800px;
+      min-width: 400px;
+      width: 100%;
+      height: auto;
     }
   }
 }

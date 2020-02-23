@@ -1,8 +1,5 @@
-// Google Fonts 'LATO'
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap");
-// Font Variables
-$lato-font: "Lato", sans-serif;
-// Styles
+// Global styles variables
+@import "./Variables.scss";
 
 .A-Component {
   display: flex;
@@ -21,7 +18,7 @@ $lato-font: "Lato", sans-serif;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #1f2026;
+    background-color: $darktheme;
     width: 100%;
     height: auto;
 
@@ -30,8 +27,8 @@ $lato-font: "Lato", sans-serif;
       align-items: center;
       font-size: 2rem;
       font-weight: 900;
-      opacity: 1;
-      color: #f2ebe9;
+      color: $offwhite;
+      font-weight: 100;
       padding: 10px;
       margin: 10px;
     }

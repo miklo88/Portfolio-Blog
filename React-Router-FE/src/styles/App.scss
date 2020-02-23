@@ -1,9 +1,7 @@
 // GOOGLE FONTS 'LATO'
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap");
 // VARIABLEs
 @import "./Variables.scss";
-
-// colors
 
 // MEYERS RESET BONANZA
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -144,6 +142,5 @@ table {
   min-width: 400px;
   max-height: 2000px;
   min-height: 400px;
-  // FONT VARIABLE
-  font-family: "Lato", sans-serif;
+  font-family: $lato-font;
 }

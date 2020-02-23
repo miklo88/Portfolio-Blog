@@ -5,27 +5,27 @@ import "../styles/Nav.scss";
 export default function Nav() {
   return (
     <div className='Nav'>
-      <h1 className='Main-Title'>MIKLO</h1>
+      <h1 className='Main-Title'>Miklo</h1>
       <ul className='Nav-Menu'>
         {/* NAVIGATION LINKS AND NAV-LINK CONTAINERS */}
         <li className='Nav-Link'>
           <Link className='Link' to='/login'>
-            LOGIN
+            Login
           </Link>
         </li>
         <li className='Nav-Link'>
           <Link className='Link' to='/about'>
-            ABOUT
+            About
           </Link>
         </li>
         <li className='Nav-Link'>
           <Link className='Link' to='/photos'>
-            PHOTOGRAPHY
+            Photography
           </Link>
         </li>
         <li className='Nav-Link'>
           <Link className='Link' to='/design'>
-            DESIGN
+            Design
           </Link>
         </li>
       </ul>
