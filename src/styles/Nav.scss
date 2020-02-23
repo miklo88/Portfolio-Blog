@@ -1,0 +1,72 @@
+// Font Variables
+@import "./Variables.scss";
+
+// Styles
+.Nav {
+  display: flex;
+  flex-direction: row;
+  min-width: 400px;
+  max-width: 1024px;
+  height: 100px;
+  padding-bottom: 50px;
+
+  .Main-Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $darktheme;
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .Nav-Menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // NAVIGATION LINK CONTAINERS
+    .Nav-Link {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      // LINKS TO COMPONENTS
+      .Link:link,
+      .Link:visited {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: $lightgrey;
+        color: $lightgrey;
+        transition-duration: 0.7s;
+        padding: 10px 30px;
+      }
+      .Link:hover {
+        border-color: $darktheme;
+        border: 1px solid;
+        border-radius: 5px;
+        color: $darktheme;
+      }
+      .Link:active {
+        border-radius: 5px;
+        background-color: $lightgrey;
+        opacity: 0.2;
+        $lato-weight: 100;
+        transition-duration: 0.8s;
+        color: $redAccent;
+        box-shadow: 0px 0px 0px 1px $redAccent;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+// Global styles variables
+@import "./Variables.scss";
+
+.A-Component {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-width: 400px;
+  max-width: 1024px;
+  overflow: hidden;
+
+  .A-Image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $darktheme;
+    width: 100%;
+    height: auto;
+
+    .Page-Title {
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: 900;
+      color: $offwhite;
+      font-weight: 100;
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+}

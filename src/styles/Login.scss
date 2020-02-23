@@ -1,0 +1,54 @@
+@import "../styles/Variables.scss";
+
+.Login-Component {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 400px;
+
+  .Login-Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: $darktheme;
+    .Page-Title {
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: 100;
+      opacity: 1;
+      color: $offwhite;
+      padding: 20px;
+      margin: 10px;
+    }
+    .Input-Label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $offwhite;
+      padding: 10px;
+      margin: 5px;
+    }
+    .Login-button {
+      background-color: $offwhite;
+      color: $darktheme;
+      // color: #f2ebe9;
+      font-size: 12pt;
+      padding: 10px 35px;
+      transition-duration: 0.5s;
+      margin: 1%;
+    }
+    .Login-button:hover {
+      background-color: $darktheme;
+      color: $offwhite;
+    }
+  }
+}
