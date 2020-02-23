@@ -21,6 +21,7 @@
     align-items: center;
     width: 100%;
     height: auto;
+    padding-bottom: 50px;
     // H1
     .Page-Title {
       justify-content: center;
@@ -39,6 +40,12 @@
       min-width: 400px;
       width: 100%;
       height: auto;
+    }
+    .P-Title {
+      font-weight: 100;
+    }
+    .P-Location {
+      font-weight: 100;
     }
   }
 }
