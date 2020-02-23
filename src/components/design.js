@@ -1,8 +1,9 @@
 import React from "react";
 // STYLES
 import "../styles/Design.scss";
-import photo1 from "../stockPhotos/kiosk EVENTS.jpg";
-import photo2 from "../stockPhotos/Double_Kiosk_Left.png";
+import photo1 from "../stockPhotos/Double_Left.png";
+import photo2 from "../stockPhotos/kiosk EVENTS.jpg";
+import photo3 from "../stockPhotos/Double_Kiosk_Left.png";
 
 import photo300 from "../stockPhotos/Triple_Kiosk_Left.jpg";
 import photo301 from "../stockPhotos/Triple_Kiosk_Center.jpg";
@@ -15,12 +16,18 @@ const Design = () => {
       <div className='D-Page'>
         <h1 className='Page-Title'>Design</h1>
         <img className='D-Image' src={photo1} alt='' />
+        <p className='P-Title'>"Marshalls Landing Restaurant" </p>
+        <p className='P-Title'>Merchandise Mart.</p>
+        <p className='P-Location'>Merchandise Mart. Chicago. IL</p>
+      </div>
+      <div className='D-Page'>
+        <img className='D-Image' src={photo2} alt='' />
         <p className='P-Title'>"Stella Summer Chicago" </p>
         <p className='P-Title'>Merchandise Mart. aka Work :)</p>
         <p className='P-Location'>Merchandise Mart. Chicago. IL</p>
       </div>
       <div className='D-Page'>
-        <img className='D-Image' src={photo2} alt='' />
+        <img className='D-Image' src={photo3} alt='' />
         <p className='P-Title'>"Stella Summer Chicago" </p>
         <p className='P-Title'>Merchandise Mart. aka Work :)</p>
         <p className='P-Location'>Merchandise Mart. Chicago. IL</p>

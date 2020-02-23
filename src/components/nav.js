@@ -9,8 +9,8 @@ export default function Nav() {
       <ul className='Nav-Menu'>
         {/* NAVIGATION LINKS AND NAV-LINK CONTAINERS */}
         <li className='Nav-Link'>
-          <Link className='Link' to='/login'>
-            Login
+          <Link className='Link' to='/registerForm'>
+            Blog
           </Link>
         </li>
         <li className='Nav-Link'>

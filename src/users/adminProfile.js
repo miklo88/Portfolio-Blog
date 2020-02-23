@@ -1,7 +1,7 @@
 import React from "react";
-import users from "./users";
+import admin from "./admin";
 
-const userProfile = () => {
+const adminProfile = () => {
   return (
     <div className='Profile-Component'>
       <h1 className='Page-Title'>`${users}`</h1>
@@ -9,4 +9,4 @@ const userProfile = () => {
   );
 };
 
-export { userProfile };
+export { adminProfile };
