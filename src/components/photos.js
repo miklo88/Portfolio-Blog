@@ -10,29 +10,21 @@ const Photos = () => {
       <div className='P-Page'>
         <h1 className='Page-Title'>Photography</h1>
         <img className='P-Image' src={photo1} alt='' />
-        <div className='I-Text'>
-          <p className='P-Title'>"Private Dining Room" </p>
-          <p className='P-Title'>mk the restaurant</p>
-          <p className='P-Location'>Chicago, IL </p>
-        </div>
+        <p className='P-Title'>"Private Dining Room" </p>
+        <p className='P-Title'>mk the restaurant</p>
+        <p className='P-Location'>Chicago, IL </p>
       </div>
       <div className='P-Page'>
         <img className='P-Image' src={photo2} alt='' />
-        <div className='I-Text'>
-          <p className='P-Title'>"El Tiede" </p>
-          <p className='P-Title'>Tiede Volcano</p>
-          <p className='P-Location'>
-            Tenerife - Islas de Las Canarias, Espana{" "}
-          </p>
-        </div>
+        <p className='P-Title'>"El Tiede" </p>
+        <p className='P-Title'>Tiede Volcano</p>
+        <p className='P-Location'>Tenerife - Islas de Las Canarias, Espana </p>
       </div>
       <div className='P-Page'>
         <img className='P-Image' src={photo3} alt='' />
-        <div className='I-Text'>
-          <p className='P-Title'>"home" </p>
-          <p className='P-Title'>La Laguna, Santa Cruz de Tenerife</p>
-          <p className='P-Location'>Tenerife - Islas de Las Canarias, Espana</p>
-        </div>
+        <p className='P-Title'>"home" </p>
+        <p className='P-Title'>La Laguna, Santa Cruz de Tenerife</p>
+        <p className='P-Location'>Tenerife - Islas de Las Canarias, Espana</p>
       </div>
     </div>
   );

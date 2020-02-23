@@ -15,9 +15,15 @@ const Design = () => {
       <div className='D-Page'>
         <h1 className='Page-Title'>Design</h1>
         <img className='D-Image' src={photo1} alt='' />
+        <p className='P-Title'>"Stella Summer Chicago" </p>
+        <p className='P-Title'>Merchandise Mart. aka Work :)</p>
+        <p className='P-Location'>Merchandise Mart. Chicago. IL</p>
       </div>
       <div className='D-Page'>
         <img className='D-Image' src={photo2} alt='' />
+        <p className='P-Title'>"Stella Summer Chicago" </p>
+        <p className='P-Title'>Merchandise Mart. aka Work :)</p>
+        <p className='P-Location'>Merchandise Mart. Chicago. IL</p>
       </div>
       <div className='DTriple-Page'>
         <img className='DTriple-Image' src={photo300} alt='' />
@@ -26,6 +32,9 @@ const Design = () => {
       </div>
       <div className='D-Page'>
         <img className='D-Image' src={photo303} alt='' />
+        <p className='P-Title'>"Music on the Landing" </p>
+        <p className='P-Title'> Marshalls Landing</p>
+        <p className='P-Location'>Merchandise Mart. Chicago. IL</p>
       </div>
     </div>
   );
