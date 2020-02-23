@@ -19,6 +19,7 @@
     align-items: center;
     width: 100%;
     height: auto;
+    padding-bottom: 50px;
     // H1
     .Page-Title {
       justify-content: center;
@@ -28,15 +29,17 @@
       opacity: 1;
       color: $darktheme;
       padding: 10px;
-      margin: 10px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid;
+      border-color: $lightgrey;
     }
     //PAGE-IMAGE
     .D-Image {
-      max-height: 800px;
       max-width: 800px;
       min-width: 400px;
       width: 100%;
       height: auto;
+      margin-bottom: 30px;
     }
   }
 }
