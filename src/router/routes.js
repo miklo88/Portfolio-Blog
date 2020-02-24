@@ -13,7 +13,7 @@ const Routes = () => {
   return (
     <>
       <Switch>
-        <Route path='/registerForm' exact component={RegisterForm} />
+        <Route path='/' exact component={RegisterForm} />
         <Route path='/about' component={About} />
         <Route path='/photos' component={Photos} />
         <Route path='/design' component={Design} />
