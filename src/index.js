@@ -13,10 +13,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
-
-// ReactDOM.render(
-//   <Router>
-//     <App />
-//   </Router>,
-//   document.getElementById("root")
-// );

@@ -13,15 +13,7 @@ class RegisterForm extends React.Component {
       password: ""
     };
   }
-  componentDidMount() {
-    console.log("THIS COMPONENT MOUNTED YOUR APP");
-  }
-  componentDidUpdate(prevProps, prevState) {
-    console.log("COMPONENT UPDATED!");
-  }
-  componentWillUnmount() {
-    console.log("COMPONENT WILL UNMOUNT!");
-  }
+
   updateCheckbox(checked) {
     this.setState({
       acceptedTerms: checked
@@ -42,8 +34,16 @@ class RegisterForm extends React.Component {
       password: value
     });
   }
+  componentDidMount() {
+    console.log("THIS COMPONENT MOUNTED YOUR APP");
+  }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("COMPONENT UPDATED!");
+  }
+  componentWillUnmount() {
+    console.log("COMPONENT WILL UNMOUNT!");
+  }
 
-  submit() {}
   render() {
     return (
       <div className='Login-Component'>
