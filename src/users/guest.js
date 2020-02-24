@@ -5,7 +5,7 @@ export default class Guest extends Component {
     return (
       <div className='Guest-Container'>
         {this.props.text}
-        <p>hola from guest component.</p>
+        <p>was here.</p>
       </div>
     );
   }
