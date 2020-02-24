@@ -3,7 +3,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 // separate route files being imported
 // import Login from "../login/login";
-import registerForm from "../register/registerForm";
+import RegisterForm from "../register/registerForm";
 import { About } from "../components/about";
 import { Design } from "../components/design";
 import { Photos } from "../components/photos";
@@ -13,7 +13,7 @@ const Routes = () => {
   return (
     <>
       <Switch>
-        <Route path='/registerForm' exact component={registerForm} />
+        <Route path='/registerForm' exact component={RegisterForm} />
         <Route path='/about' component={About} />
         <Route path='/photos' component={Photos} />
         <Route path='/design' component={Design} />

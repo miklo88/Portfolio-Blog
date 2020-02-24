@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+// import Login from "./login";
 import "../styles/Login.scss";
 
 class RegisterForm extends React.Component {
@@ -8,10 +9,10 @@ class RegisterForm extends React.Component {
     this.state = {
       acceptedTerms: false,
       email: "",
-      username: ""
+      username: "",
+      password: ""
     };
-
-}
+  }
   updateCheckbox(checked) {
     this.setState({
       acceptedTerms: checked
@@ -22,23 +23,24 @@ class RegisterForm extends React.Component {
     this.setState({
       email: value
     });
-}
+  }
   updateUsername(value) {
     this.setState({
-        username: value
+      username: value
     });
-}
-}
+  }
+  updatePassword(value) {
+    this.setState({
+      password: value
+    });
+  }
 
-
-submit() {
-
-}
+  submit() {}
   render() {
     return (
       <div className='Login-Component'>
         <form className='Login-Form'>
-          <h1 className='Page-Title'>Login</h1>
+          <h1 className='Page-Title'>Free Tour!</h1>
           <label className='Input-Label'>
             email
             <input
@@ -62,6 +64,17 @@ submit() {
             />
           </label>
           <label className='Input-Label'>
+            password
+            <input
+              className='Input-Field'
+              type='password'
+              onChange={event => {
+                this.updatePassword(event.target.value);
+              }}
+              value={this.state.password}
+            />
+          </label>
+          <label className='Input-Label'>
             <input
               className='Input-Field'
               type='checkbox'
@@ -82,4 +95,5 @@ submit() {
       </div>
     );
   }
-
+}
+export default RegisterForm;

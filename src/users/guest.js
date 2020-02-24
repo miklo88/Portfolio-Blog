@@ -1,11 +1,23 @@
 import React from "react";
+import GuestProfile from "./guestProfile";
 
-export default function guest() {
-  return (
-    <div className='Profile-Component'>
-      <h1 className='Page-Title'>Guest - Info</h1>
-      <p>Guest</p>
-      <p>User</p>
-    </div>
-  );
+class Guest extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      newGuest: {
+        email: "email@email.com",
+        username: "MOJOJOJO"
+      }
+    };
+  }
+
+  render() {
+    return (
+      <div className='Profile-Component'>
+        <GuestProfile newGuest={this.state.newGuest} />
+      </div>
+    );
+  }
 }
+export default Guest;

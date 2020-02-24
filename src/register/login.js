@@ -1,53 +1,53 @@
-// import React, { useState } from "react";
-// // STYLES
-// import "../styles/Login.scss";
+import React from "react";
+import Guest from "../users/guest";
+import RegisterForm from "../register/registerForm";
 
-// export default function Login(props) {
-//   // const [username, setUsername] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
+function LoginButton(props) {
+  return <button onClick={props.onClick}>Login</button>;
+}
 
-//   function validateForm() {
-//     return email.length > 0 && password.length > 0;
-//   }
+function LogoutButton(props) {
+  return <button onClick={props.onClick}>Logout</button>;
+}
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <Guest />;
+  }
+  return <RegisterForm />;
+}
+class LoginControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleLoginClick = this.handleLogoutClick.bind(this);
+    this.state = { isLoggedIn: false };
+  }
 
-//   function handleSubmit(event) {
-//     event.preventDefault();
-//   }
+  handleLoginClick() {
+    this.setState({ isLoggedIn: true });
+  }
 
-//   return (
-//     <div className='Login-Component'>
-//       <form className='Login-Form' onSubmit={handleSubmit}>
-//         <h1 className='Page-Title'>Login</h1>
-//         <label className='Input-Label'>
-//           email:
-//           <input
-//             className='Input-Field'
-//             type='email'
-//             value={email}
-//             onChange={e => setEmail(e.target.value)}
-//           />
-//         </label>
-//         <label className='Input-Label'>
-//           password:
-//           <input
-//             className='Input-Field'
-//             type='password'
-//             value={password}
-//             onChange={e => setPassword(e.target.value)}
-//           />
-//         </label>
+  handleLogoutClick() {
+    this.setState({ isLoggedIn: false });
+  }
 
-//         <button
-//           className='Login-button'
-//           disabled={!validateForm()}
-//           type='submit'
-//         >
-//           Login
-//         </button>
-//       </form>
-//     </div>
-//   );
-// }
+  render() {
+    const isLoggedIn = this.state.isLoggedIn;
+    let button;
 
-// // export { Login };
+    if (isLoggedIn) {
+      button = <LogoutButton onCLick={this.handleLogoutClick} />;
+    } else {
+      button = <LoginButton onClik={this.handleLoginClick} />;
+    }
+
+    return (
+      <div>
+        <Greeting isLoggedIn={isLoggedIn} />
+        {button}
+      </div>
+    );
+  }
+}
+export default LoginControl;
