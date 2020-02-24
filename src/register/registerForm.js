@@ -13,12 +13,20 @@ class RegisterForm extends React.Component {
       password: ""
     };
   }
+  componentDidMount() {
+    console.log("THIS COMPONENT MOUNTED YOUR APP");
+  }
+  componentDidUpdate(prevProps, prevState) {
+    console.log("COMPONENT UPDATED!");
+  }
+  componentWillUnmount() {
+    console.log("COMPONENT WILL UNMOUNT!");
+  }
   updateCheckbox(checked) {
     this.setState({
       acceptedTerms: checked
     });
   }
-
   updateEmail(value) {
     this.setState({
       email: value
@@ -89,7 +97,7 @@ class RegisterForm extends React.Component {
               this.submit();
             }}
           >
-            Register
+            Sign Up
           </button>
         </form>
       </div>
