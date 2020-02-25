@@ -4,8 +4,8 @@
 //PAGE LAYOUT
 .P-Component {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -21,16 +21,16 @@
     align-items: center;
     width: 100%;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     // H1
     .Page-Title {
       justify-content: center;
       align-items: center;
       font-size: 2rem;
       font-weight: 100;
+      opacity: 1;
       color: $darktheme;
-      padding: 10px;
-      margin-bottom: 30px;
+      margin: 60px;
       border-bottom: 1px solid;
       border-color: $lightgrey;
     }
@@ -40,7 +40,7 @@
       min-width: 400px;
       width: 100%;
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
     .P-Title {
       font-weight: 100;
