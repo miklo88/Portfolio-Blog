@@ -90,8 +90,6 @@ time,
 mark,
 audio,
 video {
-  margin: 0 auto;
-  padding: 0 auto;
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -143,4 +141,6 @@ table {
   max-height: 2000px;
   min-height: 400px;
   font-family: $lato-font;
+  margin: 0 auto;
+  padding: 0 auto;
 }
