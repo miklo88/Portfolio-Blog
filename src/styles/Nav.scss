@@ -13,14 +13,6 @@
   // background-color: yellowgreen;
 
   overflow: hidden;
-  @media (max-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    // background-color: rgb(86, 157, 204);
-  }
-  @media (max-width: $mobile) {
-    // background-color: burlywood;
-  }
 
   .Main-Title {
     display: flex;
@@ -32,12 +24,6 @@
     font-weight: 300;
     width: 100%;
     // background-color: red;
-
-    @media (max-width: $mobile) {
-      // background-color: orange;
-      height: 100px;
-      width: 100%;
-    }
   }
   .Nav-Menu {
     display: flex;
@@ -47,17 +33,7 @@
     height: 100px;
     width: 100%;
     // background-color: green;
-    @media (max-width: $tablet) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    @media (max-width: $mobile) {
-      // background-color: lightgreen;
-      height: 200px;
-      width: 100%;
-    }
+
     // NAVIGATION LINK CONTAINERS
     .Nav-Link {
       display: flex;
@@ -66,9 +42,7 @@
       width: 100%;
       height: 100%;
       // background-color: yellow;
-      @media (max-width: $mobile) {
-        // background-color: yellow;
-      }
+
       // LINKS TO COMPONENTS
       .Link:link,
       .Link:visited {
@@ -83,13 +57,6 @@
         transition-duration: 0.7s;
         padding: 10px 30px;
         // margin: 1px;
-        @media (max-width: $mobile) {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          // padding: 5px 1px;
-        }
       }
       .Link:hover {
         color: $darktheme;
