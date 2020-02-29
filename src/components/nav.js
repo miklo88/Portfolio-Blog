@@ -18,11 +18,11 @@ export default function Nav() {
             About
           </Link>
         </li>
-        <li className='Nav-Link'>
+        {/* <li className='Nav-Link'>
           <Link className='Link' to='/photos'>
             Photography
           </Link>
-        </li>
+        </li> */}
         <li className='Nav-Link'>
           <Link className='Link' to='/design'>
             Design

@@ -10,16 +10,16 @@
   max-width: $desktop;
   width: 100%;
   height: 100%;
-  background-color: yellowgreen;
+  // background-color: yellowgreen;
 
   overflow: hidden;
   @media (max-width: $tablet) {
     display: flex;
     flex-direction: column;
-    background-color: rgb(86, 157, 204);
+    // background-color: rgb(86, 157, 204);
   }
   @media (max-width: $mobile) {
-    background-color: burlywood;
+    // background-color: burlywood;
   }
 
   .Main-Title {
@@ -31,10 +31,10 @@
     font-size: 2rem;
     font-weight: 300;
     width: 100%;
-    background-color: red;
+    // background-color: red;
 
     @media (max-width: $mobile) {
-      background-color: orange;
+      // background-color: orange;
       height: 100px;
       width: 100%;
     }
@@ -46,7 +46,7 @@
     align-items: center;
     height: 100px;
     width: 100%;
-    background-color: green;
+    // background-color: green;
     @media (max-width: $tablet) {
       display: flex;
       flex-direction: column;
@@ -54,9 +54,9 @@
       align-items: center;
     }
     @media (max-width: $mobile) {
-      background-color: lightgreen;
+      // background-color: lightgreen;
       height: 200px;
-      // width: 100%;
+      width: 100%;
     }
     // NAVIGATION LINK CONTAINERS
     .Nav-Link {
@@ -65,9 +65,9 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      background-color: yellow;
+      // background-color: yellow;
       @media (max-width: $mobile) {
-        background-color: yellow;
+        // background-color: yellow;
       }
       // LINKS TO COMPONENTS
       .Link:link,
@@ -79,7 +79,7 @@
         text-decoration: none;
         font-size: 16px;
         color: $lightgrey;
-        background-color: blue;
+        // background-color: blue;
         transition-duration: 0.7s;
         padding: 10px 30px;
         // margin: 1px;

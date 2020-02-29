@@ -6,7 +6,7 @@ import { Route, Switch } from "react-router-dom";
 import RegisterForm from "../register/registerForm";
 import { About } from "../components/about";
 import { Design } from "../components/design";
-import { Photos } from "../components/photos";
+// import { Photos } from "../components/photos";
 // stylez jeje
 
 const Routes = () => {
@@ -15,7 +15,7 @@ const Routes = () => {
       <Switch>
         <Route path='/' exact component={RegisterForm} />
         <Route path='/about' component={About} />
-        <Route path='/photos' component={Photos} />
+        {/* <Route path='/photos' component={Photos} /> */}
         <Route path='/design' component={Design} />
       </Switch>
     </>
