@@ -138,12 +138,7 @@ table {
 }
 // GLOBAL STYLES
 .App {
-  box-sizing: border-box;
-  max-width: 1024px;
-  min-width: 400px;
-  max-height: 2000px;
-  min-height: 400px;
   font-family: $lato-font;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: auto;
+  padding: auto;
 }

@@ -20,6 +20,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 25px;
+    background-color: red;
     // H1
     .Page-Title {
       justify-content: center;
@@ -31,6 +32,7 @@
       margin: 60px;
       border-bottom: 1px solid;
       border-color: $lightgrey;
+      background-color: blue;
     }
     //PAGE-IMAGE
     .D-Image {
@@ -55,10 +57,12 @@
     align-items: center;
     width: 50%;
     height: auto;
+    background-color: yellowgreen;
     .DTriple-Image {
       min-width: 100px;
       width: 300px;
       height: auto;
+      background-color: green;
     }
     .P-Title {
       font-weight: 100;

@@ -3,14 +3,13 @@
 
 .A-Component {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
   min-width: 400px;
-  max-width: 1024px;
   overflow: hidden;
 
   .A-Image {
