@@ -7,6 +7,7 @@ import RegisterForm from "../register/registerForm";
 import { About } from "../components/about";
 import { Design } from "../components/design";
 // import { Photos } from "../components/photos";
+import Blog from "../blog/blog";
 // stylez jeje
 
 const Routes = () => {
@@ -17,6 +18,7 @@ const Routes = () => {
         <Route path='/about' component={About} />
         {/* <Route path='/photos' component={Photos} /> */}
         <Route path='/design' component={Design} />
+        <Route path='/blog' render={Blog} />
       </Switch>
     </>
   );

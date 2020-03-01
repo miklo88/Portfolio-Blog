@@ -18,17 +18,25 @@ export default function Nav() {
             About
           </Link>
         </li>
-        {/* <li className='Nav-Link'>
-          <Link className='Link' to='/photos'>
-            Photography
-          </Link>
-        </li> */}
         <li className='Nav-Link'>
           <Link className='Link' to='/design'>
             Design
+          </Link>
+        </li>
+        <li className='Nav-Link'>
+          <Link className='Link' to='/blog'>
+            Blog userState
           </Link>
         </li>
       </ul>
     </div>
   );
 }
+
+// {
+/* <li className='Nav-Link'>
+          <Link className='Link' to='/blog'>
+            Blog userState
+          </Link>
+        </li> */
+// }
