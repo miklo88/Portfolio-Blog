@@ -4,9 +4,12 @@ $darktheme: #1f2026 !default;
 $lightgrey: #d9d9d9;
 $redAccent: #eb5142;
 //media breakpoints
-$mobile: 400px;
-$tablet: 800px;
-$desktop: 1024px;
+$screen-mobile-min: 500px; // mobile-min
+$screen-xsmobile-max: 499px; // xsmobile
+$screen-tablet-min: 900px; // tablet-min
+$screen-mobile-max: 899px; // mobile-max
+$screen-desktop-min: 1200px; // desktop-min
+$screen-tablet-max: 1199px; // tablet-max
 
 //font
 $lato-font: "Lato", sans-serif;

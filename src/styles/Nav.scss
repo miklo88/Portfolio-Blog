@@ -5,14 +5,34 @@
 .Nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  max-width: $desktop;
   width: 100%;
   height: 50px;
+  box-shadow: 0px 0px 0px 1px $lightgrey;
+  @media (max-width: $screen-desktop-min) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  @media (max-width: $screen-tablet-min) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  @media (max-width: $screen-xsmobile-max) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
   .Main-Title {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     color: $darktheme;
@@ -20,6 +40,23 @@
     font-size: 1rem;
     font-weight: 400;
     width: 100%;
+    @media (max-width: $screen-tablet-min) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $darktheme;
+      color: $offwhite;
+      height: 100%;
+      padding: 30px;
+    }
+    @media (max-width: $screen-xsmobile-max) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $darktheme;
+      color: $offwhite;
+      // padding: 20px;
+    }
   }
   .Nav-Menu {
     display: flex;
@@ -28,13 +65,23 @@
     align-items: center;
     height: 100%;
     width: 100%;
-
+    @media (max-width: $screen-tablet-min) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+    @media (max-width: $screen-xsmobile-max) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     // NAVIGATION LINK CONTAINERS
     .Nav-Link {
       justify-content: center;
       align-items: center;
       padding: 10px 30px;
-
       // LINKS TO COMPONENTS
       .Link:link,
       .Link:visited {
