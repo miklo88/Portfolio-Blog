@@ -25,7 +25,7 @@ export default function Nav() {
           </Link>
         </li>
         <li className='Nav-Link'>
-          <Link className='Link' to='/'>
+          <Link className='Link' to='/userRegistration'>
             Sign Up / Login
           </Link>
         </li>
