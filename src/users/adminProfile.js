@@ -1,12 +1,12 @@
 import React from "react";
-import admin from "./admin";
+import Admin from "./admin";
 
-const adminProfile = () => {
+const AdminProfile = () => {
   return (
     <div className='Profile-Component'>
-      <h1 className='Page-Title'>`${users}`</h1>
+      <h1 className='Page-Title'>`${Admin}`</h1>
     </div>
   );
 };
 
-export { adminProfile };
+export { AdminProfile };

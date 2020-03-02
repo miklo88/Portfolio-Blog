@@ -4,6 +4,7 @@ import "../styles/Photos.scss";
 import photo1 from "../stockPhotos/blk_whtie1blk_white15_1.JPG";
 import photo2 from "../stockPhotos/portBW1.JPG";
 import photo3 from "../stockPhotos/tenerifegate.JPG";
+
 const Photos = () => {
   return (
     <div className='P-Component'>
