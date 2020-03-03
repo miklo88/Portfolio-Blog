@@ -1,27 +1,43 @@
 // Font Variables
 @import "./Variables.scss";
 
-// Styles
+// Mobile-First-Styles
 .Nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background-color: yellow;
+  // background-color: yellow;
   .Main-Title {
-    color: $darktheme;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $offwhite;
+    background-color: $lightgrey;
     height: 100%;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
     width: 100%;
-    background-color: red;
+    padding: 20px;
+    // opacity: 0.6;
+    // background-color: red;
   }
   .Nav-Menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
-    background-color: green;
+    // background-color: green;
     // NAVIGATION LINK CONTAINERS
     .Nav-Link {
-      padding: 10px 30px;
-      background-color: orange;
+      padding: 10px;
+      margin: 5px;
+      // background-color: orange;
       // LINKS TO COMPONENTS
       .Link:link,
       .Link:visited {
@@ -30,20 +46,20 @@
         font-size: 100%;
         color: $lightgrey;
         transition-duration: 0.7s;
-        // padding: 2px 30px;
+        padding: 10px 30px;
       }
-      // .Link:hover {
-      //   color: $darktheme;
-      // }
-      // .Link:active {
-      //   border-radius: 5px;
-      //   background-color: $lightgrey;
-      //   opacity: 0.2;
-      //   $lato-weight: 100;
-      //   transition-duration: 0.8s;
-      //   color: $redAccent;
-      //   box-shadow: 0px 0px 0px 1px $redAccent;
-      // }
+      .Link:hover {
+        color: $darktheme;
+      }
+      .Link:active {
+        border-radius: 5px;
+        background-color: $offwhite;
+        opacity: 0.2;
+        $lato-weight: 100;
+        transition-duration: 0.02s;
+        color: $redAccent;
+        box-shadow: 0px 0px 0px 1px $redAccent;
+      }
     }
   }
 }

@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Nav.scss";
 import Clock from "../clock/clock";
+
+import "../styles/Nav.scss";
+
 export default function Nav() {
   return (
     <div className='Nav'>
-      <h1 className='Main-Title'>Miklo</h1>
+      <h1 className='Main-Title'>miklo</h1>
       <ul className='Nav-Menu'>
         {/* NAVIGATION LINKS AND NAV-LINK CONTAINERS */}
 
