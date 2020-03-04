@@ -10,8 +10,19 @@
   width: 100%;
   height: auto;
   min-width: 400px;
-  overflow: hidden;
+  padding-bottom: 25px;
 
+  .Page-Title {
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 100;
+    opacity: 1;
+    color: $darktheme;
+    margin: 30px;
+    border-bottom: 1px solid;
+    border-color: $lightgrey;
+  }
   .A-Image {
     display: flex;
     flex-wrap: wrap;
@@ -20,16 +31,5 @@
     // background-color: $darktheme;
     width: 100%;
     height: auto;
-
-    .Page-Title {
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-      font-weight: 900;
-      color: $darktheme;
-      font-weight: 100;
-      padding: 10px;
-      margin: 10px;
-    }
   }
 }

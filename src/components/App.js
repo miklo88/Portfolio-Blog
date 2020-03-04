@@ -7,7 +7,6 @@ import Nav from "../components/nav";
 import Routes from "../router/routes";
 import AddGuest from "../users/guestProfile";
 import GuestList from "../users/guestList";
-import Clock from "../clock/clock";
 
 import "../styles/App.scss";
 
@@ -19,7 +18,7 @@ class App extends Component {
       <div className='App'>
         <Nav />
         <Routes />
-        <Clock />
+        {/* moving 2 lines below comment to a component.*/}
         <AddGuest onAddClick={text => dispatch(addGuest(text))} />
         <GuestList guests={visibleGuests} />
       </div>

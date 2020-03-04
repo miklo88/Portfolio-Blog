@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Clock from "../clock/clock";
 
 import "../styles/Nav.scss";
+import "../styles/Clock.scss";
 
 export default function Nav() {
   return (
@@ -32,7 +33,8 @@ export default function Nav() {
           </Link>
         </li>
       </ul>
-      <div className='Nav-timeStyle'>
+
+      <div className='Clock-Container'>
         <Clock />
       </div>
     </div>

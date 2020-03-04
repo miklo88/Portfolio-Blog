@@ -1,6 +1,12 @@
 // Font Variables
 @import "./Variables.scss";
 
-p.P-Title {
-  color: $lightgrey;
+.Clock-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: $offwhite;
+  padding: 15px 15px;
+  overflow: hidden;
 }
