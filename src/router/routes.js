@@ -1,5 +1,4 @@
 import React from "react";
-// depencies
 import { Route, Switch } from "react-router-dom";
 // separate route files being imported
 import RegisterForm from "../register/registerForm";

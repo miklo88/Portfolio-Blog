@@ -138,6 +138,10 @@ table {
 }
 // GLOBAL STYLES
 .App {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   font-family: $lato-font;
   margin: auto;
   padding: auto;

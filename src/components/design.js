@@ -2,8 +2,8 @@ import React from "react";
 // STYLES
 import "../styles/Design.scss";
 import photo1 from "../stockPhotos/Double_Left.png";
-import photo2 from "../stockPhotos/kiosk EVENTS.jpg";
-import photo3 from "../stockPhotos/Double_Kiosk_Left.png";
+import photo2 from "../stockPhotos/dame.png";
+import photo3 from "../stockPhotos/kiosk coffee bar.jpg";
 
 import photo300 from "../stockPhotos/Triple_Kiosk_Left.jpg";
 import photo301 from "../stockPhotos/Triple_Kiosk_Center.jpg";

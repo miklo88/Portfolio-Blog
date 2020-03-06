@@ -5,7 +5,7 @@
 .Nav {
   @media (min-width: $screen-mobile) {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -13,11 +13,12 @@
     padding-bottom: 40px;
   }
   @media (min-width: $screen-tablet) {
-    background-color: $lightgrey;
+    // background-color: $lightgrey;
   }
   @media (min-width: $screen-desktop) {
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
+    padding-bottom: 100px;
   }
   // background-color: yellow;
   .Main-Title {
@@ -26,26 +27,35 @@
       justify-content: center;
       align-items: center;
       color: white;
-      background-color: $lightgrey;
+      background-color: $redAccent;
       height: 100%;
       font-size: 2rem;
       font-weight: 400;
       width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding: 10px;
+    }
+    @media (min-width: $screen-desktop) {
+      color: $redAccent;
+      background: none;
+      width: 20%;
     }
   }
   .Nav-Menu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    @media (min-width: $screen-desktop) {
+    @media (min-width: $screen-mobile) {
       display: flex;
-      flex-direction: row;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      // background-color: purple;
+    }
+    @media (min-width: $screen-tablet) {
+      display: flex;
+      flex-flow: row;
+    }
+    @media (min-width: $screen-desktop) {
+      padding: 40px;
     }
     // NAVIGATION LINK CONTAINERS
     .Nav-Link {
@@ -64,30 +74,23 @@
           padding: 10px 30px;
         }
         @media (min-width: $screen-tablet) {
-          color: white;
-          background-color: $lightgrey;
         }
         @media (min-width: $screen-desktop) {
-          color: white;
-          background-color: $lightgrey;
+          color: $lightgrey;
         }
       }
       .Link:hover {
-        color: $darktheme;
+        color: $redAccent;
       }
       .Link:active {
         @media (min-width: $screen-mobile) {
           border-radius: 5px;
-          // background-color: $offwhite;
+          background-color: $redAccent;
           opacity: 0.5;
           $lato-weight: 100;
           transition-duration: 0.02s;
-          color: white;
+          color: $offwhite;
           box-shadow: 0px 0px 0px 1px white;
-        }
-        @media (min-width: $screen-tablet) {
-        }
-        @media (min-width: $screen-desktop) {
         }
       }
     }
