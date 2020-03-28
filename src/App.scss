@@ -1,13 +1,8 @@
-// GOOGLE FONTS 'LATO'
-@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap");
-// VARIABLEs
-@import "./Variables.scss";
-
+@import "./components/styles/Variables.scss";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -92,7 +87,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -136,9 +131,13 @@ table {
 * {
   box-sizing: border-box;
 }
-// GLOBAL STYLES
-.App {
+html {
   font-family: $lato-font;
-  margin: 0 auto;
-  padding: 0 auto;
+  font-weight: $lato-weight;
+}
+
+//GLOBAL STYLES
+.App {
+  margin: auto;
+  padding: auto;
 }
