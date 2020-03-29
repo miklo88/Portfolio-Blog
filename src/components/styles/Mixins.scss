@@ -1,2 +1,9 @@
 // variables folder. colors / font etc.
 @import "./Variables.scss";
+
+// basic grid layout for a page.
+@mixin gridContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 3em 3em 3em;
+}

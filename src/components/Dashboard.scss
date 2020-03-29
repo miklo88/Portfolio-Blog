@@ -7,6 +7,7 @@
   justify-items: center;
   align-items: center;
   background-color: lightseagreen;
+  /// nested items in the grid.
   .dashboard-text {
     grid-column: 1;
     color: white;

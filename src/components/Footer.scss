@@ -1,0 +1,16 @@
+.footer-container {
+  display: grid;
+  // 4 rows
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  // 3 columns
+  grid-template-rows: 3em 3em 3em;
+  background-color: lightblue;
+  /// nested items in the grid.
+  .footer-text {
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/3;
+    grid-row: 1 / span 3;
+    color: white;
+  }
+}

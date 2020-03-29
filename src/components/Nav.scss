@@ -1,0 +1,23 @@
+.nav-container {
+  display: grid;
+  // 4 rows
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  // 3 columns
+  grid-template-rows: 3em 3em 3em;
+  justify-items: center;
+  align-items: center;
+  background-color: lightgray;
+  /// nested items in the grid.
+  .logo-img {
+    grid-column: 1;
+    background-color: white;
+  }
+  .nav-h1 {
+    grid-column: 2;
+    color: white;
+  }
+  .nav-links {
+    grid-column: 3;
+    color: white;
+  }
+}

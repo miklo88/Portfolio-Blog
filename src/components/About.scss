@@ -1,0 +1,24 @@
+@import "./styles/Mixins.scss";
+
+.about-container {
+  @include gridContainer;
+  //   display: grid;
+  //   grid-template-rows: 1fr 1fr 1fr 1fr;
+  //   grid-template-columns: 3em 3em 3em;
+  background-color: mediumaquamarine;
+  .about-text {
+    justify-self: center;
+    align-self: center;
+    color: white;
+    grid-column: 1/3;
+    grid-row: 1 / span 3;
+  }
+  .home-link {
+    justify-self: center;
+    align-self: center;
+    color: white;
+    grid-column: 3;
+    grid-row: 4;
+    text-decoration: none;
+  }
+}
