@@ -4,6 +4,11 @@
 // basic grid layout for a page.
 @mixin gridContainer {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 3em 3em 3em;
+  grid-template-rows: 3em 3em 3em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@mixin centerItem {
+  justify-self: center;
+  align-self: center;
 }

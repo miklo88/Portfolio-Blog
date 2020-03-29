@@ -9,7 +9,6 @@ function App() {
     <div className='App'>
       <Nav />
       <Router />
-      <p>Beinvenidos mi gente!</p>
       <Footer />
     </div>
   );
