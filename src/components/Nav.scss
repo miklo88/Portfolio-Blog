@@ -8,23 +8,25 @@
 
   .logo-img {
     grid-column: 1;
-    grid-row: 1 / span 4;
+    grid-row: 1 / span 3;
     @include centerItem;
-    background-color: $offwhite;
-  }
-  .nav-h1 {
-    grid-column: 2;
-    grid-row: 1 / span 4;
-    @include centerItem;
-    width: 500px;
-    color: $offwhite;
     background-color: $redAccent;
   }
-  .nav-links {
-    grid-column: 3;
-    grid-row: 1 / span 4;
+  .nav-h1 {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    // @include centerItem;
+    color: $offwhite;
+  }
+  .navigation {
+    grid-column: 4;
+    grid-row: 1 / span 3;
     @include centerItem;
-    background-color: $offwhite;
-    text-decoration: none;
+    background-color: $redAccent;
+
+    .links {
+      color: $offwhite;
+      text-decoration: none;
+    }
   }
 }
