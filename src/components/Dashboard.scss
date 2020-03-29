@@ -1,11 +1,7 @@
+@import "./styles/Mixins.scss";
+
 .dashboard-container {
-  display: grid;
-  // 4 rows
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  // 3 columns
-  grid-template-rows: 3em 3em 3em;
-  justify-items: center;
-  align-items: center;
+  @include gridContainer;
   background-color: lightseagreen;
   /// nested items in the grid.
   .dashboard-text {

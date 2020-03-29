@@ -2,9 +2,6 @@
 
 .about-container {
   @include gridContainer;
-  //   display: grid;
-  //   grid-template-rows: 1fr 1fr 1fr 1fr;
-  //   grid-template-columns: 3em 3em 3em;
   background-color: mediumaquamarine;
   .about-text {
     justify-self: center;
