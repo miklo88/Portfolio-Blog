@@ -3,20 +3,21 @@
 
 .dashboard-container {
   @include gridContainer;
+
   /// nested items in the grid.
   .dashboard-img {
     grid-column: 1 / span 3;
     grid-row: 1 / span 3;
     width: 100%;
     height: 100%;
-    //object fit makes sure the photo covers the element completely. just like background image css.
     object-fit: cover;
   }
+  //mobile styling.
   .dashboard-h1 {
     grid-column: 1 / span 3;
     grid-row: 1 / span 3;
     color: $offwhite;
-    font-size: $cta-h1;
+    font-size: 3rem;
     font-weight: 900;
     @include centerItem;
   }

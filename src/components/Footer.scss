@@ -1,8 +1,8 @@
 @import "./styles/Mixins.scss";
 
 .footer-container {
-  @include gridContainer;
-  background-color: lightblue;
+  @include smContainer;
+  background-color: $darktheme;
   /// nested items in the grid.
   .footer-text {
     @include centerItem;
