@@ -5,7 +5,7 @@
 @mixin gridContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, minmax(75px, auto));
+  grid-template-rows: repeat(4, minmax(75px, auto));
   grid-gap: 1em;
 }
 // header footer grids
@@ -48,8 +48,8 @@
     border-radius: 20px;
   }
   &:active {
-    color: $offwhite;
-    border: $darktheme;
-    background-color: $darktheme;
+    color: $redAccent;
+    border: $lightgrey;
+    background-color: $lightgrey;
   }
 }

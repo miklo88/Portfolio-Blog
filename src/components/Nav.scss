@@ -7,6 +7,8 @@
   .nav-h1 {
     grid-column: 1;
     grid-row: 1 / span 3;
+    font-size: 2rem;
+    font-weight: 200;
     color: $darktheme;
     @include centerItem;
   }
@@ -22,10 +24,6 @@
     .links {
       @include centerItem;
       @include basicButton;
-      // color: $darktheme;
-      // text-decoration: none;
-      // padding: 10px;
-      // cursor: pointer;
     }
   }
 }
