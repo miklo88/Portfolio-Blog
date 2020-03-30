@@ -2,29 +2,29 @@
 @import "./styles/Variables.scss";
 
 .nav-container {
-  // nav-container mixin
   @include gridContainer;
   background-color: lightgray;
-
+  /// nested items in the grid.
   .logo-img {
     grid-column: 1;
     grid-row: 1 / span 3;
-    @include centerItem;
     background-color: $redAccent;
+    @include centerItem;
   }
   .nav-h1 {
-    grid-column: 2 / span 3;
-    grid-row: 2;
-    // @include centerItem;
+    grid-column: 2;
+    grid-row: 1 / span 3;
     color: $offwhite;
+    @include centerItem;
   }
   .navigation {
-    grid-column: 4;
+    grid-column: 3;
     grid-row: 1 / span 3;
-    @include centerItem;
     background-color: $redAccent;
+    @include centerItem;
 
     .links {
+      @include centerItem;
       color: $offwhite;
       text-decoration: none;
     }
