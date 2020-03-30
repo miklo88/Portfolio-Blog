@@ -2,13 +2,15 @@
 @import "./Variables.scss";
 
 // basic grid layout for a page. 3 column 3 row.
+
 @mixin gridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 3em 3em 3em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 3em);
   grid-gap: 1em;
 }
 
+//centers item in specific grid table.
 @mixin centerItem {
   place-self: center;
 }
