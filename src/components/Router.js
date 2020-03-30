@@ -6,14 +6,14 @@ import Dashboard from "./Dashboard";
 
 function Router() {
   return (
-    <div>
+    <>
       <Switch>
         <Route exact path='/about' component={About} />
         {/* <Route exact path='/users' component={users}>
         </Route> */}
         <Route exact path='/' component={Dashboard} />
       </Switch>
-    </div>
+    </>
   );
 }
 export default Router;

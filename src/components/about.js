@@ -6,7 +6,6 @@ function About() {
   return (
     <div className='about-container'>
       <p className='about-text'>something about me.</p>
-
       <Link className='home-link' to='/'>
         Home
       </Link>

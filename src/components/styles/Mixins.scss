@@ -1,7 +1,7 @@
 // variables folder. colors / font etc.
 @import "./Variables.scss";
 
-// basic grid layout for a page.
+// basic grid layout for a page. 3 column 3 row.
 @mixin gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -9,10 +9,6 @@
   grid-gap: 1em;
 }
 
-// @mixin centerItem {
-//   justify-self: center;
-//   align-self: center;
-// }
 @mixin centerItem {
   place-self: center;
 }

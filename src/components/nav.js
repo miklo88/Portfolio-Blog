@@ -5,7 +5,6 @@ import "./Nav.scss";
 function Nav() {
   return (
     <nav className='nav-container'>
-      <img className='logo-img' src='' alt='nav-logo' />
       <h1 className='nav-h1'>Navigation component.</h1>
       {/* links for other pages */}
       <ul className='navigation'>
