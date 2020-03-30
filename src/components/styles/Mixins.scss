@@ -8,6 +8,7 @@
   grid-template-rows: repeat(3, minmax(75px, auto));
   grid-gap: 1em;
 }
+// header footer grids
 @mixin smContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -19,4 +20,36 @@
   place-self: center;
 }
 
-// font sizing mixin
+// media breakpoints.
+@mixin respond-to($breakpoints) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn 'no value could be retrieved from `${breakpoint}`. ' + 'Available breakpoints are: #{map-keys($breakpoints)}.';
+  }
+}
+
+///// buttons/ links
+@mixin basicButton {
+  color: $darktheme;
+  border: 1px solid $darktheme;
+  border-radius: 0px;
+  padding: 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.7s;
+
+  &:hover {
+    color: $redAccent;
+    border: 1px solid;
+    border-radius: 20px;
+  }
+  &:active {
+    color: $offwhite;
+    border: $darktheme;
+    background-color: $darktheme;
+  }
+}

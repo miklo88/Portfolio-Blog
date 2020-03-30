@@ -6,4 +6,12 @@ $redAccent: #eb5142;
 
 //font // play with fonts more.
 $lato-font: "Lato", sans-serif;
-$cta-h1: 3rem;
+
+// media breakpoint variables.
+$breakpoints: (
+  "smmobile": 300px,
+  "mobile": 400px,
+  "tablet": 800px,
+  "desktop": 1000px,
+  "large": 1200px
+) !default;
