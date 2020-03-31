@@ -3,16 +3,22 @@
 
 .nav-container {
   @include smContainer;
-  /// nested items in the grid.
-  .nav-h1 {
+  .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 400;
     color: $darktheme;
+    text-decoration: none;
+    transition: 0.7s;
     @include centerItem;
+    &:hover {
+      color: $redAccent;
+    }
+    &:active {
+      color: $lightgrey;
+    }
   }
-  ///
   .navigation {
     display: flex;
     flex-direction: row;

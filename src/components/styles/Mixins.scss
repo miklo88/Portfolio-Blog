@@ -34,22 +34,23 @@
 ///// buttons/ links
 @mixin basicButton {
   color: $darktheme;
-  border: 1px solid $darktheme;
-  border-radius: 0px;
+  border: 1px solid white;
+  border-radius: 5px;
   padding: 10px 30px;
-  margin: 10px;
+  margin: 5px;
   cursor: pointer;
   text-decoration: none;
   transition: 0.7s;
 
   &:hover {
     color: $redAccent;
-    border: 1px solid;
+    border: 1px solid $redAccent;
     border-radius: 20px;
   }
   &:active {
-    color: $redAccent;
-    border: $lightgrey;
-    background-color: $lightgrey;
+    color: $lightgrey;
+    border: 1px solid $offwhite;
+    border-radius: 20px;
+    background-color: $offwhite;
   }
 }
