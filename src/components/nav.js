@@ -17,7 +17,7 @@ function Nav() {
         <Link className='links' to='/blog'>
           Blog
         </Link>
-        <Link className='links' to='/login'>
+        <Link className='links' to='/signup'>
           Login/Signup
         </Link>
         {/* <li className='link'><Link to='/users' >Users</Link></li> */}

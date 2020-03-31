@@ -3,31 +3,36 @@
 
 .dashboard-container {
   @include gridContainer;
-  /// nested items in the grid.
-
   .dashboard-img {
     grid-column: 1 / span 3;
     grid-row: 1 / span 4;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.2;
+    transition-duration: 1s;
+    @include centerItem;
+
+    &:hover {
+      opacity: 1;
+    }
   }
   //mobile styling.
-  .dashboard-h1 {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 4;
-    color: $offwhite;
-    font-size: 4rem;
-    font-weight: 900;
-    @include centerItem;
-  }
+  // .dashboard-h1 {
+  //   grid-column: 1 / span 3;
+  //   grid-row: 1 / span 4;
+  //   color: $offwhite;
+  //   font-size: 4rem;
+  //   font-weight: 900;
+  //   @include centerItem;
+
+  // }
   .dashboard-p {
     grid-column: 1 / span 3;
     grid-row: 1 / span 4;
     color: $offwhite;
     font-size: 1rem;
     font-weight: 200;
-    opacity: 0.5;
     @include centerItem;
   }
 }
