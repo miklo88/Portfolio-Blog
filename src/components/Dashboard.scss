@@ -10,7 +10,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.2;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     @include centerItem;
 
     &:hover {
@@ -30,9 +30,12 @@
   .dashboard-p {
     grid-column: 1 / span 3;
     grid-row: 1 / span 4;
-    color: $offwhite;
+    color: $darktheme;
     font-size: 1rem;
     font-weight: 200;
     @include centerItem;
+    &:hover {
+      display: none;
+    }
   }
 }

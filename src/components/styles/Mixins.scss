@@ -19,6 +19,10 @@
 @mixin centerItem {
   place-self: center;
 }
+@mixin centerForm {
+  justify-content: center;
+  align-items: center;
+}
 
 // media breakpoints.
 @mixin respond-to($breakpoints) {
@@ -47,7 +51,7 @@
     border-radius: 20px;
   }
   &:active {
-    color: $lightgrey;
+    color: white;
     border: 1px solid $offwhite;
     border-radius: 20px;
     background-color: $offwhite;
