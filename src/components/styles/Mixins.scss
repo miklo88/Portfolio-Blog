@@ -1,6 +1,14 @@
 // variables folder. colors / font etc.
 @import "./Variables.scss";
 
+/// mixin for deleting default browser styling
+@mixin clearStyles {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+}
+
 // basic grid layout for a page. 3 column 3 row.
 @mixin gridContainer {
   display: grid;
@@ -18,10 +26,6 @@
 //centers item in specific grid table.
 @mixin centerItem {
   place-self: center;
-}
-@mixin centerForm {
-  justify-content: center;
-  align-items: center;
 }
 
 // media breakpoints.
@@ -51,9 +55,9 @@
     border-radius: 20px;
   }
   &:active {
-    color: white;
-    border: 1px solid $offwhite;
+    color: $offwhite;
+    border: 1px solid $redAccent;
     border-radius: 20px;
-    background-color: $offwhite;
+    background-color: $redAccent;
   }
 }

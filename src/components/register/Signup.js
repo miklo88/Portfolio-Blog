@@ -7,35 +7,37 @@ const Signup = () => {
   // export const Signup = () => {
   return (
     <>
-      {/* // <div className='signup-container'> */}
       <form className='signup-form'>
         <label className='input-label'>First Name:</label>
-        <input className='input' type='text' placeholder='Carlitos' />
+        <input className='input-field' type='text' placeholder='First Name' />
 
         <label className='input-label'>Last Name:</label>
-        <input className='input' type='text' placeholder='Redding' />
+        <input className='input-field' type='text' placeholder='Last Name' />
 
         <label className='input-label'>Username:</label>
-        <input className='input' type='text' placeholder='Miklo' />
+        <input className='input-field' type='text' placeholder='Username' />
 
         <label className='input-label'>Email:</label>
         <input
-          className='input'
+          className='input-field'
           type='text'
-          placeholder='miklo.concepcion@gmail.com'
+          placeholder='Email@gmail.com'
         />
 
         <label className='input-label'>Password:</label>
-        <input className='input' type='text' placeholder='Password' />
+        <input className='input-field' type='text' placeholder='Password' />
 
-        <input className='submit-input' type='submit' value='submit' />
+        <button className='submit-btn' type='submit' value='submit'>
+          Submit
+        </button>
+        <div className='link-to-login'>
+          <p className='to-login'>Already a user?</p>
+          <Link className='login-link' to='/login'>
+            Login
+          </Link>
+        </div>
       </form>
-      <div className='to-login'>
-        <p>Already a user?</p>
-        <Link to='/login'>Login</Link>
-      </div>
     </>
-    // {/* </div> */}
   );
 };
 export default Signup;
