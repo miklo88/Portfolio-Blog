@@ -10,23 +10,18 @@ const Signup = () => {
       <form className='signup-form'>
         <label className='input-label'>First Name:</label>
         <input className='input-field' type='text' placeholder='First Name' />
-
         <label className='input-label'>Last Name:</label>
         <input className='input-field' type='text' placeholder='Last Name' />
-
         <label className='input-label'>Username:</label>
         <input className='input-field' type='text' placeholder='Username' />
-
         <label className='input-label'>Email:</label>
         <input
           className='input-field'
           type='text'
           placeholder='Email@gmail.com'
         />
-
         <label className='input-label'>Password:</label>
         <input className='input-field' type='text' placeholder='Password' />
-
         <button className='submit-btn' type='submit' value='submit'>
           Submit
         </button>
