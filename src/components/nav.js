@@ -9,11 +9,12 @@ function Nav() {
       <Link className='home-link' to='/'>
         <h1>MIKLO</h1>
       </Link>
-      {/* links for other pages */}
+      {/* About/contact page */}
       <nav className='navigation'>
         <Link className='links' to='/about'>
           About
         </Link>
+        {/* link to blog/landing pg. signup pg incl. */}
         <Link className='links' to='/blog'>
           Blog
         </Link>
