@@ -11,9 +11,14 @@ export const deleteUser = (id) => ({
   type: "DELETE_USER",
   id: id,
 });
+export const setUsersFilter = (filter) => ({
+  type: "SET_USER_FILTER",
+  filter,
+});
 
 // exports UserFilters to export to the reducer
-export const UserFilters = {
+export const UsersFilter = {
+  SHOW_USER: "SHOW_USER",
   ADD_USER: "ADD_USER",
   DELETE_USER: "DELETE_USER",
 };
