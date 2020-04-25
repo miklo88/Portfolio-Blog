@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import About from "../About";
+import About from "../about";
 import Dashboard from "../landing/Dashboard";
 import Signup from "../register/Signup";
 // import Users from '../Users.js';
