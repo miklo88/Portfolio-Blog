@@ -6,8 +6,10 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import rootReducer from "./redux/reducers/Combine-Reducers";
 
+const store = createStore(rootReducer);
+
 ReactDOM.render(
-  <Provider store={createStore}>
+  <Provider store={store}>
     <Router>
       <App />
     </Router>
