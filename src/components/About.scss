@@ -1,4 +1,5 @@
-@import "./styles/Mixins.scss";
+@import "../components/styles/mixins";
+@import "../components/styles/variables";
 
 .about-container {
   @include gridContainer;

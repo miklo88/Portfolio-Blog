@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Router from "./components/Router";
-import Footer from "./components/Footer";
+import Nav from "./components/nav/Nav";
+import Router from "./components/router/Router";
+import Footer from "./components/nav/Footer";
 import "./App.scss";
 
 function App() {

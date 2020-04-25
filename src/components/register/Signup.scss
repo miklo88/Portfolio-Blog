@@ -57,6 +57,7 @@
       padding: 10px;
       margin: 5px;
     }
+    // link to login
     .login-link {
       color: $darktheme;
       text-decoration: none;
@@ -64,7 +65,6 @@
       border-radius: 5px;
       padding: 5px 10px;
       transition: 0.7s;
-
       &:hover {
         color: $redAccent;
         border: 1px solid $redAccent;

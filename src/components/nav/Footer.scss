@@ -1,0 +1,14 @@
+@import "../styles/mixins.scss";
+@import "../styles/variables";
+
+.footer-container {
+  @include smContainer;
+  background-color: $darktheme;
+  /// nested items in the grid.
+  .footer-text {
+    @include centerItem;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    color: white;
+  }
+}
