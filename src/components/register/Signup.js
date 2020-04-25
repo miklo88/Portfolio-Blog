@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./Signup.scss";
 
-const Signup = () => {
-  // export const Signup = () => {
+const Signup = (props) => {
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [userName, setUsername] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
+  useEffect(() => {
+    function handleSubmit(submit) {
+      setFirstName(submit.firstName);
+      setLastName(submit.lastName);
+      setUsername(submit.userName);
+      setEmail(submit.email);
+      setPassword(submit.password);
+    }
+  });
+
   return (
     <>
       <form className='signup-form'>
