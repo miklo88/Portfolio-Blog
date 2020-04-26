@@ -13,6 +13,7 @@ const Login = (props) => {
         className='login-form'
         onSubmit={(e) => {
           e.preventDefault();
+          //Auth handler
         }}
       >
         <label className='form-label'>
@@ -20,7 +21,8 @@ const Login = (props) => {
           <input
             className='input-field'
             type='email'
-            onChange={(e) => setUserEmail({ email: e.target.value })}
+            value={userEmail}
+            onChange={(e) => setUserEmail(e.target.value)}
             placeholder='Email@email.com'
           />
         </label>
@@ -29,7 +31,8 @@ const Login = (props) => {
           <input
             className='input-field'
             type='password'
-            onChange={(e) => setUserPassword({ password: e.target.value })}
+            value={userPassword}
+            onChange={(e) => setUserPassword(e.target.value)}
             placeholder='Password'
           />
         </label>

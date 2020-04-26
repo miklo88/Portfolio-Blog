@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Signup.scss";
 
+// const Signup = (props) => {
+//   const [firstName, setFirstName] = useState("");
+//   const [lastName, setLastName] = useState("");
+//   const [userName, setUserName] = useState("");
+//   const [useremail, setUserEmail] = useState("");
+//   const [userPassword, setUserPassword] = useState("");
 class SignUp extends React.Component {
   constructor(props) {
     super(props);
