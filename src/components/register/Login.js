@@ -6,6 +6,10 @@ import "./Login.scss";
 const Login = (props) => {
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
+  // error handler aqui
+
+  // auth handler. can use "https://jsonplaceholder.typicode.com/users"
+  // https://levelup.gitconnected.com/learn-react-hooks-by-building-an-auth-based-to-do-app-c2d143928b0b
 
   return (
     <>
