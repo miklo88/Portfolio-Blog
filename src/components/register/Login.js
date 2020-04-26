@@ -1,21 +1,50 @@
-import React from "react";
-import { connect } from "react-redux";
-// import "./Login.scss";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+// import { connect } from "react-redux";
+import "./Login.scss";
 
-const Login = () => {
+const Login = (props) => {
+  const [userEmail, setUserEmail] = useState("");
+  const [userPassword, setUserPassword] = useState("");
+
   return (
-    <div className='login-container'>
-      <form className='login-form'>
+    <>
+      <form
+        className='login-form'
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <label className='form-label'>
           Email:
-          <input className='login-input' type='text' />
+          <input
+            className='input-field'
+            type='email'
+            onChange={(e) => setUserEmail({ email: e.target.value })}
+            placeholder='Email@email.com'
+          />
         </label>
         <label>
           Password:
-          <input className='login-input' type='text' />
+          <input
+            className='input-field'
+            type='password'
+            onChange={(e) => setUserPassword({ password: e.target.value })}
+            placeholder='Password'
+          />
         </label>
+        <button className='login-btn' type='submit'>
+          Login
+        </button>
       </form>
-    </div>
+      {/* to signup component if a new user */}
+      <div className='link-to-signup'>
+        <p className='to-signup'>New User?</p>
+        <Link className='signup-link' to='/signup'>
+          Sign Up
+        </Link>
+      </div>
+    </>
   );
 };
 export default Login;

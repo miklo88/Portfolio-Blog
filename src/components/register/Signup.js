@@ -20,7 +20,7 @@ class SignUp extends React.Component {
 
   render() {
     return (
-      <div>
+      <>
         <form className='signup-form'>
           <label className='input-label'>First Name:</label>
           <input
@@ -81,7 +81,7 @@ class SignUp extends React.Component {
             </Link>
           </div>
         </form>
-      </div>
+      </>
     );
   }
 }
