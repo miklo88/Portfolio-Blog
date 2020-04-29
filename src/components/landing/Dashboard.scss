@@ -9,7 +9,8 @@
     grid-row: 1 / span 1;
     @include centerItem;
     color: $darktheme;
-    font-size: 7em;
+    font-size: 8em;
+    padding-top: 1em;
   }
   ////////////////img about ////////////////
   .dashboard-img-about {
@@ -40,7 +41,7 @@
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
     @include centerItem;
-    color: $offwhite;
+    color: $darktheme;
     font-size: 2em;
     text-decoration: none;
   }
@@ -57,7 +58,7 @@
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
     @include centerItem;
-    color: $offwhite;
+    color: $darktheme;
     font-size: 2em;
     text-decoration: none;
   }
