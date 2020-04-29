@@ -11,10 +11,8 @@ function Router() {
   return (
     <>
       <Switch>
-        <Route exact path='/about' component={About} />
-        {/* <Route exact path='/users' component={users}>
-        </Route> */}
         <Route exact path='/' component={Dashboard} />
+        <Route exact path='/about' component={About} />
         <Route exact path='/signup' component={Signup} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/contact' component={Contact} />
