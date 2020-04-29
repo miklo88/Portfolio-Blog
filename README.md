@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Miklos-Portfolio 👋</h1>
+<h1 align="center">Welcome to Carl's Portfolio 👾</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/npm-6.13.4-blue.svg" />
@@ -37,13 +37,14 @@ npm run test
 
 👤 **Carl Redding**
 
-* Twitter: [@Miklo13F](https://twitter.com/Miklo13F)
-* Github: [@miklo88](https://github.com/miklo88)
-* LinkedIn: [@carl-redding](https://linkedin.com/in/carl-redding)
+- Twitter: [@Miklo13F](https://twitter.com/Miklo13F)
+- Github: [@miklo88](https://github.com/miklo88)
+- LinkedIn: [@carl-redding](https://linkedin.com/in/carl-redding)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

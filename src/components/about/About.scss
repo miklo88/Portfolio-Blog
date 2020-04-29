@@ -1,5 +1,5 @@
-@import "../components/styles/mixins";
-@import "../components/styles/variables";
+@import "../styles/mixins";
+@import "../styles/variables";
 
 .about-container {
   @include gridContainer;
