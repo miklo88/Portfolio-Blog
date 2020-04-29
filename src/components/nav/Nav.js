@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Nav.scss";
 
-function Nav() {
+const Nav = () => {
   return (
     <div className='nav-container'>
       <Link className='home-link' to='/'>
-        <h1>MIKLO</h1>
+        MIKLO
       </Link>
       {/* About/contact page */}
       <nav className='navigation'>
@@ -17,13 +17,15 @@ function Nav() {
         <Link className='links' to='/blog'>
           Blog
         </Link>
-        <Link className='links' to='/signup'>
+        {/* <Link className='links' to='/signup'>
           Login/Signup
+        </Link> */}
+        <Link className='links' to='/contact'>
+          Contact
         </Link>
-        {/* <li className='link'><Link to='/users' >Users</Link></li> */}
       </nav>
     </div>
   );
-}
+};
 
 export default Nav;

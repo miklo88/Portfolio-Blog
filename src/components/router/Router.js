@@ -1,9 +1,10 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import About from "../about";
+import About from "../about/about";
 import Dashboard from "../landing/Dashboard";
 import Signup from "../register/Signup";
 import Login from "../register/Login";
+import Contact from "../contact/contact";
 // import Users from '../Users.js';
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
         <Route exact path='/' component={Dashboard} />
         <Route exact path='/signup' component={Signup} />
         <Route exact path='/login' component={Login} />
+        <Route exact path='/contact' component={Contact} />
       </Switch>
     </>
   );
