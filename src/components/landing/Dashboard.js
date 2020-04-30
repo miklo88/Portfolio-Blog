@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import landing from "../../stockPhotos/discovery.jpg";
 import about from "../../stockPhotos/dame.png";
-import blog from "../../stockPhotos/dame.png";
-import drink from "../../stockPhotos/PENECILLIN.jpg";
+import blog from "../../stockPhotos/PENECILLINV1.2_1_2.jpg";
+import contact from "../../stockPhotos/portfolio.JPG";
 
 import "./Dashboard.scss";
 
@@ -34,7 +34,7 @@ const Dashboard = () => {
       </div>
 
       <div className='contact'>
-        <img className='dashboard-img-contact' src={drink} alt='dash-img' />
+        <img className='dashboard-img-contact' src={contact} alt='dash-img' />
         <Link className='dash-link-contact' to='/blog'>
           Contact
         </Link>
