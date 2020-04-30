@@ -2,10 +2,7 @@
 @import "../styles/variables";
 
 .dashboard-container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+  // whole page container, 1 col by 4 rows
   @include homeGrid;
 
   .landing {
@@ -16,16 +13,21 @@
       grid-row: 1 / span 4;
       width: 100%;
       height: auto;
-      // filter: brightness(50%);
       @include centerItem;
+      overflow: hidden;
     }
     ////////////////p landing
     .dash-p-landing {
-      grid-column: 3 / span 2;
-      grid-row: 2 / span 2;
-      font-size: 4em;
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 4;
+      font-size: 2em;
       color: $offwhite;
+      @include centerItem;
     }
+    //   grid-column: 3 / span 2;
+    //   grid-row: 2 / span 2;
+    //   font-size: 4em;
+    //   color: $offwhite;
   }
   .about {
     @include gridContainer;
@@ -38,8 +40,8 @@
     }
     ////////////////link about
     .dash-link-about {
-      grid-column: 1 / span 1;
-      grid-row: 2 / span 1;
+      grid-column: 2 / span 2;
+      grid-row: 3 / span 2;
       @include centerItem;
       color: $lightgrey;
       font-size: 2em;
@@ -57,8 +59,8 @@
     }
     ////////////////link blog
     .dash-link-blog {
-      grid-column: 1 / span 1;
-      grid-row: 3 / span 1;
+      grid-column: 2 / span 2;
+      grid-row: 3 / span 2;
       @include centerItem;
       color: $darktheme;
       font-size: 2em;
@@ -76,8 +78,8 @@
     }
     ////////////////link contact
     .dash-link-contact {
-      grid-column: 1 / span 1;
-      grid-row: 4 / span 1;
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 4;
       @include centerItem;
       color: $darktheme;
       font-size: 2em;

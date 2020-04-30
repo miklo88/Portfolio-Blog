@@ -8,7 +8,12 @@
   -ms-appearance: none;
   -o-appearance: none;
 }
-
+// landing page grid-should be apps parent container.
+@mixin homeGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4fr);
+}
 // basic grid layout for a page. 3 column 3 row.
 @mixin gridContainer {
   display: grid;
@@ -23,12 +28,7 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   grid-gap: 1em;
 }
-// flexbox grid??
-@mixin homeGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4fr);
-}
+
 //centers item in specific grid table.
 @mixin centerItem {
   place-self: center;

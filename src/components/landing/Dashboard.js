@@ -13,8 +13,8 @@ const Dashboard = () => {
       <div className='landing'>
         <img className='dashboard-img-landing' src={landing} alt='dash-img' />
         <p className='dash-p-landing'>
-          Web Developing<br></br>
-          Visual Design<br></br>
+          Web Developing,<br></br>
+          Visual Design,<br></br>
           Chicago, IL
         </p>
       </div>
