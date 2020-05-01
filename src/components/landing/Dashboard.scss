@@ -23,6 +23,15 @@
       font-size: 2em;
       color: $offwhite;
       @include centerItem;
+      // margin-right: 30px;
+      //mobile
+      @include respond-to("tablet") {
+        font-size: 3em;
+      }
+      // tablet view
+      @include respond-to("desktop") {
+        font-size: 4em;
+      }
     }
   }
 }
