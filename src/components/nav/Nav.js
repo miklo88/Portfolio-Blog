@@ -35,7 +35,7 @@ const Nav = () => {
         <div className='line one'></div>
         <div className='line two'></div>
         <div className='line three'></div>
-        <div className='hidden'>HI</div>
+        {/* <div className='hidden'>HI</div> */}
       </button>
     </div>
   );
