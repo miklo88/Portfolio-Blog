@@ -4,6 +4,7 @@
 .nav-container {
   @include smContainer;
   z-index: 1000;
+
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
@@ -21,14 +22,17 @@
     }
   }
   .nav-burger {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
     grid-column: 3;
     grid-row: 1 / span 3;
     color: $darktheme;
     @include centerItem;
   }
   .hamburger {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    @include centerItem;
     background: none;
     border: 0;
     z-index: 1200;
@@ -68,21 +72,20 @@
   // to make an x
   .change {
     .one {
-      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-9px, 6px);
+      -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+      transform: rotate(-45deg) translate(-5px, 5px);
       box-shadow: none;
     }
     .two {
-      transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(0deg) translate(-1200px, 1px);
       box-shadow: none;
     }
     .three {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(-45deg) translate(-9px, 6px);
+      -webkit-transform: rotate(45deg) translate(-10px, -10px);
+      transform: rotate(45deg) translate(-10px, -10px);
       box-shadow: none;
     }
   }
-
   .nav-burger {
     display: none;
   }
@@ -90,11 +93,13 @@
     display: block !important;
     width: 100%;
     z-index: 998;
-    position: absolute;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    // position: absolute;
     background-color: $redAccent;
-    top: 0;
-    left: 0;
-    padding: 15px;
+    // top: 0;
+    // left: 0;
+    padding: 20px;
     text-align: center;
 
     .links {
