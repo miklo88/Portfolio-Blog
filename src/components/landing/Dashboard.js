@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import landing from "../../stockPhotos/discovery.jpg";
-import about from "../../stockPhotos/dame.png";
-import blog from "../../stockPhotos/PENECILLINV1.2_1_2.jpg";
-import contact from "../../stockPhotos/portfolio.JPG";
 
 import "./Dashboard.scss";
 
@@ -17,27 +14,6 @@ const Dashboard = () => {
           Visual Design,<br></br>
           Chicago, IL
         </p>
-      </div>
-
-      <div className='about'>
-        <img className='dashboard-img-about' src={about} alt='dash-img' />
-        <Link className='dash-link-about' to='/blog'>
-          About
-        </Link>
-      </div>
-
-      <div className='blog'>
-        <img className='dashboard-img-blog' src={blog} alt='dash-img' />
-        <Link className='dash-link-blog' to='/blog'>
-          Blog
-        </Link>
-      </div>
-
-      <div className='contact'>
-        <img className='dashboard-img-contact' src={contact} alt='dash-img' />
-        <Link className='dash-link-contact' to='/blog'>
-          Contact
-        </Link>
       </div>
     </div>
   );

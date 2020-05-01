@@ -11,7 +11,7 @@
     .dashboard-img-landing {
       grid-column: 1 / span 4;
       grid-row: 1 / span 4;
-      max-width: 100%;
+      width: 100%;
       height: auto;
       @include centerItem;
       overflow: hidden;
@@ -23,87 +23,6 @@
       font-size: 2em;
       color: $offwhite;
       @include centerItem;
-    }
-  }
-  .about {
-    @include gridContainer;
-    ////////////////img about ////////////////
-    .dashboard-img-about {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 4;
-      max-width: 100%;
-      height: auto;
-      opacity: 0.2;
-      &:hover {
-        opacity: 1;
-        transition: 0.7s ease;
-      }
-    }
-    ////////////////link about
-    .dash-link-about {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 1;
-      @include centerItem;
-      color: $darktheme;
-      font-size: 2em;
-      padding-top: 20px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-  }
-
-  .blog {
-    @include gridContainer;
-    ////////////////img blog ////////////////
-    .dashboard-img-blog {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 4;
-      max-width: 100%;
-      height: auto;
-      opacity: 0.2;
-      &:hover {
-        opacity: 1;
-        transition: 0.7s ease;
-      }
-    }
-    ////////////////link blog
-    .dash-link-blog {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 1;
-      @include centerItem;
-      color: $darktheme;
-      font-size: 2em;
-      padding-top: 20px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-  }
-  .contact {
-    @include gridContainer;
-    ////////////////img contact ////////////////
-    .dashboard-img-contact {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 4;
-      max-width: 100%;
-      width: 100%;
-      height: auto;
-      @include centerItem;
-      opacity: 0.2;
-      &:hover {
-        opacity: 1;
-        transition: 0.7s ease;
-      }
-    }
-    ////////////////link contact
-    .dash-link-contact {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 1;
-      @include centerItem;
-      color: $darktheme;
-      font-size: 2em;
-      padding-top: 20px;
-      text-decoration: none;
-      cursor: pointer;
     }
   }
 }
