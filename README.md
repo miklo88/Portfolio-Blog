@@ -8,7 +8,8 @@
   </a>
 </p>
 
-> A simple portfolio website with my UI/UX integration, photos and code :)
+> A simple portfolio website with my UI/UX integration, photos and code
+> const portfolio = ["HTML5", "SCSS", "JavaScript", "React.js", "Redux", "Node.js"]
 
 ## Prerequisites
 
