@@ -17,7 +17,7 @@ const Nav = () => {
         MIKLO
       </Link>
       {/* hamburger menu */}
-      <nav onClick={hideBurger} className='nav-burger' id='nav-burger'>
+      <nav onClick={hideBurger} className='navigation' id='nav-burger'>
         {/* About/contact page */}
         <Link className='links' to='/about'>
           About
@@ -35,7 +35,6 @@ const Nav = () => {
         <div className='line one'></div>
         <div className='line two'></div>
         <div className='line three'></div>
-        {/* <div className='hidden'>HI</div> */}
       </button>
     </div>
   );
