@@ -1,5 +1,5 @@
 // variables folder. colors / font etc.
-@import "./Variables.scss";
+@import "./variables.scss";
 
 /// mixin for deleting default browser styling
 @mixin clearStyles {
@@ -8,28 +8,41 @@
   -ms-appearance: none;
   -o-appearance: none;
 }
-
+// landing page grid-should be apps parent container.
+@mixin homeGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4fr);
+}
 // basic grid layout for a page. 3 column 3 row.
 @mixin gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, minmax(75px, auto));
-  grid-gap: 1em;
 }
 // header footer grids
 @mixin smContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(20px, auto));
-  grid-gap: 1em;
+  // grid-gap: 1em;
 }
+
 //centers item in specific grid table.
 @mixin centerItem {
   place-self: center;
 }
 
+// media breakpoint variable.
+$breakpoints: (
+  "smmobile": 300px,
+  "mobile": 400px,
+  "tablet": 800px,
+  "desktop": 1000px,
+  "large": 1200px,
+) !default;
 // media breakpoints.
-@mixin respond-to($breakpoints) {
+@mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;

@@ -2,14 +2,27 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Nav.scss";
 
-function Nav() {
+const Nav = () => {
+  const hideBurger = (event) => {
+    event.preventDefault();
+    //if screen is larger than 1000px dont execute function.
+    if (window.innerWidth < 1000) {
+      let hamburger = document.getElementById("hamburger");
+      let navcontainer = document.getElementById("nav-burger");
+      hamburger.classList.toggle("change");
+      navcontainer.classList.toggle("show");
+      return false;
+    }
+  };
+
   return (
     <div className='nav-container'>
       <Link className='home-link' to='/'>
-        <h1>MIKLO</h1>
+        MIKLO
       </Link>
-      {/* About/contact page */}
-      <nav className='navigation'>
+      {/* hamburger menu */}
+      <nav onClick={hideBurger} className='navigation' id='nav-burger'>
+        {/* About/contact page */}
         <Link className='links' to='/about'>
           About
         </Link>
@@ -17,13 +30,18 @@ function Nav() {
         <Link className='links' to='/blog'>
           Blog
         </Link>
-        <Link className='links' to='/signup'>
-          Login/Signup
+        <Link className='links' to='/contact'>
+          Contact
         </Link>
-        {/* <li className='link'><Link to='/users' >Users</Link></li> */}
       </nav>
+      {/* burger menu */}
+      <button onClick={hideBurger} className='hamburger' id='hamburger'>
+        <div className='line one'></div>
+        <div className='line two'></div>
+        <div className='line three'></div>
+      </button>
     </div>
   );
-}
+};
 
 export default Nav;
