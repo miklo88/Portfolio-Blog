@@ -3,6 +3,7 @@
 
 .nav-container {
   @include smContainer;
+  z-index: 1000;
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
@@ -19,15 +20,86 @@
       color: $lightgrey;
     }
   }
-  .navigation {
+  .nav-burger {
     display: flex;
     flex-direction: row;
     grid-column: 3;
     grid-row: 1 / span 3;
     color: $darktheme;
     @include centerItem;
+  }
+  .hamburger {
+    background: none;
+    border: 0;
+    z-index: 1200;
+    padding: 0 10px;
+    width: 55px;
+
+    .line {
+      width: 35px;
+      height: 5px;
+      background: $darktheme;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    .one {
+      -webkit-transform: rotate(0deg) translate(0, 0);
+      transform: rotate(0deg) translate(0, 0);
+    }
+    .two {
+      opacity: 1;
+    }
+    .three {
+      -webkit-transform: rotate(0deg) translate(0, 0);
+      transform: rotate(0deg) translate(0, 0);
+    }
+    .hidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+
+  // to make an x
+  .change {
+    .one {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+      box-shadow: none;
+    }
+    .two {
+      transform: rotate(-45deg) translate(-9px, 6px);
+      box-shadow: none;
+    }
+    .three {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+      box-shadow: none;
+    }
+  }
+
+  .nav-burger {
+    display: none;
+  }
+  .show {
+    display: block !important;
+    width: 100%;
+    z-index: 998;
+    position: absolute;
+    background-color: $redAccent;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    text-align: center;
 
     .links {
+      // display: block;
+      // padding: 10px 5px;
       @include centerItem;
       @include basicButton;
     }
