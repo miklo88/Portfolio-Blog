@@ -23,7 +23,6 @@
       font-size: 2em;
       color: $offwhite;
       @include centerItem;
-      // margin-right: 30px;
       //mobile
       @include respond-to("tablet") {
         font-size: 3em;
