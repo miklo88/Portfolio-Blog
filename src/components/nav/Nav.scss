@@ -95,7 +95,7 @@
     }
   }
   // tablet view
-  @include respond-to("tablet") {
+  @include respond-to("desktop") {
     .navigation {
       display: flex;
       flex-direction: row;

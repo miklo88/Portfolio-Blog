@@ -5,10 +5,14 @@ import "./Nav.scss";
 const Nav = () => {
   const hideBurger = (event) => {
     event.preventDefault();
-    let hamburger = document.getElementById("hamburger");
-    let navcontainer = document.getElementById("nav-burger");
-    hamburger.classList.toggle("change");
-    navcontainer.classList.toggle("show");
+    //if screen is larger than 1000px dont execute function.
+    if (window.innerWidth < 1000) {
+      let hamburger = document.getElementById("hamburger");
+      let navcontainer = document.getElementById("nav-burger");
+      hamburger.classList.toggle("change");
+      navcontainer.classList.toggle("show");
+      return false;
+    }
   };
 
   return (
