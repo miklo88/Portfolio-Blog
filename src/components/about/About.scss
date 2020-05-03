@@ -1,20 +1,20 @@
 @import "../styles/mixins";
 @import "../styles/variables";
 
-.about-container {
-  @include gridContainer;
-  background-color: mediumaquamarine;
-  .about-text {
-    @include centerItem;
-    color: white;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 3;
-  }
-  .home-link {
-    @include centerItem;
-    color: white;
-    grid-column: 2;
-    grid-row: 3;
-    text-decoration: none;
-  }
-}
+// .about-container {
+//   // @include gridContainer;
+//   // background-color: mediumaquamarine;
+//   // .about-text {
+//   //   @include centerItem;
+//   //   color: white;
+//   //   grid-column: 1 / span 3;
+//   //   grid-row: 1 / span 3;
+//   // }
+//   // .home-link {
+//   //   @include centerItem;
+//   //   color: white;
+//   //   grid-column: 2;
+//   //   grid-row: 3;
+//   //   text-decoration: none;
+//   // }
+// }
