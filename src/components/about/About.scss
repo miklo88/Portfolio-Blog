@@ -1,6 +1,9 @@
 @import "../styles/mixins";
 @import "../styles/variables";
 
-// .about-container {
-
-// }
+.about-container {
+  // whole page container, 1 col by 4 rows
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4fr);
+}
