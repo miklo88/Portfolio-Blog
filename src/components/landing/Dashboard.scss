@@ -1,5 +1,4 @@
-@import "../styles/mixins";
-@import "../styles/variables";
+@import "../../index.scss";
 
 .dashboard-container {
   // whole page container, 1 col by 4 rows
@@ -8,19 +7,24 @@
   .landing {
     @include gridContainer;
     ////////////////img landing ////////////////
-    .dashboard-img-landing {
+    .color-overlay {
       grid-column: 1 / span 4;
       grid-row: 1 / span 4;
-      width: 100%;
-      height: auto;
-      @include centerItem;
-      overflow: hidden;
+      background-color: $redAccent;
+      .dashboard-img-landing {
+        width: 100%;
+        height: auto;
+        @include centerItem;
+        opacity: 0.5;
+        // overflow: hidden;
+      }
     }
     ////////////////p landing
     .dash-p-landing {
-      grid-column: 3 / span 1;
-      grid-row: 1 / span 4;
-      font-size: 2em;
+      grid-column: 2 / span 2;
+      grid-row: 3 / span 2;
+      font-size: 4em;
+      font-weight: 900;
       color: $offwhite;
       @include centerItem;
       //mobile
@@ -31,6 +35,9 @@
       @include respond-to("desktop") {
         font-size: 4em;
       }
+    }
+    .welcome {
+      @include centerItem;
     }
   }
 }

@@ -4,7 +4,7 @@
   @include smContainer;
   z-index: 1000;
   height: 70px;
-  box-shadow: 10px 5px 10px #888888;
+  box-shadow: 5px 5px 15px #c7c7c7;
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
@@ -87,7 +87,7 @@
     border-bottom-left-radius: 1em;
     padding-top: 90px;
     padding-bottom: 20px;
-    box-shadow: 10px 3px 10px #888888;
+    box-shadow: 5px 5px 15px #c7c7c7;
     margin: auto;
     .links {
       @include centerItem;
