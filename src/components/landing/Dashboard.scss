@@ -1,36 +1,37 @@
-@import "../styles/mixins";
-@import "../styles/variables";
+@import "../../index.scss";
 
 .dashboard-container {
   // whole page container, 1 col by 4 rows
-  @include homeGrid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4fr);
 
   .landing {
-    @include gridContainer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, minmax(75px, auto));
     ////////////////img landing ////////////////
     .dashboard-img-landing {
       grid-column: 1 / span 4;
       grid-row: 1 / span 4;
       width: 100%;
       height: auto;
-      @include centerItem;
-      overflow: hidden;
+      place-self: center;
     }
     ////////////////p landing
     .dash-p-landing {
-      grid-column: 3 / span 1;
-      grid-row: 1 / span 4;
-      font-size: 2em;
-      color: $offwhite;
-      @include centerItem;
-      //mobile
-      @include respond-to("tablet") {
-        font-size: 3em;
-      }
-      // tablet view
-      @include respond-to("desktop") {
-        font-size: 4em;
-      }
+      grid-column: 2 / span 2;
+      grid-row: 3 / span 2;
+      font-size: 4em;
+      font-weight: 900;
+      height: 300px;
+      color: $darktheme;
+      place-self: center;
+    }
+    .welcome {
+      grid-column: 1 / span 4;
+      grid-row: 4;
+      place-self: center;
     }
   }
 }

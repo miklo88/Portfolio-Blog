@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "cross-env": "^7.0.0",
+    "eslint-plugin-import": "^2.20.2",
     "history": "^4.10.1",
     "html-react-parser": "^0.10.3",
     "jsonwebtoken": "^8.5.1",

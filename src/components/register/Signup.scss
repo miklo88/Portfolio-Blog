@@ -1,5 +1,4 @@
-@import "../styles/Mixins.scss";
-@import "../styles/Variables.scss";
+@import "../../index.scss";
 
 .signup-form {
   display: grid;
@@ -51,7 +50,7 @@
   }
   .link-to-login {
     grid-column: 2 / span 2;
-    @include centerItem;
+    place-self: center;
     margin-bottom: 1em;
     .to-login {
       padding: 10px;
