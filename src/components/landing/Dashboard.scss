@@ -11,16 +11,12 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, minmax(75px, auto));
     ////////////////img landing ////////////////
-    .color-overlay {
+    .dashboard-img-landing {
       grid-column: 1 / span 4;
       grid-row: 1 / span 4;
-      background-color: $mellowYellow;
-      .dashboard-img-landing {
-        width: 100%;
-        height: auto;
-        place-self: center;
-        opacity: 0.5;
-      }
+      width: 100%;
+      height: auto;
+      place-self: center;
     }
     ////////////////p landing
     .dash-p-landing {
@@ -28,16 +24,9 @@
       grid-row: 3 / span 2;
       font-size: 4em;
       font-weight: 900;
-      color: $offwhite;
+      height: 300px;
+      color: $darktheme;
       place-self: center;
-      //mobile
-      @include respond-to("tablet") {
-        font-size: 3em;
-      }
-      // tablet view
-      @include respond-to("desktop") {
-        font-size: 4em;
-      }
     }
     .welcome {
       place-self: center;
