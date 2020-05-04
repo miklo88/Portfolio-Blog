@@ -2,21 +2,24 @@
 
 .dashboard-container {
   // whole page container, 1 col by 4 rows
-  @include homeGrid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4fr);
 
   .landing {
-    @include gridContainer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, minmax(75px, auto));
     ////////////////img landing ////////////////
     .color-overlay {
       grid-column: 1 / span 4;
       grid-row: 1 / span 4;
-      background-color: $redAccent;
+      background-color: $mellowYellow;
       .dashboard-img-landing {
         width: 100%;
         height: auto;
-        @include centerItem;
+        place-self: center;
         opacity: 0.5;
-        // overflow: hidden;
       }
     }
     ////////////////p landing
@@ -26,7 +29,7 @@
       font-size: 4em;
       font-weight: 900;
       color: $offwhite;
-      @include centerItem;
+      place-self: center;
       //mobile
       @include respond-to("tablet") {
         font-size: 3em;
@@ -37,7 +40,7 @@
       }
     }
     .welcome {
-      @include centerItem;
+      place-self: center;
     }
   }
 }

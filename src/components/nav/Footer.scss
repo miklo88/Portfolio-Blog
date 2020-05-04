@@ -2,11 +2,13 @@
 @import "../styles/variables";
 
 .footer-container {
-  @include smContainer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(20px, auto));
   background-color: $darktheme;
   /// nested items in the grid.
   .footer-text {
-    @include centerItem;
+    place-self: center;
     grid-column: 1 / span 3;
     grid-row: 1 / span 3;
     color: white;
