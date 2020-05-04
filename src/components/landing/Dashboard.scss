@@ -29,6 +29,8 @@
       place-self: center;
     }
     .welcome {
+      grid-column: 1 / span 4;
+      grid-row: 4;
       place-self: center;
     }
   }

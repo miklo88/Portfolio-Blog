@@ -11,8 +11,8 @@ const Dashboard = () => {
         <img className='dashboard-img-landing' src={landing} alt='dash-img' />
 
         <h1 className='dash-p-landing'>hi</h1>
+        <p className='welcome'>welcome to my portfolio page</p>
       </div>
-      <p className='welcome'>welcome to my portfolio page</p>
     </div>
   );
 };
