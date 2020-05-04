@@ -23,14 +23,14 @@ const Nav = () => {
       {/* hamburger menu */}
       <nav onClick={hideBurger} className='navigation' id='nav-burger'>
         {/* About/contact page */}
-        <Link className='links' to='/about'>
+        <Link className='links basic-button' to='/about'>
           About
         </Link>
         {/* link to blog/landing pg. signup pg incl. */}
-        <Link className='links' to='/blog'>
+        <Link className='links basic-button' to='/blog'>
           Blog
         </Link>
-        <Link className='links' to='/contact'>
+        <Link className='links basic-button' to='/contact'>
           Contact
         </Link>
       </nav>

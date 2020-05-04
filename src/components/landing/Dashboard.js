@@ -1,6 +1,6 @@
 import React from "react";
 
-import landing from "../../stockPhotos/discovery.jpg";
+import landing from "../../stockPhotos/dameYellow.png";
 
 import "./Dashboard.scss";
 
@@ -9,11 +9,9 @@ const Dashboard = () => {
     <div className='dashboard-container'>
       <div className='landing'>
         <img className='dashboard-img-landing' src={landing} alt='dash-img' />
-        <p className='dash-p-landing'>
-          Web Developing,<br></br>
-          Visual Design,<br></br>
-          Chicago, IL
-        </p>
+
+        <h1 className='dash-p-landing'>hi</h1>
+        <p className='welcome'>welcome to my portfolio page</p>
       </div>
     </div>
   );

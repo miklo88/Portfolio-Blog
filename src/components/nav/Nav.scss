@@ -1,19 +1,21 @@
-@import "../styles/mixins.scss";
-@import "../styles/variables.scss";
+@import "../../index.scss";
 
 .nav-container {
-  @include smContainer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(20px, auto));
   z-index: 1000;
   height: 70px;
+  // box-shadow: 5px 5px 15px #c7c7c7;
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: $darktheme;
     text-decoration: none;
     transition: 0.7s;
-    @include centerItem;
+    place-self: center;
     &:hover {
       color: $redAccent;
     }
@@ -25,12 +27,12 @@
     grid-column: 3;
     grid-row: 1 / span 3;
     color: $darktheme;
-    @include centerItem;
+    place-self: center;
   }
   .hamburger {
     grid-column: 3;
     grid-row: 1 / span 3;
-    @include centerItem;
+    place-self: center;
     background: none;
     border: 0;
     z-index: 1200;
@@ -87,10 +89,10 @@
     border-bottom-left-radius: 1em;
     padding-top: 90px;
     padding-bottom: 20px;
+    // box-shadow: 5px 5px 15px #c7c7c7;
     margin: auto;
     .links {
-      @include centerItem;
-      @include basicButton;
+      place-self: center;
     }
   }
   // tablet view
@@ -101,10 +103,9 @@
       grid-column: 3;
       grid-row: 1 / span 3;
       color: $darktheme;
-      @include centerItem;
+      place-self: center;
       .links {
-        @include centerItem;
-        @include basicButton;
+        place-self: center;
       }
     }
     .hamburger {
