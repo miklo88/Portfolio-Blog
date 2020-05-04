@@ -11,17 +11,14 @@ const About = () => {
         <p className='about-text'> Carl Redding aka carlitos, aka miklo</p>
         <p className='what'>What do I do?</p>
         <p className='about-text'>
-          Full Stack Web Developing Student at Lambda why ? im obsessed with
-          stealing moments from people. dancing with color, typography, design,
-          code, CREATING. code has become my platform to dissimenate what goes
-          on in my head to a broader audience than the cat i live with, Diesel.
+          I’m Full Stack Web Developing Student at Lambda.
         </p>
-        <p className='why'>Why does he do it? </p>
+        <p className='why'>Why does he do it?</p>
         <p className='about-text'>
           I’m obsessed with stealing moments from people. Dancing with color,
           typography, design, photography, code. CREATING. Coding has become a
           way for me logically solve problems by simple design and syntax.
-        </p>{" "}
+        </p>
       </div>
       <div className='text-body'>
         <p className='about-text'>
