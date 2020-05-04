@@ -7,7 +7,7 @@ export default function Footer() {
       <i class='fab fa-linkedin-in'></i>
       <i class='fab fa-github'></i>
       <i class='fab fa-twitter'></i>
-      <p className='footer-text'>footer component.</p>
+      {/* <p className='footer-text'>footer component.</p> */}
     </div>
   );
 }

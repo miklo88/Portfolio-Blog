@@ -6,6 +6,26 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   background-color: $darktheme;
   /// nested items in the grid.
+
+  .fa-linkedin-in {
+    color: $offwhite;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    place-self: center;
+  }
+  .fa-github {
+    color: $offwhite;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    place-self: center;
+  }
+  .fa-twitter {
+    color: $offwhite;
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    place-self: center;
+  }
+
   .footer-text {
     place-self: center;
     grid-column: 1 / span 3;
