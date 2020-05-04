@@ -1,5 +1,4 @@
-@import "../styles/mixins.scss";
-@import "../styles/variables";
+@import "../../index.scss";
 
 .footer-container {
   display: grid;
@@ -7,10 +6,23 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   background-color: $darktheme;
   /// nested items in the grid.
-  .footer-text {
-    place-self: center;
-    grid-column: 1 / span 3;
+  .footer-icons {
+    grid-column: 3;
     grid-row: 1 / span 3;
-    color: white;
+    place-self: center;
+    justify-content: space-evenly;
+    // align-items: center;
+    .fa-linkedin-in {
+      color: $offwhite;
+      padding: 10px;
+    }
+    .fa-github {
+      color: $offwhite;
+      padding: 10px;
+    }
+    .fa-twitter {
+      color: $offwhite;
+      padding: 10px;
+    }
   }
 }
