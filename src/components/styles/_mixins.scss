@@ -53,7 +53,7 @@ $breakpoints: (
 }
 
 ///// buttons/ links
-@mixin basicButton {
+.basic-button {
   color: $darktheme;
   border: 1px solid white;
   border-radius: 5px;

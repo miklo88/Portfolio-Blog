@@ -1,10 +1,10 @@
-@import "../styles/mixins.scss";
-@import "../styles/variables.scss";
+@import "../../index.scss";
 
 .nav-container {
   @include smContainer;
   z-index: 1000;
   height: 70px;
+  box-shadow: 10px 5px 10px #888888;
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
@@ -87,10 +87,10 @@
     border-bottom-left-radius: 1em;
     padding-top: 90px;
     padding-bottom: 20px;
+    box-shadow: 10px 3px 10px #888888;
     margin: auto;
     .links {
       @include centerItem;
-      @include basicButton;
     }
   }
   // tablet view
@@ -104,7 +104,6 @@
       @include centerItem;
       .links {
         @include centerItem;
-        @include basicButton;
       }
     }
     .hamburger {

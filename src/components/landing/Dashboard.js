@@ -1,6 +1,6 @@
 import React from "react";
 
-import landing from "../../stockPhotos/discovery.jpg";
+import landing from "../../stockPhotos/damePink.png";
 
 import "./Dashboard.scss";
 
