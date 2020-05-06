@@ -30,7 +30,7 @@ const About = () => {
           <li>[</li>
           <li>“salsa dancing”,</li>
           <li>“team driven debauchery”,</li>
-          <li>wholeness from learning and teaching”,</li>
+          <li>"wholeness from learning and teaching”,</li>
           <li>the art of running”,</li>
           <li>"late night problem solving”,</li>
           <li>"the stackoverflow gods who answer questions”,</li>

@@ -6,6 +6,7 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   z-index: 1000;
   height: 70px;
+  margin: 0 auto;
   // box-shadow: 5px 5px 15px #c7c7c7;
   .home-link {
     grid-column: 1;
