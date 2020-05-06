@@ -12,26 +12,26 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, minmax(75px, auto));
-
     .about-h1 {
       grid-column: 1 / span 4;
-      grid-row: 1;
+      grid-row: 1 / span 2;
       font-size: 4rem;
       font-weight: 900;
       color: $darktheme;
+      padding: 30px 10px;
+      z-index: 800;
     }
     .title-head {
       grid-column: 1 / span 4;
       grid-row: 2 / span 3;
       width: 100%;
-      height: 405px;
-      background: rgba(252, 201, 71, 0.5);
-      place-self: center;
+      height: auto;
+      background: rgba(252, 201, 71, 1);
+      padding: 50px 30px;
       .who {
         color: $darktheme;
         font-style: italic;
         font-weight: 700;
-        padding: 10px;
         .who-text {
           font-style: normal;
         }
@@ -39,7 +39,6 @@
       .what {
         color: $darktheme;
         font-style: italic;
-        padding: 10px;
         .what-text {
           font-style: normal;
         }
@@ -47,7 +46,6 @@
       .why {
         color: $darktheme;
         font-style: italic;
-        padding: 10px;
         .why-text {
           font-style: normal;
         }
@@ -58,6 +56,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, minmax(50px, auto));
+    padding: 50px 30px;
     .about-text {
       grid-column: 1 / span 2;
       grid-row: 1 / span 4;
