@@ -6,8 +6,7 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   z-index: 1000;
   height: 70px;
-  margin: 0 auto;
-  // box-shadow: 5px 5px 15px #c7c7c7;
+
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
@@ -25,7 +24,7 @@
     }
   }
   .navigation {
-    grid-column: 3;
+    grid-column: 2 / span 1;
     grid-row: 1 / span 3;
     color: $darktheme;
     place-self: center;
@@ -96,7 +95,7 @@
       place-self: center;
     }
   }
-  // tablet view
+  // desktop
   @include respond-to("desktop") {
     .navigation {
       display: flex;
