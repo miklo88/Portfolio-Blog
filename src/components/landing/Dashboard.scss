@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4fr);
-
   .landing {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -24,9 +23,16 @@
       grid-row: 3 / span 2;
       font-size: 4em;
       font-weight: 900;
-      height: 300px;
+      height: 150px;
       color: $darktheme;
       place-self: center;
+
+      @include respond-to("tablet") {
+        height: 200px;
+      }
+      @include respond-to("desktop") {
+        height: 300px;
+      }
     }
     .welcome {
       grid-column: 1 / span 4;
