@@ -11,7 +11,7 @@ const About = () => {
           <em className='who'>Who is this guy?</em>
           <p className='who-text'> Carl Redding aka carlitos, aka miklo</p>
 
-          <em className='what'>What do I do? </em>
+          <p className='what'>What do I do? </p>
           <p className='what-text'>
             I’m Full Stack Web Developing Student at Lambda.
           </p>
@@ -25,16 +25,27 @@ const About = () => {
         </div>
       </div>
       <div className='loves-links'>
-        <p className='about-text'>
-          <em>loves</em> = [ “salsa dancing”, “team driven debauchery”,
-          wholeness from learning and teaching”, the art of running”, late night
-          problem solving”, the stackoverflow gods who answer questions”,
-          seasonal tasting menus with a heavy pour of wine knowledge”, to
-          visually invoke your attention”, chicago summers” ]
-          <br />
-          <strong>hates</strong> = [ “open mouth chewers”, “meanies” ]
-        </p>
-
+        <ul className='loves'>
+          <p>loves = </p>
+          <li>[</li>
+          <li>“salsa dancing”,</li>
+          <li>“team driven debauchery”,</li>
+          <li>wholeness from learning and teaching”,</li>
+          <li>the art of running”,</li>
+          <li>"late night problem solving”,</li>
+          <li>"the stackoverflow gods who answer questions”,</li>
+          <li>"seasonal tasting menus with a heavy pour of wine knowledge”,</li>
+          <li>"to visually invoke your attention”,</li>
+          <li>"chicago summers”</li>
+          <li>]</li>
+        </ul>
+        <ul className='hates'>
+          <p>hates =</p>
+          <li>[</li>
+          <li>“open mouth chewers”,</li>
+          <li>“meanies”</li>
+          <li>]</li>
+        </ul>
         <div className='resume-download'>
           {/* resume download link */}
           <a

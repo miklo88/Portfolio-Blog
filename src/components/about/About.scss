@@ -31,44 +31,65 @@
       .who {
         color: $darktheme;
         font-style: italic;
-        font-weight: 700;
-        .who-text {
-          font-style: normal;
-        }
+      }
+      .who-text {
+        padding: 5px 0 10px;
       }
       .what {
         color: $darktheme;
         font-style: italic;
-        .what-text {
-          font-style: normal;
-        }
+      }
+      .what-text {
+        padding: 5px 0 10px;
       }
       .why {
         color: $darktheme;
         font-style: italic;
-        .why-text {
-          font-style: normal;
-        }
+      }
+      .why-text {
+        padding: 5px 0 10px;
       }
     }
   }
+
+  /// add see more? svg etc
   .loves-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, minmax(50px, auto));
-    padding: 50px 30px;
-    .about-text {
+    // padding: 50px 30px;
+    .loves {
       grid-column: 1 / span 2;
-      grid-row: 1 / span 4;
+      grid-row: 1 / span 2;
       color: $darktheme;
-      padding: 10px;
+      width: 100%;
+      height: auto;
+      padding: 10px 20px;
     }
+    .hates {
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 2;
+      color: $darktheme;
+      width: 100%;
+      height: auto;
+      padding: 10px 20px;
+    }
+    /// resume links
     .resume-download {
       grid-column: 3 / span 2;
       grid-row: 1 / span 4;
-      padding: 10px;
+      place-self: center;
       .resume-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
+        padding: 10px 30px;
+        background-color: $darktheme;
+        color: $offwhite;
+        border-radius: 20px;
+        margin: 10px 10px;
       }
     }
   }
