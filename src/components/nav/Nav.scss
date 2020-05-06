@@ -24,7 +24,7 @@
     }
   }
   .navigation {
-    grid-column: 2 / span 1;
+    grid-column: 3;
     grid-row: 1 / span 3;
     color: $darktheme;
     place-self: center;
@@ -89,13 +89,12 @@
     border-bottom-left-radius: 1em;
     padding-top: 90px;
     padding-bottom: 20px;
-    // box-shadow: 5px 5px 15px #c7c7c7;
     margin: auto;
     .links {
       place-self: center;
     }
   }
-  // desktop
+  // tablet view
   @include respond-to("desktop") {
     .navigation {
       display: flex;
