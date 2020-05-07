@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Contact from "../contact/contact";
+import usePopup from "../../utils/custom-hooks/usePopup";
 import "./Nav.scss";
 
 const Nav = () => {
+  const { isShowing, toggle } = usePopup();
+
+  //hamburger menu
   const hideBurger = (event) => {
     event.preventDefault();
     //if screen is larger than 1000px dont execute function.
@@ -30,9 +35,13 @@ const Nav = () => {
         <Link className='links basic-button' to='/blog'>
           Blog
         </Link>
-        <Link className='links basic-button' to='/contact'>
+        {/* <Link className='links basic-button' to='/contact'>
+          Contact
+        </Link> */}
+        <Link className='links basic-button' onClick={toggle}>
           Contact
         </Link>
+        <Contact isShowing={isShowing} hide={toggle} />
       </nav>
       {/* burger menu */}
       <button onClick={hideBurger} className='hamburger' id='hamburger'>

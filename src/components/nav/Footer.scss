@@ -4,25 +4,49 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(20px, auto));
-  background-color: $darktheme;
+  .contact-link {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    place-self: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: $darktheme;
+    &:hover {
+      background-color: $redAccent;
+      transition: 0.7s;
+      color: white;
+    }
+    &:active {
+      color: $darktheme;
+    }
+  }
   /// nested items in the grid.
   .footer-icons {
     grid-column: 3;
     grid-row: 1 / span 3;
     place-self: center;
     justify-content: space-evenly;
-    // align-items: center;
     .fa-linkedin-in {
-      color: $offwhite;
+      color: $darktheme;
       padding: 10px;
+      &:hover {
+        color: $redAccent;
+      }
     }
     .fa-github {
-      color: $offwhite;
+      color: $darktheme;
       padding: 10px;
+      &:hover {
+        color: $redAccent;
+      }
     }
     .fa-twitter {
-      color: $offwhite;
+      color: $darktheme;
       padding: 10px;
+      &:hover {
+        color: $redAccent;
+      }
     }
   }
 }
