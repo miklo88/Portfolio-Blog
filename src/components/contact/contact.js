@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import "contact.scss";
+import "./contact.scss";
+
 //contact popupcontainer displays popup message to user
 const Contact = ({ isShowing, hide }) =>
   isShowing
@@ -8,6 +9,7 @@ const Contact = ({ isShowing, hide }) =>
         <React.Fragment>
           <div className='contact-container'>
             <form className='contact-form'>
+              <h1>Can't wait to hear from you!</h1>
               <label className='name'>
                 Name:
                 <input
@@ -24,7 +26,7 @@ const Contact = ({ isShowing, hide }) =>
                   placeholder='Email'
                 />
               </label>
-              <label className='email'>
+              <label className='message'>
                 Message:
                 <textarea className='contact-input' placeholder='Message' />
               </label>
