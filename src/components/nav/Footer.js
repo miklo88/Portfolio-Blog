@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='footer-container'>
       <Link className='links basic-button' onClick={toggle}>
-        Contact
+        Contact Me
       </Link>
       <Contact isShowing={isShowing} hide={toggle} />
       <div className='footer-icons'>
