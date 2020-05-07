@@ -1,7 +1,7 @@
 import React from "react";
-// import "./Photos.scss";
+import "./blog.scss";
 
-function Photos() {
+const Blog = () => {
   return (
     <div className='photos-container'>
       <div className='another-container'>
@@ -11,6 +11,6 @@ function Photos() {
       </div>
     </div>
   );
-}
+};
 
-export default Photos;
+export default Blog;
