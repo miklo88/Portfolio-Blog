@@ -15,13 +15,19 @@
     color: $darktheme;
     text-decoration: none;
     transition: 0.7s;
-    padding-right: 200px;
+    padding-right: 20px;
     place-self: center;
     &:hover {
       color: $redAccent;
     }
     &:active {
       color: $lightgrey;
+    }
+    @include respond-to("tablet") {
+      padding-right: 50px;
+    }
+    @include respond-to("desktop") {
+      padding-right: 200px;
     }
   }
   .navigation {
