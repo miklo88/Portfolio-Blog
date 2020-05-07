@@ -7,7 +7,7 @@ import Blog from "../blog/blog";
 // import Login from "../register/Login";
 import Contact from "../contact/contact";
 
-function Router() {
+const Router = (props) => {
   return (
     <>
       <Switch>
@@ -20,5 +20,5 @@ function Router() {
       </Switch>
     </>
   );
-}
+};
 export default Router;
