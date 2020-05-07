@@ -15,9 +15,13 @@ const Contact = () => {
         </label>
         <label className='email'>
           Message:
-          <input className='contact-input' type='text' placeholder='Message' />
+          <textarea className='contact-input' placeholder='Message' />
         </label>
-        <button className='submit-contact' type='submit'>
+        <button
+          type='button'
+          className='submit-contact'
+          onclick="alert('message sent')"
+        >
           Send
         </button>
       </form>
