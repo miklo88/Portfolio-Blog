@@ -9,18 +9,22 @@ const About = () => {
         <h1 className='about-h1'>About</h1>
         <div className='title-head'>
           <em className='who'>Who is this guy?</em>
-          <p className='who-text'> Carl Redding aka carlitos, aka miklo</p>
+          <p className='who-text'>
+            Hi, I'm Carl Redding. I also go by Carlitos and I created Miklo.
+          </p>
 
           <p className='what'>What do I do? </p>
           <p className='what-text'>
-            I’m Full Stack Web Developing Student at Lambda.
+            I’m Full Stack Web Developing Student at Lambda. Also a visual
+            artist in Chicago, IL.
           </p>
 
           <em className='why'>Why do I do it?</em>
           <p className='why-text'>
             I’m obsessed with stealing moments from people. Dancing with color,
-            typography, design, photography, code. CREATING. Coding has become a
-            way for me logically solve problems by simple design and syntax.
+            typography, design, photography, code. CREATING. Learning JavaScript
+            and it's libraries has become a way for me to elaborate all the
+            goofy stuff that goes on in my head.
           </p>
         </div>
       </div>
@@ -31,7 +35,7 @@ const About = () => {
           <li>“salsa dancing”,</li>
           <li>“team driven debauchery”,</li>
           <li>"wholeness from learning and teaching”,</li>
-          <li>the art of running”,</li>
+          <li>"the art of running”,</li>
           <li>"late night problem solving”,</li>
           <li>"the stackoverflow gods who answer questions”,</li>
           <li>"seasonal tasting menus with a heavy pour of wine knowledge”,</li>
