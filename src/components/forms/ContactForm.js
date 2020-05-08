@@ -1,8 +1,8 @@
 import React from "react";
-import { useInput } from "../../utils/custom-hooks/UseInput";
+import useInput from "../../utils/custom-hooks/UseInput";
 
 export default function ContactForm(props) {
-  const [value, bind, reset] = useInput("");
+  const { value, bind, reset } = useInput("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
