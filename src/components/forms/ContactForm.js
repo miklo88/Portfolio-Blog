@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { useInput } from "../../utils/custom-hooks/UseInput";
 
-export default function ContactForm() {
-  const [form, setContactForm] = useState("");
+export default function ContactForm(props) {
+  const [value, bind, reset] = useInput("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Talk to you soon ${form}`);
+    alert(`Talk to you soon ${value}`);
+    reset();
   };
 
   return (
@@ -17,8 +19,7 @@ export default function ContactForm() {
           <input
             className='contact-input'
             type='text'
-            value={form}
-            onChange={(e) => setContactForm(e.target.value)}
+            {...bind}
             placeholder='Name'
           />
         </label>
