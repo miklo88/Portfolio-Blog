@@ -5,6 +5,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    alert(`Talk to you soon ${form}`);
   };
 
   return (
@@ -13,7 +14,13 @@ export default function ContactForm() {
         <h1>Can't wait to hear from you!</h1>
         <label className='name'>
           Name:
-          <input className='contact-input' type='text' placeholder='Name' />
+          <input
+            className='contact-input'
+            type='text'
+            value={form}
+            onChange={(e) => setContactForm(e.target.value)}
+            placeholder='Name'
+          />
         </label>
         <label className='email'>
           Email:
@@ -23,11 +30,7 @@ export default function ContactForm() {
           Message:
           <textarea className='contact-input' placeholder='Message' />
         </label>
-        <button
-          type='button'
-          className='submit-contact'
-          onClick="alert('message sent')"
-        >
+        <button type='submit' className='submit-contact' value='Submit'>
           Send
         </button>
       </form>
