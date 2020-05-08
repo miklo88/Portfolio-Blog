@@ -4,13 +4,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(20px, auto));
+  background-color: $darktheme;
   .contact-link {
     grid-column: 1;
     grid-row: 1 / span 3;
     place-self: center;
     text-decoration: none;
     padding: 10px 30px;
-    color: $darktheme;
+    color: $offwhite;
     &:hover {
       transition: 0.7s;
       color: $redAccent;
@@ -26,21 +27,21 @@
     place-self: center;
     justify-content: space-evenly;
     .fa-linkedin-in {
-      color: $darktheme;
+      color: $offwhite;
       padding: 10px;
       &:hover {
         color: $redAccent;
       }
     }
     .fa-github {
-      color: $darktheme;
+      color: $offwhite;
       padding: 10px;
       &:hover {
         color: $redAccent;
       }
     }
     .fa-twitter {
-      color: $darktheme;
+      color: $offwhite;
       padding: 10px;
       &:hover {
         color: $redAccent;
