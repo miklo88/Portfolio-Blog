@@ -10,15 +10,13 @@
     place-self: center;
     text-decoration: none;
     padding: 10px 30px;
-    border-radius: 20px;
     color: $darktheme;
     &:hover {
-      background-color: $redAccent;
       transition: 0.7s;
-      color: white;
+      color: $redAccent;
     }
     &:active {
-      color: $darktheme;
+      color: $lightgrey;
     }
   }
   /// nested items in the grid.

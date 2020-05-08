@@ -8,10 +8,11 @@ const Footer = () => {
   const { isShowing, toggle } = usePopup();
   return (
     <div className='footer-container'>
-      <Link className='links basic-button' onClick={toggle}>
+      <Link className='contact-link' onClick={toggle}>
         Contact Me
+        <Contact isShowing={isShowing} hide={toggle} />
       </Link>
-      <Contact isShowing={isShowing} hide={toggle} />
+
       <div className='footer-icons'>
         <a href='https://www.linkedin.com/in/carl-redding-000a4281/'>
           <i class='fab fa-linkedin-in'></i>

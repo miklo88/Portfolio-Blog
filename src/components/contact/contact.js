@@ -33,7 +33,7 @@ const Contact = ({ isShowing, hide }) =>
               <button
                 type='button'
                 className='submit-contact'
-                onclick="alert('message sent')"
+                onClick="alert('message sent')"
               >
                 Send
               </button>
