@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(20px, auto));
-  z-index: 1000;
+  z-index: 1500;
   height: 70px;
 
   .home-link {
@@ -42,7 +42,7 @@
     place-self: center;
     background: none;
     border: 0;
-    z-index: 1200;
+    z-index: 1490;
     width: 50px;
     outline: none;
     .line {
@@ -91,7 +91,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    z-index: 998;
+    z-index: 1480;
     background-color: white;
     border-bottom-left-radius: 1em;
     padding-top: 90px;

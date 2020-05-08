@@ -40,8 +40,8 @@ const Nav = () => {
         </Link> */}
         <Link className='links basic-button' onClick={toggle}>
           Contact
+          <Contact isShowing={isShowing} hide={toggle} />
         </Link>
-        <Contact isShowing={isShowing} hide={toggle} />
       </nav>
       {/* burger menu */}
       <button onClick={hideBurger} className='hamburger' id='hamburger'>

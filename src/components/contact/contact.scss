@@ -1,22 +1,28 @@
 @import "../../index.scss";
-
 //need to position the component to hover over everything
 .contact-container {
-  display: block;
-
+  position: fixed;
+  //based on pixel value
+  top: 70px;
+  bottom: 110px;
+  left: 0;
+  right: 0;
+  max-width: 800px;
+  // max-height: 100%;
+  height: auto;
+  margin: 0 auto;
+  z-index: 1400;
+  // @include respond-to("tablet") {
+  //   // top: 150px;
+  // }
   .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: $lightgrey;
-    position: absolute;
-    max-width: 800px;
+    // position: absolute;
+    // display: flex;
+    // flex-direction: column;
     width: 100%;
-    height: auto;
-    top: 30%;
-    left: 30%;
-    padding: 50px 50px;
-    margin: auto;
+    height: 60%;
+    padding: 50px 20px;
+    background: $lightgrey;
     h1 {
       font-size: 1.5rem;
       font-weight: 600;
