@@ -35,13 +35,10 @@ const Nav = () => {
         <Link className='links basic-button' to='/blog'>
           Blog
         </Link>
-        {/* <Link className='links basic-button' to='/contact'>
+        <button className='links basic-button' onClick={toggle}>
           Contact
-        </Link> */}
-        <Link className='links basic-button' onClick={toggle}>
-          Contact
-          <Contact isShowing={isShowing} hide={toggle} />
-        </Link>
+        </button>
+        <Contact isShowing={isShowing} hide={toggle} />
       </nav>
       {/* burger menu */}
       <button onClick={hideBurger} className='hamburger' id='hamburger'>

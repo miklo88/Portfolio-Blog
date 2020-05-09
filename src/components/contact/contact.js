@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import ContactForm from "../forms/ContactForm";
+import ContactForm from "../forms/ContactForm";
 import "./contact.scss";
 
 //contact popupcontainer displays popup message to user
@@ -8,8 +8,8 @@ const Contact = ({ isShowing, hide }) =>
   isShowing
     ? ReactDOM.createPortal(
         <React.Fragment>
-          {/* <ContactForm /> */}
-          <div className='contact-container'>
+          <ContactForm />
+          {/* <div className='contact-container'>
             <form className='contact-form'>
               <h1>Can't wait to hear from you!</h1>
               <label className='name'></label>
@@ -33,7 +33,7 @@ const Contact = ({ isShowing, hide }) =>
                 Send
               </button>
             </form>
-          </div>
+          </div> */}
         </React.Fragment>,
         document.body
       )
