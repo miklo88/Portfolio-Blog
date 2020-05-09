@@ -7,9 +7,6 @@ const Footer = () => {
   const { isShowing, toggle } = usePopup();
   return (
     <div className='footer-container'>
-      {/* <button className='contact-link' onClick={toggle}>
-        Contact Me
-      </button> */}
       <i class='fas fa-paper-plane' onClick={toggle} hide={toggle}></i>
       <Contact isShowing={isShowing} />
 

@@ -6,7 +6,6 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   background-color: $darktheme;
   /// nested items in the grid.
-  // .contact-link {
   .fa-paper-plane {
     grid-column: 1;
     grid-row: 1 / span 3;

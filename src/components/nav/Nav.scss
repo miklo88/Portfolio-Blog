@@ -99,10 +99,12 @@
     .links {
       place-self: center;
     }
-    // .contact-link {
-    //   color: $darktheme;
-    //   font-size: 1rem;
-    // }
+    .contact {
+      font-weight: 200;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
   }
   // tablet view
   @include respond-to("desktop") {
@@ -116,9 +118,11 @@
       .links {
         place-self: center;
       }
-      .contact-link {
-        color: $darktheme;
-        font-size: 1em;
+      .contact {
+        font-weight: 200;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
       }
     }
     .hamburger {

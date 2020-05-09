@@ -35,7 +35,7 @@ const Nav = () => {
         <Link className='links basic-button' to='/blog'>
           Blog
         </Link>
-        <button className='links basic-button' onClick={toggle}>
+        <button type='button' className='contact basic-button' onClick={toggle}>
           Contact
         </button>
         <Contact isShowing={isShowing} hide={toggle} />
