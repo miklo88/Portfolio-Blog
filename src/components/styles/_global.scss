@@ -5,7 +5,27 @@
   margin: 5px;
   cursor: pointer;
   text-decoration: none;
+  font-size: 1em;
   transition: 0.7s;
+  &:hover {
+    transition: 0.7s;
+    color: $redAccent;
+  }
+  &:active {
+    color: $lightgrey;
+  }
+}
+.contact-link {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  place-self: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: $offwhite;
+  font-size: 1.2rem;
+  font-weight: 200;
+  background: none;
+  border: none;
   &:hover {
     transition: 0.7s;
     color: $redAccent;

@@ -5,13 +5,20 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(20px, auto));
   background-color: $darktheme;
-  .contact-link {
+  /// nested items in the grid.
+  // .contact-link {
+  .fa-paper-plane {
     grid-column: 1;
     grid-row: 1 / span 3;
     place-self: center;
     text-decoration: none;
     padding: 10px 30px;
     color: $offwhite;
+    font-size: 1.2rem;
+    font-weight: 200;
+    background: none;
+    border: none;
+    cursor: pointer;
     &:hover {
       transition: 0.7s;
       color: $redAccent;
@@ -20,7 +27,6 @@
       color: $lightgrey;
     }
   }
-  /// nested items in the grid.
   .footer-icons {
     grid-column: 3;
     grid-row: 1 / span 3;
