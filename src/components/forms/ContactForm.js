@@ -14,8 +14,8 @@ export default function ContactForm() {
   return (
     <div id='contact-container' className='contact-container'>
       <form className='contact-form' onSubmit={handleSubmit}>
-        <h1>Can't wait to hear from you!</h1>
-        <label className='name'>
+        <h1 className='contact-title'>Can't wait to hear from you!</h1>
+        <label className='contact-label'>
           Name:
           <input
             className='contact-input'
@@ -24,11 +24,11 @@ export default function ContactForm() {
             placeholder='Name'
           />
         </label>
-        <label className='email'>
+        <label className='contact-label'>
           Email:
           <input className='contact-input' type='email' placeholder='Email' />
         </label>
-        <label className='message'>
+        <label className='contact-label'>
           Message:
           <textarea className='contact-input' placeholder='Message' />
         </label>
