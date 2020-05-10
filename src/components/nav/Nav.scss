@@ -6,7 +6,6 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   z-index: 1500;
   height: 70px;
-
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
@@ -100,6 +99,12 @@
     .links {
       place-self: center;
     }
+    .contact {
+      font-weight: 200;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
   }
   // tablet view
   @include respond-to("desktop") {
@@ -112,6 +117,12 @@
       place-self: center;
       .links {
         place-self: center;
+      }
+      .contact {
+        font-weight: 200;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
       }
     }
     .hamburger {

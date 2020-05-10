@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contact from "../contact/contact";
-import usePopup from "../../utils/custom-hooks/usePopup";
+
 import "./Nav.scss";
 
 const Nav = () => {
-  const { isShowing, toggle } = usePopup();
-
   //hamburger menu
   const hideBurger = (event) => {
     event.preventDefault();
@@ -35,12 +32,8 @@ const Nav = () => {
         <Link className='links basic-button' to='/blog'>
           Blog
         </Link>
-        {/* <Link className='links basic-button' to='/contact'>
+        <Link className='links basic-button' to='/ContactForm'>
           Contact
-        </Link> */}
-        <Link className='links basic-button' onClick={toggle}>
-          Contact
-          <Contact isShowing={isShowing} hide={toggle} />
         </Link>
       </nav>
       {/* burger menu */}
