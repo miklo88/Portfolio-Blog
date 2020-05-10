@@ -1,15 +1,14 @@
 import React from "react";
-import Contact from "../contact/contact";
-import usePopup from "../../utils/custom-hooks/usePopup";
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 const Footer = () => {
-  const { isShowing, toggle } = usePopup();
-
   return (
     <div className='footer-container'>
-      <i className='fas fa-paper-plane' onClick={toggle}></i>
-      <Contact isShowing={isShowing} hide={toggle} />
+      {/* <Contact isShowing={isShowing} hide={toggle} /> */}
+      <Link className='links basic-button' to='/contactform'>
+        <i className='fas fa-paper-plane'></i>
+      </Link>
 
       <div className='footer-icons'>
         <a href='https://www.linkedin.com/in/carl-redding-000a4281/'>
