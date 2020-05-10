@@ -5,10 +5,11 @@ import "./Footer.scss";
 
 const Footer = () => {
   const { isShowing, toggle } = usePopup();
+
   return (
     <div className='footer-container'>
-      <i class='fas fa-paper-plane' onClick={toggle} hide={toggle}></i>
-      <Contact isShowing={isShowing} />
+      <i className='fas fa-paper-plane' onClick={toggle}></i>
+      <Contact isShowing={isShowing} hide={toggle} />
 
       <div className='footer-icons'>
         <a href='https://www.linkedin.com/in/carl-redding-000a4281/'>
