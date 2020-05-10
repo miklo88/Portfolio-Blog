@@ -32,7 +32,7 @@ const Nav = () => {
         <Link className='links basic-button' to='/blog'>
           Blog
         </Link>
-        <Link className='links basic-button' to='/ContactForm'>
+        <Link className='links basic-button' to='/contactForm'>
           Contact
         </Link>
       </nav>

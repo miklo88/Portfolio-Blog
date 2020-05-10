@@ -1,65 +1,55 @@
 @import "../../index.scss";
-//need to position the component to hover over everything
+
 .contact-container {
-  position: fixed;
-  //based on pixel value
-  top: 70px;
-  bottom: 110px;
-  left: 0;
-  right: 0;
-  max-width: 800px;
-  // max-height: 100%;
-  height: auto;
-  margin: 0 auto;
-  z-index: 1400;
-  // @include respond-to("tablet") {
-  //   // top: 150px;
-  // }
   .contact-form {
-    // position: absolute;
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
     width: 100%;
-    height: 60%;
-    padding: 50px 20px;
-    background: $lightgrey;
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 10px 10px;
+    height: 500px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    .contact-title {
+      font-size: 2rem;
+      padding: 20px 20px;
+      margin: 0px 10px;
     }
-    .name {
-      padding: 10px 30px;
-      margin: 5px 5px;
-    }
-    .email {
-      padding: 10px 30px;
-      margin: 5px 5px;
-    }
-    .message {
-      padding: 10px 30px;
-      margin: 5px 5px;
-    }
-    .contact-input {
+    .contact-label {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       width: 100%;
-      padding: 10px 10px;
+      padding: 10px 20px;
+      .contact-input {
+        padding: 5px 10px;
+        margin-left: 10px;
+        color: blue;
+      }
     }
     .submit-contact {
       border: none;
-      background: none;
-      padding: 10px 20px;
-      transition: 0.7s;
-      font-size: medium;
+      color: $darktheme;
+      font-size: 1rem;
+      padding: 10px 30px;
+      border-radius: 20px;
+      border: 1px solid white;
+      -webkit-appearance: none;
+      -moz-appearance: none;
       &:hover {
         color: $redAccent;
-        border: 1px solid $redAccent;
+        transition: 0.7s;
         border-radius: 20px;
+        border: 1px solid $lightgrey;
       }
       &:active {
-        color: $offwhite;
-        border: 1px solid $redAccent;
+        background-color: $lightgrey;
+        color: $redAccent;
         border-radius: 20px;
-        background-color: $redAccent;
+        border: 1px solid $lightgrey;
+        transition: 0.7s;
       }
     }
   }

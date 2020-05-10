@@ -6,24 +6,27 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   background-color: $darktheme;
   /// nested items in the grid.
-  .fa-paper-plane {
+  .links,
+  .basic-button {
     grid-column: 1;
     grid-row: 1 / span 3;
     place-self: center;
-    text-decoration: none;
-    padding: 10px 30px;
-    color: $offwhite;
-    font-size: 1.2rem;
-    font-weight: 200;
-    background: none;
-    border: none;
-    cursor: pointer;
-    &:hover {
-      transition: 0.7s;
-      color: $redAccent;
-    }
-    &:active {
-      color: $lightgrey;
+    .fa-paper-plane {
+      text-decoration: none;
+      padding: 10px 30px;
+      color: $offwhite;
+      font-size: 1.2rem;
+      font-weight: 200;
+      background: none;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        transition: 0.7s;
+        color: $redAccent;
+      }
+      &:active {
+        color: $lightgrey;
+      }
     }
   }
   .footer-icons {
