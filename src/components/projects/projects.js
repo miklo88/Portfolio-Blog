@@ -1,45 +1,30 @@
 import React, { useState, useEffect } from "react";
 
 const Projects = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   // const [repos, setRepos] = useState("");
 
   //componentDidMount // componentDidUpdate
   useEffect(() => {
     async function fetchMyAPI() {
-      const response = await fetch("https://api.github.com/users/miklo88");
-      // const response = await fetch("https://randomuser.me/api/");
+      const url = "https://api.github.com/users/miklo88";
+      const response = await fetch(url);
       const data = await response.json();
-      // const [item] = data.results;
+      const item = data.results;
+      setData(item);
+      setLoading(false);
       console.log(data);
-      // setData(item);
-      // setLoading(false);
     }
     fetchMyAPI();
   }, []);
-
+  // i want to display a card that has the project title aka name/description and git_url
   return (
     <div className='projects-container'>
       <h1>I'm a projects component</h1>
-      <section className='project-one-container'>
-        <ul>
-          {loading ? (
-            <div>...loading up</div>
-          ) : (
-            <li>
-              {data.name.first} <br />
-              {data.name.last}
-              <br />
-              {data.dob.age}
-              <br />
-              {data.dob.date}
-            </li>
-          )}
-        </ul>
-      </section>
+
       <section className='project-two-container'>
-        <ul>{loading ? <div>...loading up</div> : <li>{data.username}</li>}</ul>
+        <ul>{loading ? <div>...loading up</div> : <li>{data.item}</li>}</ul>
       </section>
       <section className='project-three-container'>
         <p>three</p>
