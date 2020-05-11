@@ -27,26 +27,3 @@ $breakpoints: (
     @warn 'no value could be retrieved from `${breakpoint}`. ' + 'Available breakpoints are: #{map-keys($breakpoints)}.';
   }
 }
-
-///// buttons/ links
-.basic-button {
-  color: $darktheme;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 10px 30px;
-  margin: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.7s;
-  &:hover {
-    color: $redAccent;
-    border: 1px solid $redAccent;
-    border-radius: 20px;
-  }
-  &:active {
-    color: $offwhite;
-    border: 1px solid $redAccent;
-    border-radius: 20px;
-    background-color: $redAccent;
-  }
-}

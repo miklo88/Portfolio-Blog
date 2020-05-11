@@ -6,23 +6,54 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   background-color: $darktheme;
   /// nested items in the grid.
+  .links,
+  .basic-button {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    place-self: center;
+    .fa-paper-plane {
+      text-decoration: none;
+      padding: 10px 30px;
+      color: $offwhite;
+      font-size: 1.2rem;
+      font-weight: 200;
+      background: none;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        transition: 0.7s;
+        color: $redAccent;
+      }
+      &:active {
+        color: $lightgrey;
+      }
+    }
+  }
   .footer-icons {
     grid-column: 3;
     grid-row: 1 / span 3;
     place-self: center;
     justify-content: space-evenly;
-    // align-items: center;
     .fa-linkedin-in {
       color: $offwhite;
       padding: 10px;
+      &:hover {
+        color: $redAccent;
+      }
     }
     .fa-github {
       color: $offwhite;
       padding: 10px;
+      &:hover {
+        color: $redAccent;
+      }
     }
     .fa-twitter {
       color: $offwhite;
       padding: 10px;
+      &:hover {
+        color: $redAccent;
+      }
     }
   }
 }

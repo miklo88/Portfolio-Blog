@@ -4,9 +4,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(20px, auto));
-  z-index: 1000;
+  z-index: 1500;
   height: 70px;
-
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
@@ -15,12 +14,19 @@
     color: $darktheme;
     text-decoration: none;
     transition: 0.7s;
+    padding-right: 20px;
     place-self: center;
     &:hover {
       color: $redAccent;
     }
     &:active {
       color: $lightgrey;
+    }
+    @include respond-to("tablet") {
+      padding-right: 50px;
+    }
+    @include respond-to("desktop") {
+      padding-right: 200px;
     }
   }
   .navigation {
@@ -35,7 +41,7 @@
     place-self: center;
     background: none;
     border: 0;
-    z-index: 1200;
+    z-index: 1490;
     width: 50px;
     outline: none;
     .line {
@@ -84,7 +90,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    z-index: 998;
+    z-index: 1480;
     background-color: white;
     border-bottom-left-radius: 1em;
     padding-top: 90px;
@@ -92,6 +98,12 @@
     margin: auto;
     .links {
       place-self: center;
+    }
+    .contact {
+      font-weight: 200;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
     }
   }
   // tablet view
@@ -105,6 +117,12 @@
       place-self: center;
       .links {
         place-self: center;
+      }
+      .contact {
+        font-weight: 200;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
       }
     }
     .hamburger {

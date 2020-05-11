@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./Nav.scss";
 
 const Nav = () => {
+  //hamburger menu
   const hideBurger = (event) => {
     event.preventDefault();
     //if screen is larger than 1000px dont execute function.
@@ -30,7 +32,7 @@ const Nav = () => {
         <Link className='links basic-button' to='/blog'>
           Blog
         </Link>
-        <Link className='links basic-button' to='/contact'>
+        <Link className='links basic-button' to='/contactForm'>
           Contact
         </Link>
       </nav>
