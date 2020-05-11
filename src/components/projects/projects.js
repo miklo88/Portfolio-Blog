@@ -1,4 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+//componentDidMount
+// const Component = () => {
+//   useEffect(() => {
+//     console.log("Behavior before component is added to the DOM");
+//   }, []);
+// };
+// //componentDidUpdate
+// const UpdateComponent = () => {
+//   useEffect(() => {
+//     console.log("Behavior when the component receives new state or props");
+//   });
+// };
+// //componentWillUnmount
+// const UnmountComponent = () => {
+//   useEffect(() => {
+//     return () => {
+//       console.log(
+//         "Behavior right before the component is removed from the DOM"
+//       );
+//     };
+//   }, []);
+// };
 
 const Projects = () => {
   return (
