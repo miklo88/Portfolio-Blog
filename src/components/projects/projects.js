@@ -21,8 +21,8 @@ import React, { useState, useEffect } from "react";
 //     };
 //   }, []);
 // };
-
-const Projects = () => {
+//medium.com/better-programming/how-to-fetch-data-from-an-api-with-react-hooks-9e7202b8afcd
+https: const Projects = () => {
   return (
     <div className='projects-container'>
       <h1>I'm a projects component</h1>
