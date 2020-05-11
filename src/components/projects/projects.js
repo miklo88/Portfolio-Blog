@@ -1,26 +1,20 @@
 import React, { useState, useEffect } from "react";
-// //componentWillUnmount
-// const UnmountComponent = () => {
-//   useEffect(() => {
-//     return () => {
-//       console.log(
-//         "Behavior right before the component is removed from the DOM"
-//       );
-//     };
-//   }, []);
-// };
 
 const Projects = () => {
-  const [person, setPerson] = useState(null);
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  // const [repos, setRepos] = useState("");
+
   //componentDidMount // componentDidUpdate
   useEffect(() => {
     async function fetchMyAPI() {
-      const response = await fetch("https://randomuser.me/api/");
+      const response = await fetch("https://api.github.com/users/miklo88");
+      // const response = await fetch("https://randomuser.me/api/");
       const data = await response.json();
-      const [item] = data.results;
-      setPerson(item);
-      setLoading(false);
+      // const [item] = data.results;
+      console.log(data);
+      // setData(item);
+      // setLoading(false);
     }
     fetchMyAPI();
   }, []);
@@ -34,18 +28,18 @@ const Projects = () => {
             <div>...loading up</div>
           ) : (
             <li>
-              {person.name.first} <br />
-              {person.name.last}
+              {data.name.first} <br />
+              {data.name.last}
               <br />
-              {person.dob.age}
+              {data.dob.age}
               <br />
-              {person.dob.date}
+              {data.dob.date}
             </li>
           )}
         </ul>
       </section>
       <section className='project-two-container'>
-        <p>two</p>
+        <ul>{loading ? <div>...loading up</div> : <li>{data.username}</li>}</ul>
       </section>
       <section className='project-three-container'>
         <p>three</p>
