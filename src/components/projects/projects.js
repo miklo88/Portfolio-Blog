@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ProjectCard from "./projectCard";
 
 function Projects() {
   const [data, setData] = useState([]);
@@ -24,13 +25,22 @@ function Projects() {
         <ul>{loading ? <div>...loading up</div> : <li>{data}</li>}</ul>
         <p>one</p>
       </section>
-      <section className='project-two-container'>
-        {/* <ul>{loading ? <div>...loading up</div> : <li>{data}</li>}</ul> */}
-        <p>two</p>
-      </section>
-      <section className='project-three-container'>
-        <p>three</p>
-      </section>
+      <ProjectCard
+        project={{
+          imgUrl: "",
+          title: "JavaScript Essentials",
+          author: "Carlitos Redding",
+          description: "A lil somethin somethin about this project.",
+        }}
+      />
+      <ProjectCard
+        project={{
+          imgUrl: "",
+          title: "JavaScript 101",
+          author: "Carlitos Redding",
+          description: "A lil somethin somethin about this project.",
+        }}
+      />
     </div>
   );
 }
