@@ -8,23 +8,25 @@ const Projects = () => {
   //componentDidMount // componentDidUpdate
   useEffect(() => {
     async function fetchMyAPI() {
-      const url = "https://api.github.com/users/miklo88";
+      const url = "https://api.github.com/users/miklo88/repos";
       const response = await fetch(url);
       const data = await response.json();
-      const item = data.results;
+      const item = data.response;
       setData(item);
       setLoading(false);
       console.log(data);
     }
     fetchMyAPI();
   }, []);
-  // i want to display a card that has the project title aka name/description and git_url
   return (
-    <div className='projects-container'>
-      <h1>I'm a projects component</h1>
-
+    <div className='project-container'>
+      <section className='project-one-container'>
+        {/* <ul>{loading ? <div>...loading up</div> : <li>{data}</li>}</ul> */}
+        <p>one</p>
+      </section>
       <section className='project-two-container'>
-        <ul>{loading ? <div>...loading up</div> : <li>{data.item}</li>}</ul>
+        <ul>{loading ? <div>...loading up</div> : <li>{data}</li>}</ul>
+        <p>two</p>
       </section>
       <section className='project-three-container'>
         <p>three</p>
