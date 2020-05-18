@@ -27,16 +27,16 @@ function Projects() {
       </section>
       <ProjectCard
         project={{
-          imgUrl: "",
-          title: "JavaScript Essentials",
+          archive_url: "",
+          name: "JavaScript Essentials",
           author: "Carlitos Redding",
           description: "A lil somethin somethin about this project.",
         }}
       />
       <ProjectCard
         project={{
-          imgUrl: "",
-          title: "JavaScript 101",
+          archive_url: "",
+          name: "JavaScript 101",
           author: "Carlitos Redding",
           description: "A lil somethin somethin about this project.",
         }}
@@ -46,19 +46,3 @@ function Projects() {
 }
 
 export default Projects;
-
-// const [repos, setRepos] = useState("");
-
-//componentDidMount // componentDidUpdate
-// useEffect(() => {
-//   async function fetchMyAPI() {
-//     const url = "https://api.github.com/users/miklo88/repos";
-//     const response = await fetch(url);
-//     const data = await response.json();
-//     const item = data.response;
-//     setData(item);
-//     setLoading(false);
-//     console.log(data);
-//   }
-//   fetchMyAPI();
-// }, []);
