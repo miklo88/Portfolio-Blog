@@ -1,15 +1,15 @@
+// API "https://api.github.com/users/miklo88/repos"
 import React, { useState, useEffect } from "react";
-import ProjectCard from "./projectCard";
+// import ProjectCard from "./projectCard";
 
-const Projects = () => {
+const Projects = (url) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   // //componentDidMount // componentDidUpdate
   //fetching data
   useEffect(() => {
-    async function fetchMyAPI() {
-      const url = "https://api.github.com/users/miklo88/repos";
+    async function fetchData() {
       const response = await fetch(url);
       //getting response data and returning it as json
       const data = await response.json();
@@ -17,21 +17,24 @@ const Projects = () => {
       setData(item);
       setLoading(false);
       console.log(data);
-      console.log(data[0]["git_url"]);
-      console.log(data[0]["name"]);
-      console.log(data[0]["owner"]);
     }
-    fetchMyAPI();
-  }, []);
-  //need to update the state.
-  //add data into your array to map over it
+    fetchData();
+  }, [url]);
+  console.log(data);
+  return { data, loading };
+};
+
+//what were rendering
+export default () => {
+  const { data, loading } = Projects("https://api.github.com/users/example");
+  console.log(loading);
+  console.log(data);
   return (
     <div className='project-container'>
       <section className='project-one-container'>
-        <ul>{loading ? <div>...loading up</div> : <li>{data}</li>}</ul>
-        <p>one</p>
+        {loading ? <div>...loading up</div> : <p>{data}</p>}
       </section>
-      <ProjectCard
+      {/* <ProjectCard
         project={{
           archive_url: "",
           name: "JavaScript Essentials",
@@ -43,10 +46,8 @@ const Projects = () => {
           archive_url: "",
           name: "JavaScript",
           description: "A lil somethin somethin about this project.",
-        }}
-      />
+        }} 
+      />*/}
     </div>
   );
 };
-
-export default Projects;
