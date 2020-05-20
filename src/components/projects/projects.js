@@ -12,30 +12,32 @@ const Projects = (url) => {
       const response = await fetch(url);
       //getting response data and returning it as json
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       const item = JSON.stringify(data);
       // const item = data.results; // the response.json body I recieve is an object {} not an array []
       //setting data.results to state
       setData(item);
       setLoading(false);
-      console.log(item); //returns object converted to string
-      console.log(data.followers);
+      // console.log(item); //returns object converted to string
     }
     fetchData();
-  }, [url]);
+    // console.log(fetchData()); //take a look aqui in the morning. think i just need to resolve this promise.
+  });
   // console.log(data);
   return { data, loading };
 };
 
 //what were rendering
 export default () => {
-  const { data, loading } = Projects("https://api.github.com/users/example");
-  console.log(loading); //loads correctly
-  console.log(data);
+  const { data, loading } = Projects("https://api.github.com/users/miklo88");
+
+  // console.log(loading); //loads correctly
+  // console.log(data);
   return (
     <div className='project-container'>
       <section className='project-one-container'>
         {loading ? <div>...loading up</div> : <p>{data}</p>}
+        {/* {console.log(data)} */}
       </section>
       {/* <ProjectCard
         project={{
