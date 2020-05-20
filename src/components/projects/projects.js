@@ -3,31 +3,34 @@ import React, { useState, useEffect } from "react";
 // import ProjectCard from "./projectCard";
 
 const Projects = (url) => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   // //componentDidMount // componentDidUpdate
-  //fetching data
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(url);
       //getting response data and returning it as json
       const data = await response.json();
-      const item = data.results;
+      console.log(data);
+      const item = JSON.stringify(data);
+      // const item = data.results; // the response.json body I recieve is an object {} not an array []
+      //setting data.results to state
       setData(item);
       setLoading(false);
-      console.log(data);
+      console.log(item); //returns object converted to string
+      console.log(data.followers);
     }
     fetchData();
   }, [url]);
-  console.log(data);
+  // console.log(data);
   return { data, loading };
 };
 
 //what were rendering
 export default () => {
   const { data, loading } = Projects("https://api.github.com/users/example");
-  console.log(loading);
+  console.log(loading); //loads correctly
   console.log(data);
   return (
     <div className='project-container'>
