@@ -1,48 +1,58 @@
+// API "https://api.github.com/users/miklo88/repos"
 import React, { useState, useEffect } from "react";
-import ProjectCard from "./projectCard";
+// import ProjectCard from "./projectCard";
 
-function Projects() {
-  const [data, setData] = useState([]);
+const Projects = (url) => {
+  const [data, setData] = useState([{}]);
   const [loading, setLoading] = useState(true);
 
-  //componentDidMount // componentDidUpdate
+  // //componentDidMount // componentDidUpdate
   useEffect(() => {
-    async function fetchMyAPI() {
-      const url = "https://api.github.com/users/miklo88/repos";
+    async function fetchData() {
       const response = await fetch(url);
+      //getting response data and returning it as json
       const data = await response.json();
-      const item = data.results;
+      // console.log(data);
+      const item = JSON.stringify(data);
+      // const item = data.results; // the response.json body I recieve is an object {} not an array []
+      //setting data.results to state
       setData(item);
       setLoading(false);
-      console.log(data);
+      // console.log(item); //returns object converted to string
     }
-    fetchMyAPI();
-  }, []);
+    fetchData();
+    // console.log(fetchData()); //take a look aqui in the morning. think i just need to resolve this promise.
+  }, [url]);
+  // console.log(data);
+  return { data, loading };
+};
 
+//what were rendering
+export default () => {
+  const { data, loading } = Projects("https://api.github.com/users/miklo88");
+
+  // console.log(loading); //loads correctly
+  // console.log(data);
   return (
     <div className='project-container'>
       <section className='project-one-container'>
-        <ul>{loading ? <div>...loading up</div> : <li>{data}</li>}</ul>
-        <p>one</p>
+        {loading ? <div>...loading up</div> : <p>{data}</p>}
+        {console.log(data)}
       </section>
-      <ProjectCard
+      {/* <ProjectCard
         project={{
           archive_url: "",
           name: "JavaScript Essentials",
-          author: "Carlitos Redding",
           description: "A lil somethin somethin about this project.",
         }}
       />
       <ProjectCard
         project={{
           archive_url: "",
-          name: "JavaScript 101",
-          author: "Carlitos Redding",
+          name: "JavaScript",
           description: "A lil somethin somethin about this project.",
-        }}
-      />
+        }} 
+      />*/}
     </div>
   );
-}
-
-export default Projects;
+};
