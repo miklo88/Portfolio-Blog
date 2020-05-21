@@ -31,25 +31,27 @@ const Projects = (url) => {
   // </section>
   return (
     <div className='project-container'>
+      <h1 className='project-h1'>Projects</h1>
       <ProjectCard
         project={{
-          archive_url: "",
-          name: "JavaScript Essentials",
-          description: "A lil somethin somethin about this project.",
+          name: "JavaScript-Reps",
+          description: "Traversy Medias JavaScript Crash Course",
+          url: "https://api.github.com/repos/miklo88/JavaScript-Reps",
         }}
       />
       <ProjectCard
         project={{
-          archive_url: "",
           name: "JavaScript Essentials",
-          description: "A lil somethin somethin about this project.",
+          description:
+            "JavaScript fundamentals course from Udemy. (Link to course is in README)",
+          url: "https://api.github.com/repos/miklo88/JavaScript-Essentials",
         }}
       />
       <ProjectCard
         project={{
-          archive_url: "",
-          name: "JavaScript",
-          description: "A lil somethin somethin about this project.",
+          name: "JavaScript30",
+          description: "Wesbos JavaScript30",
+          url: "https://api.github.com/repos/miklo88/JavaScript30",
         }}
       />
     </div>

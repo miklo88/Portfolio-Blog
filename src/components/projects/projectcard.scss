@@ -1,1 +1,19 @@
-// @import "../../index.scss";
+@import "../../index.scss";
+
+////project card styles
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  .project-title {
+    color: black;
+  }
+  .project-description {
+    color: black;
+  }
+  .project-url {
+    color: black;
+  }
+}

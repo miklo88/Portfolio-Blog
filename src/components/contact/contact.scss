@@ -1,4 +1,6 @@
-@import "../../index.scss";
+// @import "../../index.scss";
+@import "../styles/mixins", "../styles/variables", "../styles/reset",
+  "../styles/global";
 
 .contact-container {
   .contact-title {

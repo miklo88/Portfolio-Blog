@@ -1,4 +1,2 @@
-@import "./components/styles/mixins";
-@import "./components/styles/variables";
-@import "./components/styles/reset";
-@import "./components/styles/global";
+@import "components/styles/mixins", "components/styles/variables",
+  "components/styles/reset", "components/styles/global";
