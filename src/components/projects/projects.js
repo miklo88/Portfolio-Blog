@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // import ProjectCard from "./projectCard";
 
 const Projects = (url) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([{}]);
   const [loading, setLoading] = useState(true);
 
   // //componentDidMount // componentDidUpdate
@@ -22,7 +22,7 @@ const Projects = (url) => {
     }
     fetchData();
     // console.log(fetchData()); //take a look aqui in the morning. think i just need to resolve this promise.
-  });
+  }, [url]);
   // console.log(data);
   return { data, loading };
 };
@@ -37,7 +37,7 @@ export default () => {
     <div className='project-container'>
       <section className='project-one-container'>
         {loading ? <div>...loading up</div> : <p>{data}</p>}
-        {/* {console.log(data)} */}
+        {console.log(data)}
       </section>
       {/* <ProjectCard
         project={{
