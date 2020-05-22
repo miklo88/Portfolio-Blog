@@ -1,0 +1,22 @@
+@import "../../index.scss";
+////project card styles
+.project-card {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  grid-column: 2;
+  justify-self: start;
+  align-self: center;
+  max-width: 800px;
+  padding: 10px 10px;
+  .project-title {
+    padding: 5px 5px;
+  }
+  .project-description {
+    padding: 5px 5px;
+  }
+  .project-url {
+    padding: 5px 5px;
+  }
+}
