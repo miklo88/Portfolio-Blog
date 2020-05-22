@@ -19,7 +19,6 @@ const ContactForm = () => {
         <input className='message-input' placeholder='Message' />
 
         <input type='submit' className='submit-contact' value='Send' />
-        <input type='reset' className='reset-contact' value='Reset' />
       </form>
     </div>
   );

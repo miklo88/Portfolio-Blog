@@ -11,7 +11,7 @@
   ////form container
   .contact-form {
     display: grid;
-    grid-template-columns: 4 repeat(minmax(50px, 4fr));
+    grid-template-columns: 4 repeat(4fr);
     grid-template-rows: 4 repeat(minmax(50px, 4fr));
     max-width: 800px;
     width: 100%;
@@ -24,78 +24,62 @@
       grid-row: 1;
       justify-self: end;
       align-self: center;
-      padding: 10px 20px;
+      margin-right: 10px;
     }
     .email-label {
       grid-column: 1 / span 2;
       grid-row: 2;
       justify-self: end;
       align-self: center;
-      padding: 10px 20px;
+      margin-right: 10px;
     }
     .message-label {
       grid-column: 1 / span 2;
       grid-row: 3;
       justify-self: end;
       align-self: center;
-      padding: 10px 20px;
+      margin-right: 10px;
     }
     ////////inputs
     .name-input {
       grid-column: 3 / span 2;
       grid-row: 1;
+      border: none;
       justify-self: start;
       align-self: center;
+      border-bottom: 1px solid black;
+      margin-left: 10px;
     }
     .email-input {
       grid-column: 3 / span 2;
       grid-row: 2;
+      border: none;
       justify-self: start;
       align-self: center;
+      border-bottom: 1px solid black;
+      margin-left: 10px;
     }
     .message-input {
       grid-column: 3 / span 2;
       grid-row: 3;
+      border: none;
       justify-self: start;
       align-self: center;
+      border-bottom: 1px solid black;
+      margin-left: 10px;
     }
 
     .submit-contact {
-      grid-column: 2;
+      grid-column: 2 / span 2;
       grid-row: 4;
-      place-self: end;
+      justify-self: center;
+      align-self: center;
       border: none;
       color: $darktheme;
       font-family: inherit;
       font-size: 1rem;
       padding: 10px 30px;
-      border-radius: 20px;
-      border: 1px solid white;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      &:hover {
-        color: $redAccent;
-        transition: 0.7s;
-        border-radius: 20px;
-        border: 1px solid white;
-      }
-      &:active {
-        background-color: $lightgrey;
-        color: $redAccent;
-        border-radius: 20px;
-        border: 1px solid $lightgrey;
-        transition: 0.7s;
-      }
-    }
-    .reset-contact {
-      grid-column: 3;
-      grid-row: 4;
-      place-self: start;
-      border: none;
-      color: $darktheme;
-      font-family: inherit;
-      font-size: 1rem;
-      padding: 10px 30px;
+      margin-top: 30px;
       border-radius: 20px;
       border: 1px solid white;
       -webkit-appearance: none;
