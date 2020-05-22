@@ -24,21 +24,24 @@
       grid-row: 1;
       justify-self: end;
       align-self: center;
-      margin-right: 10px;
+      margin-right: 5px;
+      margin-bottom: 20px;
     }
     .email-label {
       grid-column: 1 / span 2;
       grid-row: 2;
       justify-self: end;
       align-self: center;
-      margin-right: 10px;
+      margin-right: 5px;
+      margin-bottom: 20px;
     }
     .message-label {
       grid-column: 1 / span 2;
       grid-row: 3;
       justify-self: end;
       align-self: center;
-      margin-right: 10px;
+      margin-right: 5px;
+      margin-bottom: 20px;
     }
     ////////inputs
     .name-input {
@@ -48,7 +51,8 @@
       justify-self: start;
       align-self: center;
       border-bottom: 1px solid black;
-      margin-left: 10px;
+      margin-left: 5px;
+      margin-bottom: 20px;
     }
     .email-input {
       grid-column: 3 / span 2;
@@ -57,7 +61,8 @@
       justify-self: start;
       align-self: center;
       border-bottom: 1px solid black;
-      margin-left: 10px;
+      margin-left: 5px;
+      margin-bottom: 20px;
     }
     .message-input {
       grid-column: 3 / span 2;
@@ -66,7 +71,8 @@
       justify-self: start;
       align-self: center;
       border-bottom: 1px solid black;
-      margin-left: 10px;
+      margin-left: 5px;
+      margin-bottom: 20px;
     }
 
     .submit-contact {
@@ -79,7 +85,7 @@
       font-family: inherit;
       font-size: 1rem;
       padding: 10px 30px;
-      margin-top: 30px;
+      margin-top: 10px;
       border-radius: 20px;
       border: 1px solid white;
       -webkit-appearance: none;
