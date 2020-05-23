@@ -1,6 +1,6 @@
 import React from "react";
 import "../contact/contact.scss";
-import left from "../../stockPhotos/pineapplelime.png";
+import left from "../../stockPhotos/jazzsoftcolor2.png";
 
 const ContactForm = () => {
   return (
