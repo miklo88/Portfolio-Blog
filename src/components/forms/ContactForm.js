@@ -1,7 +1,6 @@
 import React from "react";
 import "../contact/contact.scss";
-// import left from "../../stockPhotos/PIv2.1.jpg";
-// import right from "../../stockPhotos/WEBSITE.png";
+import left from "../../stockPhotos/pineapplelime.png";
 
 const ContactForm = () => {
   return (
@@ -13,15 +12,12 @@ const ContactForm = () => {
         method='post'
         encType='text/palin'
       >
-        <div className='left-img'>img-mock</div>
-        {/* <img className='left-img' src={left} alt='placement-holder' /> */}
+        <img className='left-img' src={left} alt='placement-holder' />
         <input className='name-input' type='text' placeholder='Name' />
         <input className='email-input' type='email' placeholder='Email' />
         <input className='message-input' placeholder='Message' />
-
+        {/* input button */}
         <input type='submit' className='submit-contact' value='Send' />
-        {/* <img className='right-img' src={right} alt='placement-holder' /> */}
-        <div className='right-img'>img-mock</div>
       </form>
     </div>
   );
