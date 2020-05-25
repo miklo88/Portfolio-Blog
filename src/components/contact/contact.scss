@@ -1,119 +1,49 @@
 @import "../../index.scss";
 
 .contact-container {
+  display: grid;
+  grid-template-columns: repeat(4fr);
+  grid-template-rows: repeat(4, minmax(75px, auto));
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  //entire top row
+  //h1
   .contact-title {
-    display: block;
-    font-size: 2rem;
-    text-align: center;
-    padding: 50px 20px 0 20px;
-    margin: 0 auto;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
+    padding: 50px;
   }
-  ////form container
+  //left side
+  .left-img {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 3;
+    max-width: 400px;
+    object-fit: none;
+    object-position: 100% 40%;
+  }
+  // right side form
   .contact-form {
-    display: grid;
-    grid-template-columns: 4 repeat(1fr);
-    grid-template-rows: 4 repeat(minmax(50px, 1fr));
-    // max-width: 800px;
-    width: 100%;
-    height: auto;
-    padding: 50px 50px;
-    //left img
-    .left-img {
-      display: none;
-      @include respond-to("tablet") {
-        display: grid;
-        grid-column: 1 / span 3;
-        grid-row: 1 / span 4;
-        background-color: lightgray;
-        width: 400px;
-        height: auto;
-        object-fit: none;
-        object-position: 90% 30%;
-      }
-    }
-
-    ////////inputs
-    .name-input {
-      grid-column: 1 / span 4;
-      grid-row: 1;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 3;
+    justify-items: center;
+    align-self: center;
+    //form => inputs += button
+    .input,
+    .name,
+    .email,
+    .message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       border: none;
-      justify-self: center;
-      align-self: center;
-      font-size: 1.5rem;
+      width: 80%;
+      padding: 30px 10px 10px 30px;
       border-bottom: 1px solid black;
-      width: 100%;
-      padding: 10px 30px;
-      @include respond-to("tablet") {
-        font-size: 1.2rem;
-        grid-column: 3 / span 2;
-        width: 80%;
-      }
-    }
-    .email-input {
-      grid-column: 1 / span 4;
-      grid-row: 2;
-      border: none;
-      justify-self: center;
-      align-self: center;
-      font-size: 1.5rem;
-      border-bottom: 1px solid black;
-      width: 100%;
-      padding: 10px 30px;
-      @include respond-to("tablet") {
-        font-size: 1.2rem;
-        grid-column: 3 / span 2;
-        width: 80%;
-      }
-    }
-    .message-input {
-      grid-column: 1 / span 4;
-      grid-row: 3;
-      border: none;
-      justify-self: center;
-      align-self: center;
-      font-size: 1.5rem;
-      border-bottom: 1px solid black;
-      width: 100%;
-      padding: 10px 30px;
-      @include respond-to("tablet") {
-        font-size: 1.2rem;
-        grid-column: 3 / span 2;
-        width: 80%;
-      }
-    }
-
-    .submit-contact {
-      grid-column: 1 / span 4;
-      grid-row: 4;
-      justify-self: center;
-      align-self: center;
-      border: none;
-      color: $darktheme;
-      font-family: inherit;
-      font-size: 1.5rem;
-      padding: 10px 30px;
-      margin-top: 10px;
-      border-radius: 20px;
-      border: 1px solid white;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      &:hover {
-        color: $redAccent;
-        transition: 0.7s;
-        border-radius: 20px;
-        border: 1px solid white;
-      }
-      &:active {
-        background-color: $lightgrey;
-        color: $redAccent;
-        border-radius: 20px;
-        border: 1px solid $lightgrey;
-        transition: 0.7s;
-      }
-      @include respond-to("tablet") {
-        grid-column: 3 / span 2;
-        font-size: 1rem;
-      }
     }
   }
 }
