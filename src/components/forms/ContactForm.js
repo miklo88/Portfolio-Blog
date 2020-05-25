@@ -1,6 +1,6 @@
 import React from "react";
-import "../contact/contact.scss";
 import left from "../../stockPhotos/jazzsoftcolor2.png";
+import "../contact/contact.scss";
 
 const ContactForm = () => {
   return (
@@ -17,7 +17,9 @@ const ContactForm = () => {
         <input className='input email' type='email' placeholder='Email' />
         <input className='input message' placeholder='Message' />
         {/* input button */}
-        <input type='submit' className='submit-contact' value='Send' />
+        <button type='submit' className='submit-contact' value='Send'>
+          Send
+        </button>
       </form>
     </div>
   );

@@ -12,25 +12,31 @@
   .contact-title {
     grid-column: 1 / span 4;
     grid-row: 1;
-    justify-self: center;
-    align-self: center;
+    place-self: center;
     font-size: 1.5rem;
     padding: 50px;
   }
   //left side
   .left-img {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 3;
-    max-width: 400px;
-    object-fit: none;
-    object-position: 100% 40%;
+    display: none;
+    @include respond-to("tablet") {
+      display: grid;
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 3;
+      max-width: 400px;
+      object-fit: none;
+      object-position: 100% 40%;
+    }
   }
-  // right side form
+  // right side form mobile
   .contact-form {
-    grid-column: 3 / span 2;
+    grid-column: 1 / span 4;
     grid-row: 2 / span 3;
-    justify-items: center;
-    align-self: center;
+    // place-items: center;
+    @include respond-to("tablet") {
+      grid-column: 3 / span 2;
+      grid-row: 2 / span 3;
+    }
     //form => inputs += button
     .input,
     .name,
@@ -38,12 +44,32 @@
     .message {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      place-items: center;
       border: none;
       width: 80%;
-      padding: 30px 10px 10px 30px;
+      padding: 50px 0px 10px 30px;
       border-bottom: 1px solid black;
+      // margin-left: 20px;
+      @include respond-to("tablet") {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+      }
+    }
+    .submit-contact {
+      border: none;
+      font-size: 1rem;
+      padding: 10px 30px;
+      color: $darktheme;
+    }
+    &:hover {
+      color: $redAccent;
+    }
+    &:active {
+      border: 1px solid $lightgrey;
+      border-radius: 20px;
+      color: $lightgrey;
     }
   }
 }
