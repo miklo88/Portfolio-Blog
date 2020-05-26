@@ -5,7 +5,6 @@ import "../contact/contact.scss";
 const ContactForm = () => {
   return (
     <div id='contact-container' className='contact-container'>
-      <h1 className='contact-title'>Let's create something together.</h1>
       <img className='left-img' src={left} alt='placement-holder' />
       <form
         className='contact-form'
@@ -13,6 +12,8 @@ const ContactForm = () => {
         method='post'
         encType='text/palin'
       >
+        <h1 className='contact-title'>Let's create something together.</h1>
+
         <input className='input text' type='text' placeholder='Name' />
         <input className='input email' type='email' placeholder='Email' />
         <input className='input message' placeholder='Message' />

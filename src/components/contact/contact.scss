@@ -2,28 +2,21 @@
 
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(4fr);
+  grid-template-columns: repeat(4, (1fr));
   grid-template-rows: repeat(4, minmax(75px, auto));
   width: 100%;
   height: auto;
   margin: 0 auto;
-  //entire top row
-  //h1
-  .contact-title {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-    place-self: center;
-    font-size: 1.5rem;
-    padding: 50px;
-  }
   //left side
   .left-img {
     display: none;
     @include respond-to("tablet") {
       display: grid;
       grid-column: 1 / span 2;
-      grid-row: 2 / span 3;
+      grid-row: 1 / span 4;
       max-width: 400px;
+      width: 100%;
+      height: auto;
       object-fit: none;
       object-position: 100% 40%;
     }
@@ -31,11 +24,20 @@
   // right side form mobile
   .contact-form {
     grid-column: 1 / span 4;
-    grid-row: 2 / span 3;
-    // place-items: center;
+    grid-row: 1 / span 4;
+    place-self: center;
+    width: 100%;
+    margin: 20px;
     @include respond-to("tablet") {
       grid-column: 3 / span 2;
-      grid-row: 2 / span 3;
+      grid-row: 1 / span 4;
+    }
+    //h1
+    .contact-title {
+      grid-column: 3 / span 2;
+      place-self: center;
+      font-size: 1.5rem;
+      padding: 50px;
     }
     //form => inputs += button
     .input,
@@ -44,12 +46,12 @@
     .message {
       display: flex;
       flex-direction: column;
-      place-items: center;
+      justify-content: center;
+      align-items: center;
       border: none;
       width: 80%;
-      padding: 50px 0px 10px 30px;
+      padding: 30px 0px 10px 30px;
       border-bottom: 1px solid black;
-      // margin-left: 20px;
       @include respond-to("tablet") {
         display: flex;
         flex-direction: column;
@@ -58,10 +60,12 @@
       }
     }
     .submit-contact {
+      display: block;
       border: none;
       font-size: 1rem;
       padding: 10px 30px;
       color: $darktheme;
+      place-self: center;
     }
     &:hover {
       color: $redAccent;
