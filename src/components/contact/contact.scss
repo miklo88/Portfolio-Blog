@@ -3,10 +3,10 @@
 .contact-container {
   display: grid;
   grid-template-columns: repeat(4, (1fr));
-  grid-template-rows: repeat(4, minmax(75px, auto));
+  grid-template-rows: repeat(4, (1fr));
   width: 100%;
   height: auto;
-  margin: 0 auto;
+
   //left side
   .left-img {
     display: none;
@@ -21,59 +21,74 @@
       object-position: 100% 40%;
     }
   }
+
   // right side form mobile
   .contact-form {
+    display: grid;
     grid-column: 1 / span 4;
     grid-row: 1 / span 4;
     place-self: center;
-    width: 100%;
+    padding: 25px 0 25px 0;
     margin: 20px;
+    //tablet and greater
     @include respond-to("tablet") {
       grid-column: 3 / span 2;
       grid-row: 1 / span 4;
     }
     //h1
     .contact-title {
-      grid-column: 3 / span 2;
+      // display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 1;
       place-self: center;
-      font-size: 1.5rem;
-      padding: 50px;
-    }
-    //form => inputs += button
-    .input,
-    .name,
-    .email,
-    .message {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      width: 80%;
-      padding: 30px 0px 10px 30px;
-      border-bottom: 1px solid black;
       @include respond-to("tablet") {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        place-items: center;
+        grid-column: 3 / span 2;
+        grid-row: 1;
+        font-size: 2.5rem;
+        padding: 25px 0 25px 0;
       }
     }
-    .submit-contact {
-      display: block;
+    //form => inputs += button
+    .input {
+      // display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 2 / span 3;
       border: none;
+      width: 80%;
+      padding: 25px 0px 20px 0px;
+      border-bottom: 1px solid black;
+      @include respond-to("tablet") {
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 3;
+      }
+    }
+    .name {
+      grid-row: 2;
+    }
+    .email {
+      grid-row: 3;
+    }
+    .message {
+      grid-row: 4;
+    }
+    .submit-contact {
+      grid-column: 1 / span 4;
+      // grid-row: 4;
+      place-self: center;
+      border: none;
+      color: $darktheme;
       font-size: 1rem;
       padding: 10px 30px;
-      color: $darktheme;
-      place-self: center;
-    }
-    &:hover {
-      color: $redAccent;
-    }
-    &:active {
-      border: 1px solid $lightgrey;
-      border-radius: 20px;
-      color: $lightgrey;
+      @include respond-to("tablet") {
+        grid-column: 3 / span 2;
+      }
+
+      &:hover {
+        color: $redAccent;
+      }
+      &:active {
+        color: $lightgrey;
+      }
     }
   }
 }
