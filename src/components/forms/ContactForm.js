@@ -13,8 +13,11 @@ const ContactForm = () => {
         method='post'
         encType='text/palin'
       >
-        <input className='input text' type='text' placeholder='Name' />
+        <label className='label name'>Name:</label>
+        <input className='input name' type='text' placeholder='Name' />
+        <label className='label email'>Email:</label>
         <input className='input email' type='email' placeholder='Email' />
+        <label className='label message'>Message:</label>
         <input className='input message' placeholder='Message' />
         {/* input button */}
         <input className='submit-contact' type='submit' value='Send' />

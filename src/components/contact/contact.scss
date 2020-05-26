@@ -2,10 +2,8 @@
 
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(4, (1fr));
-  grid-template-rows: repeat(4, (1fr));
-  width: 100%;
-  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   //left side
   .left-img {
     display: none;
@@ -24,55 +22,81 @@
   .contact-title {
     grid-column: 1 / span 4;
     grid-row: 1;
+    font-size: 1.5rem;
     place-self: center;
-    font-size: 2.5rem;
+    padding: 25px 0 25px 0;
     @include respond-to("tablet") {
       grid-column: 3 / span 2;
       grid-row: 1;
-      padding: 25px 0 25px 0;
     }
   }
-  // right side form mobile
   .contact-form {
-    grid-column: 1 / span 4;
+    grid-column: 3 / span 2;
     grid-row: 2 / span 3;
-    align-items: center;
-    padding: 0 0 40px 0;
-    margin: 20px;
-    //tablet and greater
-    @include respond-to("tablet") {
-      grid-column: 3 / span 2;
+    .label {
+      display: grid;
+      grid-column: 3;
       grid-row: 2 / span 3;
     }
-    //form => inputs += button
     .input {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      width: 80%;
-      height: auto;
-      padding: 25px 0px 20px 0px;
-      border-bottom: 1px solid black;
+      display: grid;
+      grid-column: 4;
+      border-bottom: 1px solid $darktheme;
     }
-    // you arent making enough room for your button. re-think your grid layout. then work on centering it.
     .submit-contact {
-      border: none;
-      color: $darktheme;
-      font-size: 1rem;
-      padding: 10px 30px;
-      margin: 20px 20px;
-      @include respond-to("tablet") {
-        grid-column: 3 / span 2;
-      }
-
-      &:hover {
-        color: $redAccent;
-      }
-      &:active {
-        color: $lightgrey;
-      }
+      display: grid;
+      grid-column: 3 / span 2;
+      grid-row: 4;
     }
   }
+
+  // // right side form mobile
+  // .contact-form {
+  //   // display: grid;
+  //   grid-column: 1 / span 4;
+  //   grid-row: 2 / span 3;
+  //   place-self: center;
+  //   padding: 0 0 40px 0;
+  //   width: 400px;
+  //   margin: 20px;
+  //   //tablet and greater
+  //   @include respond-to("tablet") {
+  //     grid-column: 3 / span 2;
+  //   }
+  //form => inputs += button
+  // .input {
+  //   // display: grid;
+  //   grid-column: 1 / span 4;
+  //   grid-row: 1 / span 4;
+  //   border: none;
+
+  //   // width: 400px;
+  //   width: 100%;
+  //   height: auto;
+  //   padding: 25px 0px 20px 0px;
+  //   border-bottom: 1px solid black;
+  //   @include respond-to("tablet") {
+  //     grid-column: 3 / span 2;
+  //     grid-row: 1 / span 4;
+  //   }
+  // }
+  // .submit-contact {
+  //   display: grid;
+  //   grid-column: 3 / span 2;
+  //   grid-row: 4;
+  //   place-self: center;
+  //   border: none;
+  //   color: $darktheme;
+  //   font-size: 1rem;
+  //   padding: 10px 30px;
+  //   // margin: 20px 20px;
+  //   // margin: 0 auto;
+  //   &:hover {
+  //     color: $redAccent;
+  //   }
+  //   &:active {
+  //     color: $lightgrey;
+  //   }
+  // }
+  // }
 }
