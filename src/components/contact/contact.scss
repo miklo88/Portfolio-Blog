@@ -41,10 +41,10 @@
       grid-column: 1 / span 4;
       grid-row: 1;
       place-self: center;
+      font-size: 2.5rem;
       @include respond-to("tablet") {
         grid-column: 3 / span 2;
         grid-row: 1;
-        font-size: 2.5rem;
         padding: 25px 0 25px 0;
       }
     }
