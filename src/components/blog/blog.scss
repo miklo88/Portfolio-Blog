@@ -26,8 +26,14 @@
     .wip {
       text-align: center;
       font-size: 1rem;
-      color: white;
+      color: $darktheme;
       padding: 50px 50px;
+      z-index: 802;
+      a {
+        text-decoration: underline;
+        cursor: pointer;
+        color: $darktheme;
+      }
     }
   }
   .wip-img {

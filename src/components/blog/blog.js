@@ -8,8 +8,12 @@ const Blog = () => {
       <h1 className='blog-title'>Blog</h1>
       <div className='message-container'>
         <p className='wip'>
-          This blog is still a work in progess. To see updates on how I create
-          it follow me on Linkedin and twitter.
+          This blog is still a work in progess. To see updates follow me on
+          <a href='https://www.linkedin.com/in/carl-redding' target='blank'>
+            Linkedin
+          </a>
+          and
+          <a href='https://twitter.com/Miklo13F'>Twitter</a>.
         </p>
       </div>
       <img className='wip-img' src={wip} alt='placement-holder' />

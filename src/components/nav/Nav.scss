@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(20px, auto));
+  background-color: $offwhite;
   z-index: 1500;
   height: 70px;
 
@@ -88,7 +89,7 @@
     width: 100%;
     height: auto;
     z-index: 1480;
-    background-color: white;
+    background-color: $offwhite;
     border-bottom-left-radius: 1em;
     padding-top: 90px;
     padding-bottom: 20px;

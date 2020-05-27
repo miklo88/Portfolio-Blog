@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, minmax(20px, auto));
-  background-color: $darktheme;
+  background-color: $offwhite;
   /// nested items in the grid.
   .links,
   .basic-button {
@@ -14,7 +14,7 @@
     .fa-paper-plane {
       text-decoration: none;
       padding: 10px 30px;
-      color: $offwhite;
+      color: $darktheme;
       font-size: 1.2rem;
       font-weight: 200;
       background: none;
@@ -34,23 +34,27 @@
     grid-row: 1 / span 3;
     place-self: center;
     justify-content: space-evenly;
+
     .fa-linkedin-in {
-      color: $offwhite;
+      color: $darktheme;
       padding: 10px;
+      transition: 0.7s;
       &:hover {
         color: $redAccent;
       }
     }
     .fa-github {
-      color: $offwhite;
+      color: $darktheme;
       padding: 10px;
+      transition: 0.7s;
       &:hover {
         color: $redAccent;
       }
     }
     .fa-twitter {
-      color: $offwhite;
+      color: $darktheme;
       padding: 10px;
+      transition: 0.7s;
       &:hover {
         color: $redAccent;
       }
