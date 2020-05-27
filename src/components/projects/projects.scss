@@ -1,0 +1,13 @@
+@import "../../index.scss";
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3fr);
+  width: 100%;
+  margin-bottom: 50px;
+  .project-h1 {
+    grid-column: 2;
+    font-size: 2em;
+    padding: 20px 10px;
+  }
+}

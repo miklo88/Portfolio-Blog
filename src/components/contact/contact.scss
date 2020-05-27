@@ -1,118 +1,139 @@
 @import "../../index.scss";
 
 .contact-container {
-  .contact-title {
-    display: block;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 20px 20px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  //left side
+  .left-img {
+    display: none;
+    @include respond-to("tablet") {
+      display: grid;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 4;
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      object-fit: none;
+      object-position: 100% 40%;
+    }
   }
-  ////form container
+  //h1
+  .contact-title {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    font-size: 2rem;
+    place-self: center;
+    padding: 25px 25px 25px 25px;
+    @include respond-to("tablet") {
+      grid-column: 3 / span 2;
+      grid-row: 1;
+    }
+  }
   .contact-form {
     display: grid;
-    grid-template-columns: 4 repeat(minmax(50px, 4fr));
-    grid-template-rows: 4 repeat(minmax(50px, 4fr));
-    max-width: 800px;
-    width: 100%;
-    height: auto;
-    padding: 20px 30px;
-    margin: 0 auto;
-    /////////labels
-    .name-label {
-      grid-column: 1 / span 2;
-      grid-row: 1;
-      justify-self: end;
-      align-self: center;
-      padding: 10px 20px;
-    }
-    .email-label {
-      grid-column: 1 / span 2;
-      grid-row: 2;
-      justify-self: end;
-      align-self: center;
-      padding: 10px 20px;
-    }
-    .message-label {
-      grid-column: 1 / span 2;
-      grid-row: 3;
-      justify-self: end;
-      align-self: center;
-      padding: 10px 20px;
-    }
-    ////////inputs
-    .name-input {
-      grid-column: 3 / span 2;
-      grid-row: 1;
-      justify-self: start;
-      align-self: center;
-    }
-    .email-input {
-      grid-column: 3 / span 2;
-      grid-row: 2;
-      justify-self: start;
-      align-self: center;
-    }
-    .message-input {
-      grid-column: 3 / span 2;
-      grid-row: 3;
-      justify-self: start;
-      align-self: center;
-    }
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 3;
 
-    .submit-contact {
+    .label-contact {
       grid-column: 2;
-      grid-row: 4;
-      place-self: end;
+      justify-self: end;
+      align-self: center;
+      padding: 10px 10px;
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+    .input-contact {
+      border: none;
+      grid-column: 3 / span 2;
+      justify-self: start;
+      align-self: center;
+      font-size: 1.5rem;
+      padding: 10px 10px;
+      margin-left: 10px;
+      border-bottom: 1px solid $darktheme;
+    }
+    .submit-contact {
+      grid-column: 1 / span 4;
+      place-self: center;
+      font-size: 1.5rem;
       border: none;
       color: $darktheme;
-      font-family: inherit;
-      font-size: 1rem;
       padding: 10px 30px;
-      border-radius: 20px;
-      border: 1px solid white;
-      -webkit-appearance: none;
-      -moz-appearance: none;
+      transition: 0.7s;
       &:hover {
         color: $redAccent;
-        transition: 0.7s;
-        border-radius: 20px;
-        border: 1px solid white;
       }
       &:active {
         background-color: $lightgrey;
-        color: $redAccent;
-        border-radius: 20px;
-        border: 1px solid $lightgrey;
-        transition: 0.7s;
+        color: $offwhite;
       }
     }
-    .reset-contact {
-      grid-column: 3;
-      grid-row: 4;
-      place-self: start;
-      border: none;
-      color: $darktheme;
-      font-family: inherit;
-      font-size: 1rem;
-      padding: 10px 30px;
-      border-radius: 20px;
-      border: 1px solid white;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      &:hover {
-        color: $redAccent;
-        transition: 0.7s;
-        border-radius: 20px;
-        border: 1px solid white;
+    @include respond-to("tablet") {
+      grid-column: 2 / span 3;
+      grid-row: 2 / span 3;
+      .label-contact {
+        grid-column: 3;
+        font-size: 1rem;
       }
-      &:active {
-        background-color: $lightgrey;
-        color: $redAccent;
-        border-radius: 20px;
-        border: 1px solid $lightgrey;
-        transition: 0.7s;
+      .input-contact {
+        grid-column: 4;
+        font-size: 1rem;
+      }
+      .submit-contact {
+        grid-column: 3 / span 2;
+        font-size: 1rem;
       }
     }
   }
+
+  // // right side form mobile
+  // .contact-form {
+  //   // display: grid;
+  //   grid-column: 1 / span 4;
+  //   grid-row: 2 / span 3;
+  //   place-self: center;
+  //   padding: 0 0 40px 0;
+  //   width: 400px;
+  //   margin: 20px;
+  //   //tablet and greater
+  //   @include respond-to("tablet") {
+  //     grid-column: 3 / span 2;
+  //   }
+  //form => inputs += button
+  // .input {
+  //   // display: grid;
+  //   grid-column: 1 / span 4;
+  //   grid-row: 1 / span 4;
+  //   border: none;
+
+  //   // width: 400px;
+  //   width: 100%;
+  //   height: auto;
+  //   padding: 25px 0px 20px 0px;
+  //   border-bottom: 1px solid black;
+  //   @include respond-to("tablet") {
+  //     grid-column: 3 / span 2;
+  //     grid-row: 1 / span 4;
+  //   }
+  // }
+  // .submit-contact {
+  //   display: grid;
+  //   grid-column: 3 / span 2;
+  //   grid-row: 4;
+  //   place-self: center;
+  //   border: none;
+  //   color: $darktheme;
+  //   font-size: 1rem;
+  //   padding: 10px 30px;
+  //   // margin: 20px 20px;
+  //   // margin: 0 auto;
+  //   &:hover {
+  //     color: $redAccent;
+  //   }
+  //   &:active {
+  //     color: $lightgrey;
+  //   }
+  // }
+  // }
 }
