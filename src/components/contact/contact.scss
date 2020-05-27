@@ -22,31 +22,69 @@
   .contact-title {
     grid-column: 1 / span 4;
     grid-row: 1;
-    font-size: 1.5rem;
+    font-size: 2rem;
     place-self: center;
-    padding: 25px 0 25px 0;
+    padding: 25px 25px 25px 25px;
     @include respond-to("tablet") {
       grid-column: 3 / span 2;
       grid-row: 1;
     }
   }
   .contact-form {
-    grid-column: 3 / span 2;
+    display: grid;
+    grid-column: 1 / span 4;
     grid-row: 2 / span 3;
+
     .label {
-      display: grid;
-      grid-column: 3;
-      grid-row: 2 / span 3;
+      grid-column: 2;
+      justify-self: end;
+      align-self: center;
+      padding: 10px 10px;
+      margin-right: 10px;
+      font-size: 1.5rem;
     }
     .input {
-      display: grid;
-      grid-column: 4;
+      border: none;
+      grid-column: 3 / span 2;
+      justify-self: start;
+      align-self: center;
+      font-size: 1.5rem;
+      padding: 10px 10px;
+      margin-left: 10px;
       border-bottom: 1px solid $darktheme;
     }
+
     .submit-contact {
-      display: grid;
+      grid-column: 1 / span 4;
+      place-self: center;
+      font-size: 1.5rem;
+      border: none;
+      color: $darktheme;
+      padding: 10px 30px;
+      transition: 0.7s;
+      &:hover {
+        color: $redAccent;
+      }
+      &:active {
+        background-color: $lightgrey;
+        color: $offwhite;
+      }
+    }
+    @include respond-to("tablet") {
       grid-column: 3 / span 2;
-      grid-row: 4;
+      grid-row: 2 / span 3;
+      .label {
+        grid-column: 3;
+        grid-row: 2 / span 3;
+      }
+      .input {
+        grid-column: 4;
+      }
+      .submit-contact {
+        grid-column: 3 / span 2;
+        grid-row: 4;
+        border-radius: 20px;
+      }
     }
   }
 
