@@ -7,10 +7,10 @@
   margin: 0 auto;
   .blog-title {
     grid-column: 1 / span 4;
-    grid-row: 1 / span 2;
+    grid-row: 1;
     font-size: 8rem;
     font-weight: 900;
-    color: rgba(242, 235, 233, 0.2);
+    color: rgba(242, 235, 233, 0.02);
     padding: 30px 30px;
     overflow: hidden;
     z-index: 801;
@@ -20,19 +20,22 @@
     grid-row: 1;
     width: 100%;
     height: auto;
-    background: rgba(217, 217, 217, 1);
+    background: rgba(31, 32, 38, 1);
     padding: 50px 30px;
     z-index: 800;
     .wip {
       text-align: center;
       font-size: 1rem;
-      color: $darktheme;
+      color: $offwhite;
       padding: 50px 50px;
       z-index: 802;
       a {
+        display: inline;
         text-decoration: underline;
         cursor: pointer;
-        color: $darktheme;
+        color: $offwhite;
+        margin: 0px 5px 0px 5px;
+        z-index: 802;
       }
     }
   }
