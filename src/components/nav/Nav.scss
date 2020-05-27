@@ -6,6 +6,7 @@
   grid-template-rows: repeat(3, minmax(20px, auto));
   z-index: 1500;
   height: 70px;
+
   .home-link {
     grid-column: 1;
     grid-row: 1 / span 3;
@@ -17,17 +18,12 @@
     padding: 10px 50px;
     justify-self: start;
     align-self: center;
+
     &:hover {
       color: $redAccent;
     }
     &:active {
       color: $lightgrey;
-    }
-    @include respond-to("tablet") {
-      padding: 10px 50px;
-    }
-    @include respond-to("desktop") {
-      padding: 10px 50px;
     }
   }
   .navigation {
