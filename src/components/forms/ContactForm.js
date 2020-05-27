@@ -13,12 +13,16 @@ const ContactForm = () => {
         method='post'
         encType='text/palin'
       >
-        <label className='label name'>Name:</label>
-        <input className='input name' type='text' placeholder='Name' />
-        <label className='label email'>Email:</label>
-        <input className='input email' type='email' placeholder='Email' />
-        <label className='label message'>Message:</label>
-        <input className='input message' placeholder='Message' />
+        <label className='label-contact name'>Name:</label>
+        <input className='input-contact name' type='text' placeholder='Name' />
+        <label className='label-contact email'>Email:</label>
+        <input
+          className='input-contact email'
+          type='email'
+          placeholder='Email'
+        />
+        <label className='label-contact message'>Message:</label>
+        <input className='input-contact message' placeholder='Message' />
         {/* input button */}
         <input className='submit-contact' type='submit' value='Send' />
       </form>
