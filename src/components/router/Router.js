@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import About from "../about/about";
-import Dashboard from "../landing/Dashboard";
+import Landing from "../landing/Landing";
 import Blog from "../blog/blog";
 import Projects from "../projects/projects";
 import ContactForm from "../forms/ContactForm";
@@ -12,7 +12,7 @@ const Router = () => {
   return (
     <>
       <Switch>
-        <Route exact path='/' component={Dashboard} />
+        <Route exact path='/' component={Landing} />
         <Route exact path='/about' component={About} />
         <Route exact path='/blog' component={Blog} />
         <Route exact path='/projects' component={Projects} />

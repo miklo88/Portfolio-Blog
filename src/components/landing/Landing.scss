@@ -14,30 +14,28 @@
       grid-column: 1 / span 4;
       grid-row: 1 / span 4;
       width: 100%;
+      height: 75%;
+      object-fit: none;
+      object-position: 50% 40%;
+      overflow: hidden;
+
       height: auto;
       place-self: center;
     }
-    ////////////////p landing
-    .dash-p-landing {
-      grid-column: 2 / span 2;
-      grid-row: 3 / span 2;
-      font-size: 4em;
-      font-weight: 900;
-      height: 150px;
-      color: $darktheme;
-      place-self: center;
-
-      @include respond-to("tablet") {
-        height: 200px;
-      }
-      @include respond-to("desktop") {
-        height: 300px;
-      }
-    }
     .welcome {
       grid-column: 1 / span 4;
-      grid-row: 4;
+      grid-row: 1 / span 4;
+      color: $offwhite;
+      opacity: 0.8;
+      font-size: 1em;
       place-self: center;
+    }
+    .sneaky {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 4;
+      color: $offwhite;
+      opacity: 0.8;
+      place-self: bottom;
     }
   }
 }
