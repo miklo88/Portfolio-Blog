@@ -38,9 +38,10 @@ const Nav = () => {
       </nav>
       {/* burger menu */}
       <button onClick={hideBurger} className='hamburger' id='hamburger'>
-        <div className='line one'></div>
+        <div className='line one'>menu</div>
+        {/* <div className='line one'></div>
         <div className='line two'></div>
-        <div className='line three'></div>
+        <div className='line three'></div> */}
       </button>
     </div>
   );

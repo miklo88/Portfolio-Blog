@@ -18,26 +18,17 @@
       object-fit: none;
       object-position: 50% 30%;
       overflow: hidden;
-
       height: auto;
       place-self: center;
     }
     .welcome {
       grid-column: 1 / span 4;
-      grid-row: 1 / span 2;
-
+      grid-row: 1 / span 3;
       color: $offwhite;
-      opacity: 0.8;
-      font-size: 1em;
-      // place-self: center;
+      opacity: 0.2;
+      font-size: 7em;
+      font-weight: 900;
       place-self: center;
-    }
-    .sneaky {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 4;
-      color: $offwhite;
-      opacity: 0.8;
-      place-self: bottom;
     }
   }
 }

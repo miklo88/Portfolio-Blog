@@ -3,38 +3,31 @@
 .nav-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, minmax(20px, auto));
+  grid-template-rows: 1fr;
   z-index: 1500;
-  height: 70px;
+  height: 80px;
+
   .home-link {
     grid-column: 1;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     font-size: 1rem;
     font-weight: 400;
     color: $darktheme;
     text-decoration: none;
-    transition: 0.7s;
-    padding: 10px 50px;
-    justify-self: start;
-    align-self: center;
+    transition: 0.2s;
+    padding: 80px 110px;
+    place-self: center;
     &:hover {
-      color: $redAccent;
-    }
-    &:active {
       color: $lightgrey;
     }
-    @include respond-to("tablet") {
-      padding: 10px 50px;
-    }
-    @include respond-to("desktop") {
-      padding: 10px 50px;
+    &:active {
+      color: $offwhite;
     }
   }
   .navigation {
     grid-column: 3;
     grid-row: 1 / span 3;
     color: $darktheme;
-    place-self: center;
   }
   .hamburger {
     grid-column: 3;
@@ -43,45 +36,33 @@
     background: none;
     border: 0;
     z-index: 1490;
-    width: 50px;
+    padding: 80px 110px;
+    place-self: center;
     outline: none;
-    .line {
-      width: 35px;
-      height: 1px;
-      background: $darktheme;
-      margin: 6px 0;
-      transition: 0.4s;
-    }
+
     .one {
-      -webkit-transform: rotate(0deg) translate(0, 0);
-      transform: rotate(0deg) translate(0, 0);
-    }
-    .two {
-      opacity: 1;
-    }
-    .three {
       -webkit-transform: rotate(0deg) translate(0, 0);
       transform: rotate(0deg) translate(0, 0);
     }
   }
-  /////////////// to make an x
+  // /////////////// to make an x
   .change {
     .one {
-      -webkit-transform: rotate(-45deg) translate(0px, 0px);
-      transform: rotate(-45deg) translate(0px, 0px);
+      -webkit-transform: rotate(-95deg) translate(0px, 0px);
+      transform: rotate(-95deg) translate(0px, 0px);
       transition: 0.7s;
       box-shadow: none;
     }
-    .two {
-      transition: 0.5s;
-      opacity: 0;
-    }
-    .three {
-      -webkit-transform: rotate(45deg) translate(-10px, -10px);
-      transform: rotate(45deg) translate(-10px, -10px);
-      transition: 0.7s;
-      box-shadow: none;
-    }
+    // .two {
+    //   transition: 0.5s;
+    //   opacity: 0;
+    // }
+    // .three {
+    //   -webkit-transform: rotate(45deg) translate(-10px, -10px);
+    //   transform: rotate(45deg) translate(-10px, -10px);
+    //   transition: 0.7s;
+    //   box-shadow: none;
+    // }
   }
   .navigation {
     display: none;
@@ -107,13 +88,12 @@
       -moz-appearance: none;
     }
   }
+
   // tablet view
   @include respond-to("desktop") {
     .navigation {
       display: flex;
       flex-direction: row;
-      grid-column: 3;
-      grid-row: 1 / span 3;
       color: $darktheme;
       place-self: center;
       .links {

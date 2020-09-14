@@ -5,7 +5,7 @@ import "./Landing.scss";
 function Landing() {
   const [greet, sayGreet] = useState("");
   // passing the variable saying to the useEffect in the sayGreet()
-  let saying = "A portfolio website by: Carl Redding";
+  let saying = "MIKLO";
   // const greet = "MIKLO";d
   useEffect(() => {
     const timer = setTimeout(() => {
