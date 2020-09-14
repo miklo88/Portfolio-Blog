@@ -1,11 +1,11 @@
 import React from "react";
 import wip from "../../stockPhotos/doodle1.JPG";
-import "./blog.scss";
+import "./Design.scss";
 
-const Blog = () => {
+function Design() {
   return (
-    <div className='blog-container'>
-      <h1 className='blog-title'>Blog</h1>
+    <div className='Design-container'>
+      <h1 className='Design-title'>Design</h1>
       <div className='message-container'>
         <p className='wip'>
           This blog is still a work in progess. To see updates on how I create
@@ -15,6 +15,6 @@ const Blog = () => {
       <img className='wip-img' src={wip} alt='placement-holder' />
     </div>
   );
-};
+}
 
-export default Blog;
+export default Design;

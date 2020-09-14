@@ -26,17 +26,14 @@ const Nav = () => {
       <nav onClick={hideBurger} className='navigation' id='nav-burger'>
         {/* About/contact page */}
         <Link className='links basic-button' to='/about'>
-          About
+          about
         </Link>
         {/* link to blog/landing pg. signup pg incl. */}
-        <Link className='links basic-button' to='/blog'>
-          Blog
-        </Link>
-        <Link className='links basic-button' to='/projects'>
-          Projects
+        <Link className='links basic-button' to='/design'>
+          design
         </Link>
         <Link className='links basic-button' to='/contactForm'>
-          Contact
+          contact
         </Link>
       </nav>
       {/* burger menu */}
