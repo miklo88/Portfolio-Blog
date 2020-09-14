@@ -24,10 +24,12 @@
     }
     .welcome {
       grid-column: 1 / span 4;
-      grid-row: 1 / span 4;
+      grid-row: 1 / span 2;
+
       color: $offwhite;
       opacity: 0.8;
       font-size: 1em;
+      // place-self: center;
       place-self: center;
     }
     .sneaky {

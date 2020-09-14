@@ -4,24 +4,22 @@ import "./Landing.scss";
 
 function Landing() {
   const [greet, sayGreet] = useState("");
+  // passing the variable saying to the useEffect in the sayGreet()
+  let saying = "A portfolio website by: Carl Redding";
   // const greet = "MIKLO";d
   useEffect(() => {
     const timer = setTimeout(() => {
-      // document.getElementById("Welcome").innerHTML = { greet };
-
-      return sayGreet("MIKLO");
+      return sayGreet(saying);
     }, 5000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [saying]);
 
   return (
     <div className='dashboard-container'>
       <div className='landing'>
         <img className='dashboard-img-landing' src={landing} alt='dash-img' />
-
-        <p id='Welcome' className='welcome'>
-          {greet}
-        </p>
+        {/* displaying the greet from useEffect */}
+        <p className='welcome'>{greet}</p>
       </div>
     </div>
   );
