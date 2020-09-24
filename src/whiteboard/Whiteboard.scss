@@ -1,0 +1,61 @@
+@import "../../src/index.scss";
+// desktop
+.whiteboard-component {
+  width: 100%;
+  height: 500px;
+  color: $redAccent;
+  margin: 0 auto;
+  // navigation container
+  .mock-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px;
+    border: 1px solid black;
+  }
+  //home button - logo
+  .home-btn {
+    background-color: $lightgrey;
+    color: $darktheme;
+    padding: 10px 20px;
+    border: none;
+  }
+  //mobile view
+  .nav-tabs {
+    display: none;
+  }
+  .mock-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+  }
+  //mobile view
+
+  //desktop view
+  .nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightgrey;
+    color: $darktheme;
+    text-decoration: none;
+    // padding: 30px 10px;
+    .mock-btn {
+      text-decoration: none;
+      color: green;
+      padding: 30px 10px;
+    }
+  }
+  .mock-menu {
+    display: none;
+  }
+  //desktopview
+  //   .change {
+
+  //   }
+  //   .show {
+  //     background-color: blue;
+  //   }
+}
