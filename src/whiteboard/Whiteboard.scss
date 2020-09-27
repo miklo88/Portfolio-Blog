@@ -1,18 +1,19 @@
 @import "../../src/index.scss";
 // desktop
+// @include respond-to("desktop") {
+// navigation container
+
 .whiteboard-component {
   width: 100%;
-  height: 500px;
+  height: 80px;
   color: $redAccent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border: 1px solid black;
   margin: 0 auto;
-  // navigation container
-  .mock-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 40px;
-    border: 1px solid black;
-  }
+
   //home button - logo
   .home-btn {
     background-color: $lightgrey;
@@ -20,42 +21,37 @@
     padding: 10px 20px;
     border: none;
   }
-  //mobile view
-  .nav-tabs {
-    display: none;
-  }
+
   .mock-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: inherit;
-  }
-  //mobile view
-
-  //desktop view
-  .nav-tabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: $lightgrey;
-    color: $darktheme;
-    text-decoration: none;
-    // padding: 30px 10px;
-    .mock-btn {
-      text-decoration: none;
-      color: green;
-      padding: 30px 10px;
-    }
+    border: none;
   }
-  .mock-menu {
+  .nav-tabs {
     display: none;
   }
-  //desktopview
-  //   .change {
-
-  //   }
-  //   .show {
-  //     background-color: blue;
-  //   }
+  @include respond-to("tablet") {
+    //mobile view
+    .mock-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  //desktop view
+  @include respond-to("desktop") {
+    .nav-tabs {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: $lightgrey;
+    }
+    .mock-menu {
+      display: none;
+    }
+  }
 }
