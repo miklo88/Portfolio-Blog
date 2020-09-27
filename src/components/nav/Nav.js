@@ -16,7 +16,6 @@ function Nav() {
       <Link className='home-link' to='/'>
         MIKLO
       </Link>
-
       {/* dropdown menu mobile menu */}
       <button onClick={toggleMenu} className='mobile-nav' id='mobile-menu'>
         menu
