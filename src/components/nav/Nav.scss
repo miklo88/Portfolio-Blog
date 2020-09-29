@@ -10,10 +10,14 @@
   margin: 0 auto;
   // home button
   .home-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    border: none;
-    padding: 80px 40px;
     color: $lightgrey;
+    border: none;
+    height: 100%;
+    padding: 40px 40px;
     transition: 0.7s;
     &:hover {
       color: $redAccent;
@@ -27,7 +31,12 @@
     // mobile/tablet menu with dropdown
     .mobile-nav {
       -webkit-appearance: none;
-      padding: 80px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      padding: 40px 40px;
+      height: 100%;
       border: none;
       cursor: pointer;
       background: none;
@@ -46,6 +55,7 @@
     .nav-tabs {
       display: none;
     }
+    // display dropdown
     .show {
       z-index: 1400;
       display: flex;
@@ -53,17 +63,26 @@
       justify-content: center;
       align-items: center;
       background-color: white;
-      width: 200px;
-      height: 200px;
-      margin-top: 160px;
+      height: 180px;
+      margin-top: 80px;
+      transition: transform 1.5s 0s;
+      transform: translateY(90px);
       .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100px;
-        height: 100px;
-        padding: 10px;
-        // justify-content: center;
-        // align-items: center;
+        // desktop view is 40px so height is 60px aqui -
+        padding: 20px 40px;
         border: solid 1px $offwhite;
       }
+    }
+    // hide menu
+    .change {
+      z-index: 1500;
+      // transition: transform 1.5s 0s;
+      // transform: translateX(-10px);
+      // display: none;
     }
   }
   // desktop navigation
@@ -76,7 +95,7 @@
 
       .links {
         color: $lightgrey;
-        padding: 80px 40px;
+        padding: 40px 40px;
         transition: 0.2s;
         &:hover {
           color: $darktheme;

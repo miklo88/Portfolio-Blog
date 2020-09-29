@@ -9,7 +9,7 @@ function Nav() {
     e.preventDefault();
     // console.log("you clicked menu");
     document.getElementById("nav-tabs").classList.toggle("show");
-    // return thing1;
+    document.getElementById("mobile-menu").classList.toggle("change");
   }
 
   return (
@@ -22,6 +22,7 @@ function Nav() {
       <button onClick={toggleMenu} className='mobile-nav' id='mobile-menu'>
         menu
       </button>
+
       {/* navigation links */}
       <nav className='nav-tabs' id='nav-tabs'>
         {/* About page */}
