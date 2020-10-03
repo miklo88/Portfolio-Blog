@@ -8,13 +8,13 @@
   width: 100%;
   height: 80px;
   margin: 0 auto;
-  //////// home button
+  //////// home button - MIKLO
   .home-link {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: $lightgrey;
+    color: $darktheme;
     border: none;
     height: 100%;
     padding: 40px 40px;
@@ -29,22 +29,21 @@
 
   @include respond-to("mobile") {
     ////////3 mobile/tablet menu with dropdown
-    .mobile-nav {
+    .toggle-nav {
       -webkit-appearance: none;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100px;
-      padding: 40px 40px;
       height: 100%;
+      padding: 40px 40px;
       border: none;
       cursor: pointer;
       background: none;
-      color: $lightgrey;
+      color: $darktheme;
+      // background-color: lightblue;
       font-family: inherit;
       border: none;
       transition: 0.2s;
-      z-index: 1400;
       &:hover {
         color: $darktheme;
         text-decoration: underline;
@@ -53,25 +52,44 @@
         color: $darktheme;
       }
     }
-    ///////////////////////////////////////////////////
     .nav-tabs {
       display: none;
     }
-    //////////// hide menu
+    //////////// on toggle hide toggle-nav button
     .change {
       display: none;
     }
-    ////////// display dropdown
+    /////////////////////////////////////////////////// display dropdown
+    // show nav-tabs!
     .show {
       z-index: 1500;
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: $lightgrey;
-      transition: transform 1.5s 0s;
-      transform: translateY(90px);
+      height: 100%;
+      background-color: $offwhite;
+      // transition: 2.5s;
+      transform: 1s;
 
+      .mobile-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 40px 40px;
+        border: none;
+        cursor: pointer;
+        background: none;
+        color: $darktheme;
+        font-family: inherit;
+        border: none;
+        transition: 0.2s;
+        margin-top: auto;
+      }
+
+      // transform: translateY(90px);
+      // transform: matrix(100, 100, 100, 100);
       .links {
         display: flex;
         justify-content: center;
@@ -79,15 +97,13 @@
         width: 100px;
         ////////// desktop view is 40px so height is 60px aqui -
         padding: 20px 40px;
-        border: solid 1px $offwhite;
+        // border: solid 1px $offwhite;
       }
     }
   }
+
   ////////////// desktop navigation /// nav tabs
   @include respond-to("desktop") {
-    // .mobile-nav {
-    //   display: none;
-    // }
     .nav-tabs {
       display: flex;
       flex-direction: row;
@@ -95,20 +111,20 @@
       align-items: center;
 
       .links {
-        color: $lightgrey;
+        color: $darktheme;
         padding: 40px 40px;
         transition: 0.2s;
         &:hover {
-          color: $darktheme;
           text-decoration: underline;
         }
         &:active {
           color: $darktheme;
         }
       }
+
+      .mobile-nav {
+        display: none;
+      }
     }
-    // .mobile-nav {
-    //   display: none;
-    // }
   }
 }
