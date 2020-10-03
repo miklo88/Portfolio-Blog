@@ -8,7 +8,7 @@
   width: 100%;
   height: 80px;
   margin: 0 auto;
-  // home button
+  //////// home button
   .home-link {
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@
   }
 
   @include respond-to("mobile") {
-    // mobile/tablet menu with dropdown
+    ////////3 mobile/tablet menu with dropdown
     .mobile-nav {
       -webkit-appearance: none;
       display: flex;
@@ -44,6 +44,7 @@
       font-family: inherit;
       border: none;
       transition: 0.2s;
+      z-index: 1400;
       &:hover {
         color: $darktheme;
         text-decoration: underline;
@@ -55,38 +56,40 @@
     .nav-tabs {
       display: none;
     }
-    // display dropdown
+
+    ////////// display dropdown
     .show {
-      z-index: 1400;
+      z-index: 1500;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: white;
+      background-color: grey;
       height: 180px;
       margin-top: 80px;
       transition: transform 1.5s 0s;
       transform: translateY(90px);
+
       .links {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100px;
-        // desktop view is 40px so height is 60px aqui -
+        ////////// desktop view is 40px so height is 60px aqui -
         padding: 20px 40px;
         border: solid 1px $offwhite;
       }
     }
-    // hide menu
+    //////////// hide menu
     .change {
-      z-index: 1500;
-      // transition: transform 1.5s 0s;
-      // transform: translateX(-10px);
-      // display: none;
+      display: none;
     }
   }
-  // desktop navigation
+  ////////////// desktop navigation
   @include respond-to("desktop") {
+    .mobile-nav {
+      display: none;
+    }
     .nav-tabs {
       display: flex;
       flex-direction: row;

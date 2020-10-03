@@ -25,6 +25,9 @@ function Nav() {
 
       {/* navigation links */}
       <nav className='nav-tabs' id='nav-tabs'>
+        {/* <button onClick={toggleMenu} className='mobile-nav' id='mobile-menu'>
+        menu
+      </button> */}
         {/* About page */}
         <Link className='links basic-button' to='/about'>
           about
