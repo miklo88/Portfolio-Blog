@@ -53,10 +53,14 @@
         color: $darktheme;
       }
     }
+    ///////////////////////////////////////////////////
     .nav-tabs {
       display: none;
     }
-
+    //////////// hide menu
+    .change {
+      display: none;
+    }
     ////////// display dropdown
     .show {
       z-index: 1500;
@@ -64,9 +68,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: grey;
-      height: 180px;
-      margin-top: 80px;
+      background-color: $lightgrey;
       transition: transform 1.5s 0s;
       transform: translateY(90px);
 
@@ -80,16 +82,12 @@
         border: solid 1px $offwhite;
       }
     }
-    //////////// hide menu
-    .change {
-      display: none;
-    }
   }
-  ////////////// desktop navigation
+  ////////////// desktop navigation /// nav tabs
   @include respond-to("desktop") {
-    .mobile-nav {
-      display: none;
-    }
+    // .mobile-nav {
+    //   display: none;
+    // }
     .nav-tabs {
       display: flex;
       flex-direction: row;
@@ -109,8 +107,8 @@
         }
       }
     }
-    .mobile-nav {
-      display: none;
-    }
+    // .mobile-nav {
+    //   display: none;
+    // }
   }
 }

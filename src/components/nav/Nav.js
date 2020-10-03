@@ -8,8 +8,8 @@ function Nav() {
   function toggleMenu(e) {
     e.preventDefault();
     // console.log("you clicked menu");
-    document.getElementById("nav-tabs").classList.toggle("show");
     document.getElementById("mobile-menu").classList.toggle("change");
+    document.getElementById("nav-tabs").classList.toggle("show");
   }
 
   return (
@@ -23,11 +23,12 @@ function Nav() {
         menu
       </button>
 
+      {/* onclick menu aka dropdown */}
       {/* navigation links */}
       <nav className='nav-tabs' id='nav-tabs'>
-        {/* <button onClick={toggleMenu} className='mobile-nav' id='mobile-menu'>
-        menu
-      </button> */}
+        <button onClick={toggleMenu} className='mobile-nav'>
+          le menu
+        </button>
         {/* About page */}
         <Link className='links basic-button' to='/about'>
           about
