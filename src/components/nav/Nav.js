@@ -30,7 +30,7 @@ function Nav() {
       <nav className='nav-tabs' id='nav-tabs'>
         {/* mobile nav menu aka change */}
         <button onClick={toggleMenu} className='mobile-nav' id='mobile-menu'>
-          menu
+          menu -
         </button>
         {/* About page */}
         <Link className='links basic-button' to='/about'>
