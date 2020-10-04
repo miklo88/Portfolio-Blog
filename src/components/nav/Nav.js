@@ -13,7 +13,7 @@ function Nav() {
   }
 
   // here i want to have a un-toggled state of logo and either menu or items if desktop.
-  // on click of menu if menu is tablet or mobile size. s
+  // on click of menu if menu is tablet or mobile size.
   return (
     <div className='nav-container'>
       {/* UN-TOGGLED STATE */}

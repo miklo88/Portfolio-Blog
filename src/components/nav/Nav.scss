@@ -64,32 +64,30 @@
     .show {
       z-index: 1500;
       display: flex;
-      // flex-direction: column;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100%;
-      background-color: $offwhite;
-      // transition: 2.5s;
-      transform: 1s;
+      // height: 100%
+      background-color: white;
+      transition: 2.5s;
+      margin-top: 167px;
 
       .mobile-nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        padding: 40px 40px;
+        height: 80px;
+        padding: 20px 40px;
         border: none;
         cursor: pointer;
         background: none;
         color: $darktheme;
         font-family: inherit;
         border: none;
-        transition: 0.2s;
+        transition: 1.2s;
         margin-top: auto;
       }
 
-      // transform: translateY(90px);
-      // transform: matrix(100, 100, 100, 100);
       .links {
         display: flex;
         justify-content: center;
@@ -97,18 +95,29 @@
         width: 100px;
         ////////// desktop view is 40px so height is 60px aqui -
         padding: 20px 40px;
-        // border: solid 1px $offwhite;
+        z-index: 1500;
+        &:hover {
+          text-decoration: underline;
+          color: $darktheme;
+        }
       }
     }
   }
 
   ////////////// desktop navigation /// nav tabs
   @include respond-to("desktop") {
+    .toggle-nav {
+      display: none;
+    }
     .nav-tabs {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
+
+      .mobile-nav {
+        display: none;
+      }
 
       .links {
         color: $darktheme;
@@ -120,10 +129,6 @@
         &:active {
           color: $darktheme;
         }
-      }
-
-      .mobile-nav {
-        display: none;
       }
     }
   }
