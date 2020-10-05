@@ -1,18 +1,18 @@
 import React from "react";
-import wip from "../../stockPhotos/doodle1.JPG";
+// import wip from "../../stockPhotos/doodle1.JPG";
 import "./Design.scss";
 
 function Design() {
   return (
     <div className='Design-container'>
       <h1 className='Design-title'>Design</h1>
+      <span className='design-line'></span>
       <div className='message-container'>
-        <p className='wip'>
-          This blog is still a work in progess. To see updates on how I create
-          it follow me on Linkedin and twitter.
+        {/* <img className='wip-img' src={wip} alt='placement-holder' /> */}
+        <p className='design-footnote'>
+          Marshalls Landing<br></br>2019|Spring Cocktails<br></br>Mint Julep
         </p>
       </div>
-      <img className='wip-img' src={wip} alt='placement-holder' />
     </div>
   );
 }
