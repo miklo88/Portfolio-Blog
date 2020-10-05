@@ -21,6 +21,7 @@ function Nav() {
       <Link className='home-link' to='/'>
         MIKLO
       </Link>
+      {/* onclick this dissapears */}
       <button onClick={toggleMenu} className='toggle-nav' id='toggle-menu'>
         menu
       </button>

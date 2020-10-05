@@ -1,0 +1,70 @@
+@import "../../index.scss";
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: honeydew;
+  max-width: 1000px;
+  padding: 50px;
+  margin: 0 auto;
+
+  .contact-title {
+    font-weight: 600;
+  }
+  .contact-line {
+    width: 90%;
+    border-bottom: 1px solid $darktheme;
+    padding: 0px 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  // form of le contact formsy forms.
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    .label-contact {
+      width: 100%;
+      border: 1px solid $darktheme;
+    }
+    .input-contact {
+      width: 100%;
+      border: 1px solid $darktheme;
+    }
+    // .label-contact name {
+    //   background-color: red;
+    // }
+    // .input-contact name {
+    //   background-color: red;
+    // }
+    // .label-contact email {
+    //   background-color: red;
+    // }
+    // .input-contact email {
+    //   background-color: red;
+    // }
+    // .label-contact subject {
+    //   background-color: red;
+    // }
+    // .input-contact subject {
+    //   background-color: red;
+    // }
+    // .label-contact message {
+    //   background-color: red;
+    // }
+    // .input-contact message {
+    //   background-color: red;
+    // }
+    .submit-contact {
+      // background-color: red;
+
+      .fas {
+        color: $darktheme;
+        // background-color: $offwhite;
+        padding: 20px 20px;
+      }
+    }
+  }
+}

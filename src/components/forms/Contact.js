@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ContactForm from "../forms/ContactForm";
-import "./contact.scss";
+import ContactForm from "./ContactForm";
+import "./Contact.scss";
 
 //contact popupcontainer displays popup message to user
 const Contact = ({ isShowing, hide }) =>
