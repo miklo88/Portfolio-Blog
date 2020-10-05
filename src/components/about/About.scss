@@ -24,6 +24,21 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .about-me {
+  .about-content {
+    padding-bottom: 5px;
+  }
+  .resume-link {
+    color: $darktheme;
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &:hover {
+      text-decoration: underline;
+      color: $lightgrey;
+    }
+    &:active {
+      color: $lightgrey;
+      text-decoration: none;
+    }
   }
 }
