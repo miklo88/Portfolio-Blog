@@ -4,20 +4,12 @@
   cursor: pointer;
   text-decoration: none;
   // font-size: 1em;
-  transition: 0.7s;
+  transition: 0.2s;
   &:hover {
-    transition: 0.7s;
+    transition: 0.2s;
     color: $redAccent;
   }
   &:active {
     color: $lightgrey;
-  }
-}
-
-//input placeholder
-::placeholder {
-  font-size: 1.5rem;
-  @include respond-to("tablet") {
-    font-size: 1rem;
   }
 }

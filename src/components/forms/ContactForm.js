@@ -2,7 +2,7 @@ import React from "react";
 // import left from "../../stockPhotos/jazzsoftcolor2.png";
 import "./Contact.scss";
 
-const ContactForm = () => {
+function ContactForm() {
   return (
     <div id='contact-container' className='contact-container'>
       <h1 className='contact-title'>CONTACT</h1>
@@ -25,23 +25,21 @@ const ContactForm = () => {
           type='email'
           placeholder='your-email@email.com'
         />
-        <label className='label-contact message'>subject:</label>
+        <label className='label-contact subject'>subject:</label>
         <input
-          className='input-contact message'
+          className='input-contact subject'
           placeholder='subject of message'
         />
         <label className='label-contact message'>message:</label>
         <input className='input-contact message' placeholder='Hola :) ' />
-        {/* input button */}
-        <button className='submit-contact' type='submit' value='Send'>
-          <i className='fas fa-mailbox'></i>
+
+        {/* submit button */}
+        <button className='submit-contact' type='submit'>
+          <i class='far fa-paper-plane'></i>
+          {/* <i class='fas fa-paper-plane'></i> */}
         </button>
-        {/* toggle other mailbox and have it animate in????? */}
-        {/* <button className='submit-contact' type='submit' value='Send'>
-          <i className='fas fa-mailbox'></i>
-        </button> */}
       </form>
     </div>
   );
-};
+}
 export default ContactForm;

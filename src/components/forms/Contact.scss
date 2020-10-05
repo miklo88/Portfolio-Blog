@@ -5,65 +5,81 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: honeydew;
-  max-width: 1000px;
+  max-width: 800px;
   padding: 50px;
   margin: 0 auto;
 
   .contact-title {
     font-weight: 600;
+    margin-top: 10px;
+  }
+  @include respond-to("desktop") {
+    .contact-title {
+      margin-top: 30px;
+    }
   }
   .contact-line {
-    width: 90%;
+    width: 100%;
     border-bottom: 1px solid $darktheme;
     padding: 0px 50px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   // form of le contact formsy forms.
   .contact-form {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     .label-contact {
       width: 100%;
-      border: 1px solid $darktheme;
+      font-size: 1rem;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 5px;
     }
     .input-contact {
       width: 100%;
+      font-size: 1rem;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 5px;
       border: 1px solid $darktheme;
     }
-    // .label-contact name {
-    //   background-color: red;
-    // }
-    // .input-contact name {
-    //   background-color: red;
-    // }
-    // .label-contact email {
-    //   background-color: red;
-    // }
-    // .input-contact email {
-    //   background-color: red;
-    // }
-    // .label-contact subject {
-    //   background-color: red;
-    // }
-    // .input-contact subject {
-    //   background-color: red;
-    // }
-    // .label-contact message {
-    //   background-color: red;
-    // }
-    // .input-contact message {
-    //   background-color: red;
-    // }
-    .submit-contact {
-      // background-color: red;
+    .input-contact.message {
+      text-align: left;
+    }
 
-      .fas {
-        color: $darktheme;
-        // background-color: $offwhite;
-        padding: 20px 20px;
+    .submit-contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $darktheme;
+      height: auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 15px;
+      background: none;
+      cursor: pointer;
+
+      .fa-paper-plane {
+        text-decoration: none;
+        color: $lightgrey;
+        padding: 10px 80px;
+        font-size: 1.5rem;
+        &:hover {
+          color: $darktheme;
+        }
+        &:active {
+          color: white;
+        }
+      }
+
+      &:active {
+        border: 1px solid $lightgrey;
+        background-color: $lightgrey;
       }
     }
   }
