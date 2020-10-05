@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import About from "../about/about";
+import About from "../about/About";
 import Landing from "../landing/Landing";
 import Design from "../design/Design";
 import ContactForm from "../forms/ContactForm";

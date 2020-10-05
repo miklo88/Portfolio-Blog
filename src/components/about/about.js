@@ -1,58 +1,32 @@
 import React from "react";
 import "./About.scss";
 
-const About = () => {
+function About() {
   return (
     <div className='about-container'>
       {/* page title */}
-      <div className='about-body'>
-        <h1 className='about-h1'>About</h1>
-        <div className='title-head'>
-          <em className='who'>Who is this guy?</em>
-          <p className='who-text'>
-            Hi, I'm Carl Redding. I also go by Carlitos and I created Miklo.
-          </p>
 
-          <p className='what'>What do I do? </p>
-          <p className='what-text'>
-            I’m Full Stack Web Developing Student at Lambda. Also a visual
-            artist in Chicago, IL.
-          </p>
-
-          <em className='why'>Why do I do it?</em>
-          <p className='why-text'>
-            I’m obsessed with stealing moments from people. Dancing with color,
-            typography, design, photography, code. CREATING. Learning JavaScript
-            and it's libraries has become a way for me to elaborate all the
-            goofy stuff that goes on in my head.
-          </p>
-        </div>
+      <h1 className='about-title'>ABOUT</h1>
+      <span className='about-line'></span>
+      <div className='about-me'>
+        <p className='about-content'>
+          Himenaeos nec venenatis ante arcu cubilia nostra convallis conubia
+          commodo montes. Ad fames bibendum vel dolor molestie in sit, suscipit
+          erat sapien interdum? Natoque per parturient viverra. Orci varius
+          viverra mollis non. Ac mi quam dis aliquet erat curabitur scelerisque
+          imperdiet volutpat sem. Class tellus vitae porttitor non ipsum rhoncus
+          consectetur mauris iaculis augue parturient. Placerat pharetra aliquam
+          ornare mauris ut justo. Vulputate, sagittis mauris nulla ridiculus
+          pellentesque neque quis nibh himenaeos. Cursus. Sociosqu penatibus
+          cubilia orci lacinia rhoncus vel iaculis vivamus odio tristique
+          consectetur metus. Cubilia nisl imperdiet gravida aptent sodales urna.
+          Himenaeos fames dignissim, commodo per imperdiet metus in duis tempus.
+        </p>
       </div>
-      <div className='loves-links'>
-        <ul className='loves'>
-          <p>loves = </p>
-          <li>[</li>
-          <li>“salsa dancing”,</li>
-          <li>“team driven debauchery”,</li>
-          <li>"wholeness from learning and teaching”,</li>
-          <li>"the art of running”,</li>
-          <li>"late night problem solving”,</li>
-          <li>"the stackoverflow gods who answer questions”,</li>
-          <li>"seasonal tasting menus with a heavy pour of wine knowledge”,</li>
-          <li>"to visually invoke your attention”,</li>
-          <li>"chicago summers”</li>
-          <li>]</li>
-        </ul>
-        <ul className='hates'>
-          <p>hates =</p>
-          <li>[</li>
-          <li>“open mouth chewers”,</li>
-          <li>“meanies”</li>
-          <li>]</li>
-        </ul>
-        <div className='resume-download'>
+
+      {/* <div className='resume-download'>
           {/* resume download link */}
-          <a
+      {/* <a
             className='resume-link'
             href='resume/CARL-REDDING-RESUME.pdf'
             download='CarlsResume.pdf'
@@ -66,10 +40,10 @@ const About = () => {
           >
             Word Doc Resume
           </a>
-        </div>
-      </div>
+        </div>  */}
+      {/* </div> */}
     </div>
   );
-};
+}
 
 export default About;

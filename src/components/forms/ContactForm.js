@@ -1,4 +1,5 @@
 import React from "react";
+
 // import left from "../../stockPhotos/jazzsoftcolor2.png";
 import "./Contact.scss";
 
