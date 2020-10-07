@@ -1,35 +1,47 @@
 @import "../../index.scss";
 
-.design-container {
+.Design-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 800px;
+  // max-width: 800px;
   padding: 50px;
   margin: 0 auto;
-  .design-title {
+  .Design-title {
+    color: $offwhite;
     font-weight: 600;
     margin-top: 10px;
   }
   @include respond-to("desktop") {
-    .about-title {
+    .Design-title {
       margin-top: 30px;
     }
   }
   .design-line {
     width: 100%;
-    border-bottom: 1px solid $darktheme;
+    border-bottom: 1px solid $offwhite;
     padding: 0px 50px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .wip-img {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 4;
-    max-width: 800px;
-    width: 100%;
-    height: auto;
-    place-self: center;
+  .message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wip-img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      place-self: center;
+    }
+    .design-footnote {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      text-align: right;
+    }
   }
 }
