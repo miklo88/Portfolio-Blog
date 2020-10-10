@@ -5,11 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  // max-width: 800px;
+  max-width: 800px;
   padding: 50px;
+  background-image: url("../../stockPhotos/julep.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
   margin: 0 auto;
   .Design-title {
-    color: $offwhite;
+    // color: $offwhite;
+    color: $darktheme;
     font-weight: 600;
     margin-top: 10px;
   }
@@ -20,22 +26,24 @@
   }
   .design-line {
     width: 100%;
-    border-bottom: 1px solid $offwhite;
+    // border-bottom: 1px solid $offwhite;
+    border-bottom: 1px solid $darktheme;
     padding: 0px 50px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 300px;
   }
   .message-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .wip-img {
-      max-width: 800px;
-      width: 100%;
-      height: auto;
-      place-self: center;
-    }
+
+    // .wip-img {
+    //   max-width: 800px;
+    //   width: 100%;
+    //   height: auto;
+    //   place-self: center;
+    // }
     .design-footnote {
       display: flex;
       flex-direction: column;
