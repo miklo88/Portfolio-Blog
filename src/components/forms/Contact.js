@@ -1,9 +1,7 @@
 import React from "react";
-
-// import left from "../../stockPhotos/jazzsoftcolor2.png";
 import "./Contact.scss";
 
-function ContactForm() {
+function Contact() {
   return (
     <div id='contact-container' className='contact-container'>
       <h1 className='contact-title'>CONTACT</h1>
@@ -37,10 +35,9 @@ function ContactForm() {
         {/* submit button */}
         <button className='submit-contact' type='submit'>
           <i class='far fa-paper-plane'></i>
-          {/* <i class='fas fa-paper-plane'></i> */}
         </button>
       </form>
     </div>
   );
 }
-export default ContactForm;
+export default Contact;

@@ -26,9 +26,9 @@
       color: $darktheme;
     }
   }
-
+  // mobile styling
   @include respond-to("mobile") {
-    ////////3 mobile/tablet menu with dropdown
+    //////// mobile/tablet menu with dropdown
     .toggle-nav {
       -webkit-appearance: none;
       display: flex;
@@ -59,25 +59,24 @@
     .change {
       display: none;
     }
-    /////////////////////////////////////////////////// display dropdown
-    // show nav-tabs!
+    // DISPLAY DROPDOWN ////////////////////////////// DISPLAY DROPDOWN
+    // SHOW
     .show {
       z-index: 1500;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      // height: 100%
-      background-color: white;
+      background-color: $offwhite;
       transition: 2.5s;
-      margin-top: 167px;
+      margin-top: 169px;
 
       .mobile-nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80px;
-        padding: 20px 40px;
+        height: 100%;
+        padding: 40px 40px;
         border: none;
         cursor: pointer;
         background: none;

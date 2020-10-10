@@ -11,7 +11,6 @@ function Nav() {
     document.getElementById("toggle-menu").classList.toggle("change");
     document.getElementById("nav-tabs").classList.toggle("show");
   }
-
   // here i want to have a un-toggled state of logo and either menu or items if desktop.
   // on click of menu if menu is tablet or mobile size.
   return (
@@ -21,12 +20,11 @@ function Nav() {
       <Link className='home-link' to='/'>
         MIKLO
       </Link>
-      {/* onclick this dissapears */}
+      {/* MOBILE NAV // CHANGE */}
       <button onClick={toggleMenu} className='toggle-nav' id='toggle-menu'>
         menu
       </button>
-      {/* TOGGLED STATE */}
-      {/* onclick menu aka dropdown */}
+      {/* SHOW */}
       {/* navigation links */}
       <nav className='nav-tabs' id='nav-tabs'>
         {/* mobile nav menu aka change */}
@@ -42,7 +40,7 @@ function Nav() {
           design
         </Link>
         {/* contact page */}
-        <Link className='links basic-button' to='/contactForm'>
+        <Link className='links basic-button' to='/contact'>
           contact
         </Link>
       </nav>

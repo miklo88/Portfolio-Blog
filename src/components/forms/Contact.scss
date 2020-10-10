@@ -66,17 +66,19 @@
 
       .fa-paper-plane {
         text-decoration: none;
-        color: $lightgrey;
+        color: $darktheme;
         padding: 10px 80px;
         font-size: 1.5rem;
         &:hover {
-          color: $darktheme;
+          color: $lightgrey;
         }
         &:active {
           color: white;
         }
       }
-
+      &:hover {
+        border: 1px solid $lightgrey;
+      }
       &:active {
         border: 1px solid $lightgrey;
         background-color: $lightgrey;
