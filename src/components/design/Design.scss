@@ -11,45 +11,43 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  width: 100%;
+  height: 600px;
   margin: 0 auto;
-  .Design-title {
-    // color: $offwhite;
-    color: $darktheme;
-    font-weight: 600;
-    margin-top: 10px;
-  }
-  @include respond-to("desktop") {
-    .Design-title {
-      margin-top: 30px;
-    }
-  }
-  .design-line {
-    width: 100%;
-    // border-bottom: 1px solid $offwhite;
-    border-bottom: 1px solid $darktheme;
-    padding: 0px 50px;
-    margin-top: 10px;
-    margin-bottom: 300px;
-  }
   .message-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
 
-    // .wip-img {
-    //   max-width: 800px;
-    //   width: 100%;
-    //   height: auto;
-    //   place-self: center;
-    // }
-    .design-footnote {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-end;
-      text-align: right;
+    .Design-title {
+      align-items: center;
+      color: $darktheme;
+      font-weight: 600;
+      margin-top: 10px;
     }
+    @include respond-to("desktop") {
+      .Design-title {
+        margin-top: 30px;
+      }
+    }
+    .design-line {
+      width: 100%;
+      border-bottom: 1px solid $darktheme;
+      padding: 0px 50px;
+      margin-top: 10px;
+      margin-bottom: 300px;
+    }
+  }
+  .design-footnote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    width: 100%;
+    color: $darktheme;
   }
 }
