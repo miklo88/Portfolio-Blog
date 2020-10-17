@@ -34,7 +34,7 @@ function Contact() {
 
         {/* submit button */}
         <button className='submit-contact' type='submit'>
-          <i class='far fa-paper-plane'></i>
+          <i className='far fa-paper-plane'></i>
         </button>
       </form>
     </div>
