@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "./Nav.scss";
 
 function Nav() {
@@ -17,7 +16,7 @@ function Nav() {
     <div className='nav-container'>
       {/* UN-TOGGLED STATE */}
       {/* home link */}
-      <Link className='home-link' to='/'>
+      <Link className='home-link' to='/landing'>
         MIKLO
       </Link>
       {/* MOBILE NAV // CHANGE */}
