@@ -25,13 +25,16 @@ const contact = matchPath("/contact", {
   exact: true,
   strict: false,
 });
+
 function Footer() {
   let { id } = useParams();
   console.log("useParams", useParams());
+  console.log("outReturn", id);
   // checking params path against matchPath
   let footerMenu;
   if (id === landing) {
     footerMenu = <WhiteboardLanding />;
+    console.log("footerMenu", footerMenu);
   } else if (id === about) {
     footerMenu = <WhiteboardAbout />;
   } else if (id === design) {
@@ -44,8 +47,8 @@ function Footer() {
 
   return (
     <>
-      <>{console.log({ id })}</>
-      <div>hook: {id}</div>
+      <>{console.log("id", { id })}</>
+      {/* <div>hook: {id}</div> */}
       {/* <WhiteboardLanding /> */}
       {/* {console.log(footerMenu)} */}
       {footerMenu}

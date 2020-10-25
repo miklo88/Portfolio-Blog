@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import { Switch, Route, Link } from "react-router-dom";
+// import ID from "../../whiteboard/Whiteboard";
 import "./Nav.scss";
 
 function Nav() {
@@ -43,6 +45,11 @@ function Nav() {
           contact
         </Link>
       </nav>
+      {/* <>
+        <Switch>
+          <Route path='/:id' children={ID} />
+        </Switch>
+      </> */}
     </div>
   );
 }
