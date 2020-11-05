@@ -42,18 +42,22 @@ function WhiteboardLanding() {
         {/* landing display / DISPLAY 1. */}
         <div className='alpha'>
           <Link className='alpha-link' to='/about'>
-            <h3 className='alpha title'>{alpha1}</h3>
+            <h3>{alpha1}</h3>
           </Link>
         </div>
         <div className='bravo'>
           <Link className='bravo-link' to='/design'>
-            <h3 className='bravo title'>{bravo2}</h3>
+            <h3>{bravo2}</h3>
           </Link>
         </div>
         <div className='charlie'>
+          {/* home link miklo */}
+          <Link className='miklo_logo' to='/'>
+            <img className='miklo_lemon' src={miklo_lemon} alt='miklo_lemon' />
+          </Link>
           {/* contact link */}
           <Link className='charlie-link' to='/contact'>
-            <h3 className='charlie title'>{charlie3}</h3>
+            <h3>{charlie3}</h3>
           </Link>
           <div className='logos'>
             <div className='footer-icons'>
@@ -67,14 +71,6 @@ function WhiteboardLanding() {
                 <i className='fab fa-twitter'></i>
               </a>
             </div>
-            {/* home link miklo */}
-            <Link to='/'>
-              <img
-                className='miklo_lemon'
-                src={miklo_lemon}
-                alt='miklo_lemon'
-              />
-            </Link>
           </div>
         </div>
       </div>
