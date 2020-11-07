@@ -88,38 +88,32 @@
         text-decoration: underline;
       }
     }
-    .logos {
+    //SOCIAL MEDIA ICONS.
+    .footer-icons {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100%;
       width: auto;
-      .footer-icons {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .fa-linkedin {
-          color: $offwhite;
-          padding: 10px;
-          &:hover {
-            color: $darktheme;
-          }
+      .fa-linkedin {
+        color: $offwhite;
+        padding: 10px;
+        &:hover {
+          color: $darktheme;
         }
-        .fa-github-square {
-          color: $offwhite;
-          padding: 10px;
-          &:hover {
-            color: $darktheme;
-          }
+      }
+      .fa-github-square {
+        color: $offwhite;
+        padding: 10px;
+        &:hover {
+          color: $darktheme;
         }
-        .fa-instagram-square {
-          color: $offwhite;
-          padding: 10px;
-          &:hover {
-            color: $darktheme;
-          }
+      }
+      .fa-instagram-square {
+        color: $offwhite;
+        padding: 10px;
+        &:hover {
+          color: $darktheme;
         }
       }
     }

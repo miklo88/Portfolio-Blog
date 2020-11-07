@@ -59,18 +59,17 @@ function WhiteboardLanding() {
           <Link className='charlie-link' to='/contact'>
             <h3>{charlie3}</h3>
           </Link>
-          <div className='logos'>
-            <div className='footer-icons'>
-              <a href='https://www.linkedin.com/in/carl-redding-000a4281/'>
-                <i className='fab fa-linkedin'></i>
-              </a>
-              <a href='https://github.com/miklo88'>
-                <i className='fab fa-github-square'></i>
-              </a>
-              <a href='https://instagram.com/miklo34'>
-                <i className='fab fa-instagram-square'></i>
-              </a>
-            </div>
+
+          <div className='footer-icons'>
+            <a href='https://www.linkedin.com/in/carl-redding-000a4281/'>
+              <i className='fab fa-linkedin'></i>
+            </a>
+            <a href='https://github.com/miklo88'>
+              <i className='fab fa-github-square'></i>
+            </a>
+            <a href='https://instagram.com/miklo34'>
+              <i className='fab fa-instagram-square'></i>
+            </a>
           </div>
         </div>
       </div>
