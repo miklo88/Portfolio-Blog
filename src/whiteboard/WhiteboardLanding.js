@@ -62,13 +62,13 @@ function WhiteboardLanding() {
           <div className='logos'>
             <div className='footer-icons'>
               <a href='https://www.linkedin.com/in/carl-redding-000a4281/'>
-                <i className='fab fa-linkedin-in'></i>
+                <i className='fab fa-linkedin'></i>
               </a>
               <a href='https://github.com/miklo88'>
-                <i className='fab fa-github'></i>
+                <i className='fab fa-github-square'></i>
               </a>
-              <a href='https://twitter.com/Miklo13F'>
-                <i className='fab fa-twitter'></i>
+              <a href='https://instagram.com/miklo34'>
+                <i className='fab fa-instagram-square'></i>
               </a>
             </div>
           </div>

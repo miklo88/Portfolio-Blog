@@ -100,21 +100,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .fa-linkedin-in {
+        .fa-linkedin {
           color: $offwhite;
           padding: 10px;
           &:hover {
             color: $darktheme;
           }
         }
-        .fa-github {
+        .fa-github-square {
           color: $offwhite;
           padding: 10px;
           &:hover {
             color: $darktheme;
           }
         }
-        .fa-twitter {
+        .fa-instagram-square {
           color: $offwhite;
           padding: 10px;
           &:hover {
