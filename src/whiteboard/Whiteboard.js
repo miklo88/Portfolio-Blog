@@ -1,57 +1,31 @@
 import React from "react";
-import { matchPath } from "react-router";
-import { useParams } from "react-router-dom";
+
 import WhiteboardLanding from "./WhiteboardLanding";
 import WhiteboardAbout from "./WhiteboardAbout";
 import WhiteboardDesign from "./WhiteboardDesign";
 import WhiteboardContact from "./WhiteboardContact";
-const landing = matchPath("/landing", {
-  path: "/components/router/Router.js",
-  exact: true,
-  strict: false,
-});
-const about = matchPath("/about", {
-  path: "/components/router/Router.js",
-  exact: true,
-  strict: false,
-});
-const design = matchPath("/design", {
-  path: "/components/router/Router.js",
-  exact: true,
-  strict: false,
-});
-const contact = matchPath("/contact", {
-  path: "/components/router/Router.js",
-  exact: true,
-  strict: false,
-});
 
 function Footer() {
-  let { id } = useParams();
-  console.log("useParams", useParams());
-  console.log("outReturn", id);
-  // checking params path against matchPath
-  let footerMenu;
-  if (id === landing) {
-    footerMenu = <WhiteboardLanding />;
-    console.log("footerMenu", footerMenu);
-  } else if (id === about) {
-    footerMenu = <WhiteboardAbout />;
-  } else if (id === design) {
-    footerMenu = <WhiteboardDesign />;
-  } else if (id === contact) {
-    footerMenu = <WhiteboardContact />;
-  } else {
-    footerMenu = <WhiteboardLanding />;
+  //dictionary to goof around with.
+  const footers = {
+    1: <WhiteboardLanding />,
+    2: <WhiteboardAbout />,
+    3: <WhiteboardDesign />,
+    4: <WhiteboardContact />,
+  };
+  console.log(footers);
+  const proppasser = { one: 10, two: 20 };
+  function name2() {
+    return proppasser.one;
   }
 
   return (
     <>
-      <>{console.log("id", { id })}</>
-      {/* <div>hook: {id}</div> */}
-      {/* <WhiteboardLanding /> */}
-      {/* {console.log(footerMenu)} */}
-      {footerMenu}
+      {/* {footers} */}
+      <WhiteboardLanding name='FOOTER' name1='FOOTER1' name2={name2()} />
+      {/* <WhiteboardAbout />
+      <WhiteboardDesign />
+      <WhiteboardContact /> */}
     </>
   );
 }

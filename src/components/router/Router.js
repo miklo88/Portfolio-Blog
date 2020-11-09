@@ -10,9 +10,9 @@ function Router() {
     <>
       <Switch>
         <Route exact path='/landing' component={Landing} />
-        <Route path='/about' component={About} />
-        <Route path='/design' component={Design} />
-        <Route path='/contact' component={Contact} />
+        <Route exact path='/about' component={About} />
+        <Route exact path='/design' component={Design} />
+        <Route exact path='/contact' component={Contact} />
       </Switch>
     </>
   );

@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 import miklo_lemon from "../stockPhotos/miklo_lemon.png";
 import "./WhiteboardLanding.scss";
 
-function WhiteboardLanding() {
+function WhiteboardLanding(props) {
   const [alpha1, sayAlpha1] = useState("");
   const [bravo2, sayBravo2] = useState("");
   const [charlie3, sayCharlie3] = useState("");
-  // passing the variable saying to the useEffect in the sayGreet()
 
-  // let one = <p>ABOUT</p>;
   let one = "ABOUT";
   let two = "DESIGN";
   let three = "CONTACT";
@@ -34,6 +32,7 @@ function WhiteboardLanding() {
     }, 100);
     return () => clearTimeout(timer);
   }, [one]);
+
   return (
     // if link = / display Landing Footer THIS IS LANDING FOOTER
     <>
@@ -58,6 +57,10 @@ function WhiteboardLanding() {
           {/* contact link */}
           <Link className='charlie-link' to='/contact'>
             <h3>{charlie3}</h3>
+            {/* props injection */}
+            <h3>{props.name}</h3>
+            <h3>{props.name1}</h3>
+            <h3>{props.name2}</h3>
           </Link>
 
           <div className='footer-icons'>
