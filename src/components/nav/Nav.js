@@ -7,7 +7,6 @@ function Nav() {
   // menu toggle
   function toggleMenu(e) {
     e.preventDefault();
-
     document.getElementById("toggle-menu").classList.toggle("change");
     document.getElementById("nav-tabs").classList.toggle("show");
   }
