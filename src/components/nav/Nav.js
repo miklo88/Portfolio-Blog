@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Switch, Route, Link } from "react-router-dom";
-// import ID from "../../whiteboard/Whiteboard";
+
 import "./Nav.scss";
 
 function Nav() {
   // menu toggle
   function toggleMenu(e) {
     e.preventDefault();
-    // console.log("you clicked menu");
+
     document.getElementById("toggle-menu").classList.toggle("change");
     document.getElementById("nav-tabs").classList.toggle("show");
   }
@@ -18,7 +17,7 @@ function Nav() {
     <div className='nav-container'>
       {/* UN-TOGGLED STATE */}
       {/* home link */}
-      <Link className='home-link' to='/landing'>
+      <Link className='home-link' to='/'>
         MIKLO
       </Link>
       {/* MOBILE NAV // CHANGE */}
@@ -45,11 +44,6 @@ function Nav() {
           contact
         </Link>
       </nav>
-      {/* <>
-        <Switch>
-          <Route path='/:id' children={ID} />
-        </Switch>
-      </> */}
     </div>
   );
 }

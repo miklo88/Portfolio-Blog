@@ -9,7 +9,7 @@ function Router() {
   return (
     <>
       <Switch>
-        <Route exact path='/landing' component={Landing} />
+        <Route exact path='/' component={Landing} />
         <Route exact path='/about' component={About} />
         <Route exact path='/design' component={Design} />
         <Route exact path='/contact' component={Contact} />
