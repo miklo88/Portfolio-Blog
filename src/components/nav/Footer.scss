@@ -1,59 +1,78 @@
-// @import "../../index.scss";
+@import "../../index.scss";
 
-// .footer-container {
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   grid-template-rows: repeat(3, minmax(20px, auto));
-//   background-color: $lightgrey;
-//   /// nested items in the grid.
-//   .links,
-//   .basic-button {
-//     grid-column: 1;
-//     grid-row: 1 / span 3;
-//     place-self: center;
-//     .fa-paper-plane {
-//       text-decoration: none;
-//       padding: 10px 30px;
-//       color: $offwhite;
-//       font-size: 1.2rem;
-//       font-weight: 200;
-//       background: none;
-//       border: none;
-//       cursor: pointer;
-//       &:hover {
-//         transition: 0.7s;
-//         color: $redAccent;
-//       }
-//       &:active {
-//         color: $lightgrey;
-//       }
-//     }
-//   }
-//   .footer-icons {
-//     grid-column: 3;
-//     grid-row: 1 / span 3;
-//     place-self: center;
-//     justify-content: space-evenly;
-//     .fa-linkedin-in {
-//       color: $offwhite;
-//       padding: 10px;
-//       &:hover {
-//         color: $redAccent;
-//       }
-//     }
-//     .fa-github {
-//       color: $offwhite;
-//       padding: 10px;
-//       &:hover {
-//         color: $redAccent;
-//       }
-//     }
-//     .fa-twitter {
-//       color: $offwhite;
-//       padding: 10px;
-//       &:hover {
-//         color: $redAccent;
-//       }
-//     }
-//   }
-// }
+.footer-container {
+  z-index: 1600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightgrey;
+  height: auto;
+  margin: 0 auto;
+
+  /// bravo
+  .bravo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 25%;
+    background-color: $offwhite;
+    justify-content: center;
+    align-items: center;
+
+    //SOCIAL MEDIA ICONS.
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: auto;
+      .fa-linkedin {
+        color: $darktheme;
+        padding: 10px;
+        &:hover {
+          color: $offwhite;
+        }
+      }
+      .fa-github-square {
+        color: $darktheme;
+        padding: 10px;
+        &:hover {
+          color: $offwhite;
+        }
+      }
+      .fa-instagram-square {
+        color: $darktheme;
+        padding: 10px;
+        &:hover {
+          color: $offwhite;
+        }
+      }
+    }
+  }
+  // logo icon and contact links. what else should go in this part of the footer?
+  .charlie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightgrey;
+
+    .charlie-link {
+      text-decoration: none;
+      color: black;
+      padding: 20px;
+      &:hover {
+        transition: 0.2s;
+        color: $lightgrey;
+        text-decoration: underline;
+      }
+      &:active {
+        color: $lightgrey;
+        text-decoration: underline;
+      }
+    }
+  }
+}
