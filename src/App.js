@@ -10,7 +10,7 @@ function App() {
     <div className='App'>
       <Nav />
       <Router />
-      <Footer />
+      <Footer display='boolean' />
     </div>
   );
 }

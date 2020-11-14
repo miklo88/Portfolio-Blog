@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Footer.scss";
 
-function Footer() {
+function Footer(props) {
   return (
     <>
       {/* displaying the greet from useEffect */}
@@ -23,7 +23,7 @@ function Footer() {
           </div>
           <div className='charlie'>
             <Link className='charlie-link' to='/contact'>
-              <i className='fas fa-envelope-square'></i>
+              <i className='fas fa-envelope-square'>{props.display}</i>
             </Link>
           </div>
         </div>
