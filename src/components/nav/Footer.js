@@ -23,16 +23,10 @@ function Footer() {
           </div>
           <div className='charlie'>
             <Link className='charlie-link' to='/contact'>
-              CONTACT
+              <i className='fas fa-envelope-square'></i>
             </Link>
           </div>
         </div>
-
-        {/* <div className='charlie'>
-          <Link className='charlie-link' to='/contact'>
-            CONTACT
-          </Link>
-        </div> */}
       </div>
     </>
   );
