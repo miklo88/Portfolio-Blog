@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $lightgrey;
+  // background-color: $lightgrey;
   height: auto;
   margin: 0 auto;
 
@@ -18,6 +18,7 @@
     align-items: flex-start;
     width: 100%;
     height: 25%;
+    // background-color: $offwhite;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -27,14 +28,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      // height: 100%;
-      // width: 100%;
       .fab {
         color: $darktheme;
         padding: 20px;
         font-size: 1.8rem;
         &:hover {
-          color: $offwhite;
+          // color: $offwhite;
+          color: $lightgrey;
         }
       }
     }
@@ -45,7 +45,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: $lightgrey;
+    // background-color: $lightgrey;
 
     .charlie-link {
       text-decoration: none;

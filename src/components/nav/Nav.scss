@@ -6,7 +6,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-width: 320px;
   height: 80px;
   margin: 0 auto;
   //////// home button - MIKLO
@@ -21,10 +20,7 @@
     padding: 40px 40px;
     transition: 0.7s;
     &:hover {
-      color: $redAccent;
-    }
-    &:active {
-      color: $darktheme;
+      text-decoration: underline;
     }
   }
   // mobile styling

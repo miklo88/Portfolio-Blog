@@ -21,13 +21,18 @@ function Footer() {
               <i className='fab fa-instagram-square'></i>
             </a>
           </div>
+          <div className='charlie'>
+            <Link className='charlie-link' to='/contact'>
+              CONTACT
+            </Link>
+          </div>
         </div>
 
-        <div className='charlie'>
+        {/* <div className='charlie'>
           <Link className='charlie-link' to='/contact'>
             CONTACT
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );
