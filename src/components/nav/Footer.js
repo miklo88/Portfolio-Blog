@@ -23,11 +23,16 @@ function Footer(props) {
           </div>
           <div className='charlie'>
             <Link className='charlie-link' to='/contact'>
-              <i className='fas fa-envelope-square'>{props.display}</i>
+              <i className='fas fa-envelope-square'>{props.name}</i>
             </Link>
+            <p>{props.username}</p>
+            <p>{props.age}</p>
+            <p>{props.value}</p>
+            <p>{props.password}</p>
           </div>
         </div>
       </div>
+      {console.log(props)}
     </>
   );
 }
