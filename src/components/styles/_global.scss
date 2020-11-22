@@ -1,4 +1,4 @@
-///// buttons/ links
+// ///// buttons/ links
 .basic-button {
   color: $darktheme;
   cursor: pointer;
@@ -7,7 +7,7 @@
   transition: 0.2s;
   &:hover {
     transition: 0.2s;
-    color: $redAccent;
+    text-decoration: underline;
   }
   &:active {
     color: $lightgrey;
