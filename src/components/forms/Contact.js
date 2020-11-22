@@ -12,29 +12,33 @@ function Contact() {
         method='post'
         encType='text/palin'
       >
-        <label className='label-contact name'>name:</label>
-        <input
-          className='input-contact name'
-          type='text'
-          placeholder='your first and last name.'
-        />
-
-        <label className='label-contact email'>email:</label>
-        <input
-          className='input-contact email'
-          type='email'
-          placeholder='your-email@email.com'
-        />
-
-        <label className='label-contact subject'>subject:</label>
-        <input
-          className='input-contact subject'
-          placeholder='subject of message'
-        />
-
-        <label className='label-contact message'>message:</label>
-        <input className='input-contact message' placeholder='Hello :)' />
-
+        <label className='label-contact name'>
+          name:
+          <input
+            className='input-contact name'
+            type='text'
+            placeholder='Your first and last name.'
+          />
+        </label>
+        <label className='label-contact email'>
+          email:
+          <input
+            className='input-contact email'
+            type='email'
+            placeholder='Your-email@email.com'
+          />
+        </label>
+        <label className='label-contact subject'>
+          subject:
+          <input
+            className='input-contact subject'
+            placeholder='Subject of message'
+          />
+        </label>
+        <label className='label-contact message'>
+          message:
+          <input className='input-contact message' placeholder='Hola :) ' />
+        </label>
         {/* submit button */}
         <button className='submit-contact' type='submit'>
           <i className='far fa-paper-plane'></i>

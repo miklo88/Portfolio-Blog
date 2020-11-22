@@ -25,13 +25,15 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  // form of le contact formsy forms.
+  // contact form container.
+  // includes name, email, subject, message.
   .contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    //all labels
     .label-contact {
       width: 100%;
       font-size: 1rem;
@@ -39,6 +41,7 @@
       padding-bottom: 5px;
       margin-top: 5px;
     }
+    //all inputs
     .input-contact {
       width: 100%;
       font-size: 1rem;
@@ -46,9 +49,6 @@
       padding-bottom: 5px;
       margin-top: 5px;
       border: 1px solid $darktheme;
-    }
-    .input-contact.message {
-      text-align: left;
     }
 
     .submit-contact {
