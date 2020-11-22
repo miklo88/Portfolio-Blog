@@ -9,7 +9,11 @@ function About() {
       <span className='about-line'></span>
       {/* resume on display */}
       <div className='about-content'>
-        <img src='resume/Carl-Redding-Resume.jpg' alt='display-window' />
+        <img
+          className='about-resume'
+          src='resume/Carl-Redding-Resume.jpg'
+          alt='display-window'
+        />
       </div>
       {/* resumes / need to be updated. 22-NOV-2020 latest update.*/}
       {/* resume download link */}

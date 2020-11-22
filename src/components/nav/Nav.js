@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Nav.scss";
 
 function Nav() {
-  // menu toggle
+  // mobile menu-dropdown toggle
   function toggleMenu(e) {
     e.preventDefault();
     document.getElementById("toggle-menu").classList.toggle("change");

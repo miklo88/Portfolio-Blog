@@ -26,6 +26,11 @@
   }
   .about-content {
     padding-bottom: 5px;
+    .about-resume {
+      min-width: 300px;
+      height: auto;
+      width: 100%;
+    }
   }
   .resume-link {
     color: $darktheme;
