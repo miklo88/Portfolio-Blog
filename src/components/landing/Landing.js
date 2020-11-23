@@ -1,6 +1,6 @@
 import React from "react";
 import landing from "../../stockPhotos/discovery.jpg";
-import "./Landing.scss";
+import "./landing.scss";
 
 function Landing() {
   return (

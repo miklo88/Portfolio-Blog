@@ -1,10 +1,9 @@
 import React from "react";
-import Nav from "./components/nav/Nav";
-// import Footer from "./whiteboard/Whiteboard";
-import Router from "./components/router/Router";
-import Footer from "./components/nav/Footer";
+import Nav from "./components/nav/nav.js";
+import Router from "./components/router/router.js";
+import Footer from "./components/nav/footer.js";
 
-import "./App.scss";
+import "./app.scss";
 
 function App() {
   return (

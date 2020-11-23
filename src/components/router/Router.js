@@ -1,9 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import About from "../about/About.js";
-import Landing from "../landing/Landing.js";
-import Design from "../design/Design.js";
-import Contact from "../forms/Contact.js";
+import About from "../about/about.js";
+import Landing from "../landing/landing.js";
+import Design from "../design/design.js";
+import Contact from "../forms/contact.js";
 
 function Router() {
   return (
