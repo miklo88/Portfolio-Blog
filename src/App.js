@@ -3,7 +3,7 @@ import Nav from "./components/nav/nav.js";
 import Router from "./components/router/router.js";
 import Footer from "./components/nav/footer.js";
 
-import "./app.scss";
+import "./App.scss";
 
 function App() {
   return (
