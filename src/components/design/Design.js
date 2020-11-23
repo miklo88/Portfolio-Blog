@@ -1,17 +1,23 @@
 import React from "react";
+import API from "./API.js";
 import "./Design.scss";
 
 function Design() {
   return (
-    <div className='Design-container'>
-      <div className='message-container'>
-        <h1 className='Design-title'>DESIGN</h1>
-        <span className='design-line'></span>
+    <>
+      <div className='Design-container'>
+        <div className='message-container'>
+          <h1 className='Design-title'>DESIGN</h1>
+          <span className='design-line'></span>
+        </div>
+        <p className='design-footnote'>
+          Marshalls Landing<br></br>2019|Spring Cocktails<br></br>Mint Julep
+        </p>
       </div>
-      <p className='design-footnote'>
-        Marshalls Landing<br></br>2019|Spring Cocktails<br></br>Mint Julep
-      </p>
-    </div>
+      <div className='Api-container'>
+        <API />
+      </div>
+    </>
   );
 }
 
