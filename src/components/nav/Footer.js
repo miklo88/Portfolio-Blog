@@ -6,9 +6,11 @@ import "./Footer.scss";
 function Footer() {
   return (
     <>
-      {/* displaying the greet from useEffect */}
       <div className='footer-container'>
-        {/* landing display / DISPLAY 1. */}
+        <div className='alpha'>
+          MIKLO portfolio page created by Carl Redding.
+        </div>
+        {/* linkedin, github and instagram links */}
         <div className='bravo'>
           <div className='footer-icons'>
             <a href='https://www.linkedin.com/in/carl-redding-000a4281/'>
@@ -21,6 +23,7 @@ function Footer() {
               <i className='fab fa-instagram-square'></i>
             </a>
           </div>
+          {/* contact link icon => to contact component */}
           <div className='charlie'>
             <Link className='charlie-link' to='/contact'>
               <i className='fas fa-envelope-square'></i>

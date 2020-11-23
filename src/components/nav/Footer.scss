@@ -6,9 +6,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-color: $lightgrey;
+  background-color: $darktheme;
   height: auto;
   margin: 0 auto;
+  //alpha
+
+  color: $offwhite;
+  padding: 40px 10px;
 
   /// bravo
   .bravo {
@@ -18,8 +22,6 @@
     align-items: flex-start;
     width: 100%;
     height: 25%;
-    // background-color: $offwhite;
-    background-color: white;
     justify-content: center;
     align-items: center;
 
@@ -29,11 +31,10 @@
       justify-content: center;
       align-items: center;
       .fab {
-        color: $darktheme;
-        padding: 20px;
-        font-size: 1.8rem;
+        color: $offwhite;
+        padding: 20px 0px 0px 20px;
+        font-size: 1.5rem;
         &:hover {
-          // color: $offwhite;
           color: $lightgrey;
         }
       }
@@ -45,21 +46,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    // background-color: $lightgrey;
 
+    //mobile
     .charlie-link {
       text-decoration: none;
-      font-size: 1.8rem;
-      color: black;
-      padding: 20px;
+      font-size: 1.5rem;
+      color: $offwhite;
+      padding: 20px 0px 0px 20px;
       &:hover {
         transition: 0.2s;
         color: $lightgrey;
-        text-decoration: underline;
-      }
-      &:active {
-        color: $lightgrey;
-        text-decoration: underline;
       }
     }
   }
