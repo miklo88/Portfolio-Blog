@@ -1,7 +1,7 @@
 import React from "react";
 //GITHUB REPOS {API}
-import API from "./api.js";
-import "./design.scss";
+import API from "./Api.js";
+import "./Design.scss";
 
 function Design() {
   return (

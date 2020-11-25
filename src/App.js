@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "./components/nav/nav.js";
-import Router from "./components/router/router.js";
-import Footer from "./components/nav/footer.js";
+import Nav from "./components/nav/Nav.js";
+import Router from "./components/router/Router.js";
+import Footer from "./components/nav/Footer.js";
 
 import "./App.scss";
 
