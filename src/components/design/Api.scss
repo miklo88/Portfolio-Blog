@@ -1,19 +1,31 @@
-// api.js file
+// ERROR MESSAGE STYLES
 .error-message {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
+// LOADING... STYLE
 .loading-message {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
+// THE ENTIRE LIST OF REPOS
 .repo-items {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px 10px;
+  // EACH INDIVIDUAL REPO
+  .repo-item {
+    padding: 10px 10px;
+    .item {
+      padding: 10px;
+    }
+  }
 }

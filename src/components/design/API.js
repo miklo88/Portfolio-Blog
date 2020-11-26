@@ -8,7 +8,7 @@ export default function API() {
   //functional componentDidMount() the useEffect will only run once
   useEffect(() => {
     // added pagination and established how many repos I want to display.
-    fetch("https://api.github.com/users/miklo88/repos?page=1&per_page=174")
+    fetch("https://api.github.com/users/miklo88/repos?page=1&per_page=1000")
       // fetch("https://api.github.com/users/miklo88/repos")
       .then((res) => res.json())
       .then(
@@ -33,12 +33,14 @@ export default function API() {
     return (
       <div className='repo-items'>
         {repos.map((repo) => (
-          <p key={repo.id}>
-            {repo.name}
+          <p className='repo-item' key={repo.id}>
             {/* UNPACKING THE OWNER URL */}
-            {/* {repo.owner.avatar_url} */}
-            {/* {repo.owner.html_url} */}
+            <p className='item'>{repo.name}</p>
+            <p className='item'>{repo.owner.avatar_url}</p>
+            <p className='item'>{repo.owner.html_url}</p>
+
             {/* {repo.owner.starred_url} */}
+            {/* {repo.pulls_url} */}
           </p>
         ))}
       </div>
