@@ -21,7 +21,7 @@ export default function API() {
         }
       );
   }, []);
-  console.log(repos);
+  // console.log(repos);
 
   if (error) {
     return <div>Whoops: {error.message}</div>;
