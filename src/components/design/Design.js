@@ -1,5 +1,5 @@
 import React from "react";
-//GITHUB REPOS {API}
+//GITHUB REPOS API
 import API from "./Api.js";
 import "./Design.scss";
 
@@ -15,9 +15,9 @@ function Design() {
           Marshalls Landing<br></br>2019|Spring Cocktails<br></br>Mint Julep
         </p>
       </div>
-      <div className='Api-container'>
-        <API />
-      </div>
+      {/* <div className='Api-container'> */}
+      <API />
+      {/* </div> */}
     </>
   );
 }

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import "./Design.scss";
 
 export default function API() {
   const [error, setError] = useState(null);
@@ -24,12 +24,12 @@ export default function API() {
   // console.log(repos);
 
   if (error) {
-    return <div>Whoops: {error.message}</div>;
+    return <div className='error-message'>Whoops: {error.message}</div>;
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <div className='loading-message'>Loading...</div>;
   } else {
     return (
-      <div>
+      <div className='repo-items'>
         {repos.map((repo) => (
           <p key={repo.id}>{repo.name}</p>
         ))}

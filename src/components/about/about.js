@@ -16,7 +16,6 @@ function About() {
         leadership, teamwork and impeccable standards. Enthusiastic about my
         development in Relativity's Fellowship program.
       </p>
-
       {/* resumes / need to be updated. 22-NOV-2020 latest update.*/}
       {/* resume download link */}
       <a
