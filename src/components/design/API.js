@@ -7,7 +7,9 @@ export default function API() {
   const [repos, setRepos] = useState([]);
   //functional componentDidMount() the useEffect will only run once
   useEffect(() => {
-    fetch("https://api.github.com/users/miklo88/repos?page=1&per_page=1000")
+    // added pagination and established how many repos I want to display.
+    fetch("https://api.github.com/users/miklo88/repos?page=1&per_page=174")
+      // fetch("https://api.github.com/users/miklo88/repos")
       .then((res) => res.json())
       .then(
         (result) => {
