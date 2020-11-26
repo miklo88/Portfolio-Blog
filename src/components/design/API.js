@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Design.scss";
+import "./Api.scss";
 
 export default function API() {
   const [error, setError] = useState(null);
@@ -7,7 +7,7 @@ export default function API() {
   const [repos, setRepos] = useState([]);
   //functional componentDidMount() the useEffect will only run once
   useEffect(() => {
-    fetch("https://api.github.com/users/miklo88/repos")
+    fetch("https://api.github.com/users/miklo88/repos?page=1&per_page=1000")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -21,7 +21,7 @@ export default function API() {
         }
       );
   }, []);
-  // console.log(repos);
+  console.log(repos);
 
   if (error) {
     return <div className='error-message'>Whoops: {error.message}</div>;
@@ -31,7 +31,13 @@ export default function API() {
     return (
       <div className='repo-items'>
         {repos.map((repo) => (
-          <p key={repo.id}>{repo.name}</p>
+          <p key={repo.id}>
+            {repo.name}
+            {/* UNPACKING THE OWNER URL */}
+            {/* {repo.owner.avatar_url} */}
+            {/* {repo.owner.html_url} */}
+            {/* {repo.owner.starred_url} */}
+          </p>
         ))}
       </div>
     );

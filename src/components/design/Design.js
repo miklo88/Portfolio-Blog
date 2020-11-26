@@ -15,9 +15,8 @@ function Design() {
           Marshalls Landing<br></br>2019|Spring Cocktails<br></br>Mint Julep
         </p>
       </div>
-      {/* <div className='Api-container'> */}
+      {/* api component */}
       <API />
-      {/* </div> */}
     </>
   );
 }
