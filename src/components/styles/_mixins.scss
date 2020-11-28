@@ -1,0 +1,28 @@
+// variables folder. colors / font etc.
+@import "./variables.scss";
+
+/// mixin for deleting default browser styling
+@mixin clearStyles {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+}
+
+// media breakpoint variable.
+$breakpoints: (
+  "mobile": 300px,
+  "tablet": 800px,
+  "desktop": 1000px,
+  "large": 1200px,
+) !default;
+// media breakpoints.
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn 'no value could be retrieved from `${breakpoint}`. ' + 'Available breakpoints are: #{map-keys($breakpoints)}.';
+  }
+}
