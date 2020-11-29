@@ -33,24 +33,35 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    //all labels
+    // ALL LABELS
     .label-contact {
       width: 100%;
-      font-size: 1rem;
       padding-top: 5px;
       padding-bottom: 5px;
       margin-top: 5px;
     }
-    //all inputs
+    //ALL INPUTS
     .input-contact {
       width: 100%;
-      font-size: 1rem;
       padding-top: 5px;
       padding-bottom: 5px;
       margin-top: 5px;
       border: 1px solid $darktheme;
     }
-
+    // MESSAGE TEXTAREA FIELD
+    .text-contact {
+      width: 100%;
+      padding-top: 5px;
+      margin-top: 5px;
+      border: 1px solid $darktheme;
+    }
+    //MESSAGE TEXTAREA PLACEHOLDER TEXT STYLE
+    ::placeholder {
+      font-size: 1rem;
+      padding-bottom: 5px;
+      $lato-font: "Lato", sans-serif;
+    }
+    // SUBMIT BUTTON
     .submit-contact {
       display: flex;
       flex-direction: column;
@@ -64,7 +75,7 @@
       background: none;
       cursor: pointer;
 
-      .fa-paper-plane {
+      .fa-paper-plwane {
         text-decoration: none;
         color: $darktheme;
         padding: 10px 80px;

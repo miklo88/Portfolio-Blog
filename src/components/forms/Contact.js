@@ -37,7 +37,7 @@ function Contact() {
         </label>
         <label className='label-contact message'>
           message:
-          <textarea className='input-contact message' />
+          <textarea className='text-contact message' placeholder='Hola!' />
         </label>
         {/* submit button */}
         <button className='submit-contact' type='submit'>
