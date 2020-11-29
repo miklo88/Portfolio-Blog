@@ -9,9 +9,9 @@ import three from "../../stockPhotos/coffee_L_logo.jpg";
 import four from "../../stockPhotos/Triple_Left.png";
 import five from "../../stockPhotos/Triple_Right.png";
 
-const photos = [two, three, four, five];
+// const photos = [two, three, four, five];
 
-console.log(photos);
+// console.log(photos);
 
 function Design() {
   return (
