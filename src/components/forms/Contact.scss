@@ -5,10 +5,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 800px;
+  max-width: 1200px;
   padding: 50px;
   margin: 0 auto;
-
   .contact-title {
     font-weight: 600;
     margin-top: 10px;
@@ -25,74 +24,62 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  // contact form container.
-  // includes name, email, subject, message.
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    // ALL LABELS
-    .label-contact {
-      width: 100%;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin-top: 5px;
-    }
-    //ALL INPUTS
-    .input-contact {
-      width: 100%;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin-top: 5px;
-      border: 1px solid $darktheme;
-    }
-    // MESSAGE TEXTAREA FIELD
-    .text-contact {
-      width: 100%;
-      padding-top: 5px;
-      margin-top: 5px;
-      border: 1px solid $darktheme;
-    }
-    //MESSAGE TEXTAREA PLACEHOLDER TEXT STYLE
-    ::placeholder {
-      font-size: 1rem;
-      padding-bottom: 5px;
-      $lato-font: "Lato", sans-serif;
-    }
-    // SUBMIT BUTTON
-    .submit-contact {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid $darktheme;
-      height: auto;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin-top: 15px;
-      background: none;
-      cursor: pointer;
 
-      .fa-paper-plwane {
-        text-decoration: none;
-        color: $darktheme;
-        padding: 10px 80px;
-        font-size: 1.5rem;
+  .contact-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 20px;
+    margin: 0 auto;
+    // CONTACT IMAGE
+    .contact-img {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      height: 800px;
+      min-width: 200px;
+      width: 300px;
+      object-fit: cover;
+      object-position: 0% 50%;
+    }
+    // INCLUDES SUBMIT BUTTON AND OTHER ICONS
+    .contact-form {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      place-self: center;
+      width: 100%;
+      // SUBMIT BUTTON
+      .submit-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $darktheme;
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 15px;
+        background: none;
+        cursor: pointer;
+
+        .fa-paper-plane {
+          text-decoration: none;
+          color: $darktheme;
+          padding: 10px 80px;
+          font-size: 1.5rem;
+          &:hover {
+            color: $lightgrey;
+          }
+          &:active {
+            color: white;
+          }
+        }
         &:hover {
-          color: $lightgrey;
+          border: 1px solid $lightgrey;
         }
         &:active {
-          color: white;
+          border: 1px solid $lightgrey;
+          background-color: $lightgrey;
         }
-      }
-      &:hover {
-        border: 1px solid $lightgrey;
-      }
-      &:active {
-        border: 1px solid $lightgrey;
-        background-color: $lightgrey;
       }
     }
   }
