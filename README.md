@@ -38,7 +38,7 @@ npm run test
 
 👤 **Carl Redding**
 
-- Twitter: [@Miklo13F](https://twitter.com/Miklo13F)
+- Instagram: [@Miklo13F](https://instagram.com/miklo34)
 - Github: [@miklo88](https://github.com/miklo88)
 - LinkedIn: [@carl-redding](https://linkedin.com/in/carl-redding)
 
