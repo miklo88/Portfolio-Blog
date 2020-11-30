@@ -26,7 +26,7 @@ function Design() {
       </h1>
       <div className='photos-container'>
         <img className='two' src={two} alt='two' />
-        <p className='title-two'>2019|Spring Cocktails Penecillin</p>
+        <p className='title-two'>2019|Spring Cocktails Penicillin</p>
         <img className='three' src={three} alt='three' />
         <p className='title-three'>2019|Coffee Bar Menu</p>
         <img className='four' src={four} alt='four' />
