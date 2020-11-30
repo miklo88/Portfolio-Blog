@@ -50,43 +50,95 @@
     color: $darktheme;
   }
 }
-.design-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.title {
+  text-align: center;
   font-size: 1rem;
   font-weight: 600;
   padding: 30px 0px 10px 0px;
 }
+.design-description {
+  font-size: 1rem;
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+//PHOTOS DESIGN MARSHALLS LANDING
 .photos-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   min-width: 200px;
   width: 100%;
   height: auto;
   margin: 0 auto;
+  @include respond-to("desktop") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 20px;
+    gap: 10px;
+    max-width: 1200px;
+    min-width: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
   .two {
     width: 100%;
     height: auto;
     padding: 20px 0px;
+    @include respond-to("desktop") {
+      grid-column: 1;
+      grid-row: 1;
+      place-self: center;
+    }
   }
   .three {
     width: 100%;
     height: auto;
     padding: 20px 0px;
+    @include respond-to("desktop") {
+      grid-column: 2;
+      grid-row: 1;
+      place-self: center;
+    }
   }
   .four {
     width: 100%;
     height: auto;
-    padding: 20px 0px;
+    padding: 20px 20px;
+    @include respond-to("desktop") {
+      display: none;
+    }
   }
-  .five {
-    width: 100%;
-    height: auto;
-    padding: 20px 0px;
+  // P TITLES FOR PHOTOS MARSHALLS LANDING
+  .title-two {
+    text-align: left;
+    padding-bottom: 20px;
+    @include respond-to("desktop") {
+      grid-column: 1;
+      grid-row: 2;
+      text-align: left;
+      padding-left: 10px;
+      font-weight: 600;
+    }
+  }
+  .title-three {
+    text-align: left;
+    padding-bottom: 20px;
+    @include respond-to("desktop") {
+      grid-column: 2;
+      grid-row: 2;
+      text-align: left;
+      padding-left: 10px;
+      font-weight: 600;
+    }
+  }
+  .title-four {
+    text-align: left;
+    padding-bottom: 20px;
+    @include respond-to("desktop") {
+      display: none;
+    }
   }
 }
