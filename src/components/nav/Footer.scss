@@ -6,12 +6,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $darktheme;
+  background-color: white;
   height: auto;
   margin: 0 auto;
   //alpha
 
-  color: $offwhite;
+  color: $darktheme;
   padding: 40px 10px;
 
   /// bravo
@@ -31,7 +31,7 @@
       justify-content: center;
       align-items: center;
       .fab {
-        color: $offwhite;
+        color: $darktheme;
         padding: 20px 0px 0px 20px;
         font-size: 1.5rem;
         &:hover {
@@ -51,7 +51,7 @@
     .charlie-link {
       text-decoration: none;
       font-size: 1.5rem;
-      color: $offwhite;
+      color: $darktheme;
       padding: 20px 0px 0px 20px;
       &:hover {
         transition: 0.2s;

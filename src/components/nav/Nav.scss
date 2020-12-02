@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: $darktheme;
+  background-color: white;
   width: 100%;
   height: 80px;
   margin: 0 auto;
@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: $offwhite;
+    color: $darktheme;
     border: none;
     height: 100%;
     padding: 40px 40px;
@@ -37,7 +37,7 @@
       border: none;
       cursor: pointer;
       background: none;
-      color: $offwhite;
+      color: $darktheme;
       font-family: inherit;
       font-size: 1em;
       border: none;
@@ -46,7 +46,7 @@
         text-decoration: underline;
       }
       &:active {
-        color: $offwhite;
+        color: $lightgrey;
       }
     }
     .nav-tabs {
@@ -113,7 +113,7 @@
         display: none;
       }
       .links {
-        color: $offwhite;
+        color: $darktheme;
         padding: 40px 40px;
         transition: 0.2s;
         &:hover {
