@@ -65,9 +65,11 @@
     height: 100%;
     padding: 50px;
     margin: 0 auto;
-    background-color: $lightgrey;
+    // background-color: $lightgrey;
+    background-color: rgba(217, 217, 217, 0.1);
     @include respond-to("desktop") {
       text-align: left;
+      border-radius: 10px;
     }
     .miklo-design {
       font-size: 1.5rem;
