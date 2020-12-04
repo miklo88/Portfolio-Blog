@@ -19,7 +19,7 @@ function Footer() {
             <a href='https://github.com/miklo88'>
               <i className='fab fa-github-square'></i>
             </a>
-            <a href='https://instagram.com/miklo_a'>
+            <a href='https://instagram.com/miklo_a/'>
               <i className='fab fa-instagram-square'></i>
             </a>
           </div>
