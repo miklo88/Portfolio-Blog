@@ -29,7 +29,7 @@ function About() {
       {/* resume download link */}
       <a
         className='resume-link'
-        href='resume/Carl-Redding-Resume.pdf'
+        href='resume/Carl_Redding.pdf'
         download='Carl_Redding_Resume.pdf'
       >
         Download PDF Resume
