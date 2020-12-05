@@ -1,4 +1,5 @@
 import React from "react";
+import Mailto from "./Mailto";
 import "./Contact.scss";
 
 function Contact() {
@@ -33,18 +34,26 @@ function Contact() {
           - Front-end Web Development <br />
         </p>
         {/* EMAIL BUTTON */}
-        <form
+        <Mailto
+          email='credding07@gmail.com'
+          subject='Hello'
+          body='Hello world!'
+        >
+          <i className='far fa-paper-plane'></i>
+        </Mailto>
+
+        {/* <form
           className='contact-form'
           action='mailto:credding07@gmail.com'
           method='post'
           encType='text/palin'
         >
-          <p className='email-p'>Say hi!</p>
-          {/* submit button */}
-          <button className='submit-contact' type='submit'>
+          <p className='email-p'>Say hi!</p> */}
+        {/* submit button */}
+        {/* <button className='submit-contact' type='submit'>
             <i className='far fa-paper-plane'></i>
           </button>
-        </form>
+        </form> */}
       </div>
     </div>
   );
