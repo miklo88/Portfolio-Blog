@@ -33,27 +33,13 @@ function Contact() {
           - Visual Design <br />
           - Front-end Web Development <br />
         </p>
-        {/* EMAIL BUTTON */}
+        {/* EMAIL BUTTON COMPONENT*/}
+
         <Mailto
           email='credding07@gmail.com'
           subject='Hello'
           body='Hello world!'
-        >
-          <i className='far fa-paper-plane'></i>
-        </Mailto>
-
-        {/* <form
-          className='contact-form'
-          action='mailto:credding07@gmail.com'
-          method='post'
-          encType='text/palin'
-        >
-          <p className='email-p'>Say hi!</p> */}
-        {/* submit button */}
-        {/* <button className='submit-contact' type='submit'>
-            <i className='far fa-paper-plane'></i>
-          </button>
-        </form> */}
+        ></Mailto>
       </div>
     </div>
   );
