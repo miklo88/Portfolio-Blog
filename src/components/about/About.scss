@@ -1,11 +1,16 @@
 @import "../../index.scss";
 
-.about-container {
+.about-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 800px;
+  background-image: url("../../stockPhotos/didier.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  height: auto;
   padding: 50px;
   margin: 0 auto;
   .about-title {
@@ -24,6 +29,15 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
+}
+.about-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  padding: 50px;
+  margin: 0 auto;
   .about-content {
     padding-bottom: 5px;
   }
