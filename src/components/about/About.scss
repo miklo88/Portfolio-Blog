@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("../../stockPhotos/miaMCA.jpg");
+  background-image: url("../../stockPhotos/missingpiece.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,6 +14,9 @@
   width: 100%;
   padding: 50px;
   margin: 0 auto;
+  @include respond-to("desktop") {
+    background-image: url("../../stockPhotos/plumeria.jpeg");
+  }
   .about-title {
     color: white;
     font-weight: 600;
@@ -33,32 +36,52 @@
     margin-bottom: 20px;
   }
 }
-.about-body {
+.body-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   max-width: 1200px;
-  padding: 50px;
   margin: 0 auto;
+  background-color: lightgray;
+  @include respond-to("desktop") {
+    flex-direction: row;
+  }
   .content-title {
-    padding-bottom: 5px;
-  }
-  .about-content {
-    padding: 5px 0px 5px 0px;
-  }
-
-  .resume-link {
-    color: $darktheme;
-    text-decoration: underline;
-    padding: 10px 0px 10px 0px;
-    &:hover {
-      text-decoration: underline;
-      color: $lightgrey;
+    font-size: 6rem;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    @include respond-to("desktop") {
+      padding: 50px;
     }
-    &:active {
-      color: $lightgrey;
-      text-decoration: none;
+  }
+  .about-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 1200px;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    .about-content {
+      padding: 5px 0px 5px 0px;
+      width: 500px;
+    }
+    .resume-link {
+      color: $darktheme;
+      text-decoration: underline;
+      padding: 10px 0px 10px 0px;
+      &:hover {
+        text-decoration: underline;
+        color: $lightgrey;
+      }
+      &:active {
+        color: $lightgrey;
+        text-decoration: none;
+      }
     }
   }
 }
