@@ -31,7 +31,7 @@ function Contact() {
         <p className='miklo-design'>
           - Photography <br />
           - Visual Design <br />
-          - Front-end Web Development <br />
+          - Web Development <br />
         </p>
         {/* EMAIL BUTTON COMPONENT*/}
 
