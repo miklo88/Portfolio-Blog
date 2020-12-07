@@ -11,24 +11,14 @@ function About() {
       </div>
       <div className='about-body'>
         {/* resume on display */}
-        <p className='about-content'>Why MIKLO:</p>
-        <p className='about-content'>
-          I was given the nickname Miklo from some of the best fine dining
-          servers in the city of Chicago. The movie 'Blood In, Blood Out' is
-          where Miklo's character was born. Being half white and half latino did
-          play a role, but it was his authentic self of never deviating from who
-          he truly was.
-        </p>
-        <p className='about-content'>
+        <p className='content-title'>MIKLO in context:</p>
+        <p className='about-content-one'>
           My love for meticuously crafted food and wine aged into my days in the
-          military creating a digital network out of frequency hop radios. To
+          military. Creating a digital network out of frequency hop radios. To
           getting a graphic design job with no mentoring or previous experience.
           Getting my hands on an editor and creating my first 'Hello World'. I
-          attract problems, break them, figure them out and re-build them. That
-          is just who my whole authentic self is.
+          attract problems, break them, figure them out and re-build them.
         </p>
-
-        <p className='hello-world'> "Hello World" </p>
         {/* resumes / need to be updated. 04-DEC-2020 latest update.*/}
         {/* resume download link */}
         <a
