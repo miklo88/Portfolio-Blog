@@ -7,6 +7,7 @@
     padding: 20px 20px;
     margin: 10px;
     font-size: 2.5rem;
+    color: white;
     @include respond-to("desktop") {
       padding: 40px 40px;
       margin-top: 150px;
@@ -26,10 +27,10 @@
       background: none;
       border: none;
       cursor: pointer;
-      color: $darktheme;
+      color: white;
       font-size: 2.5rem;
       &:hover {
-        color: $offwhite;
+        color: $darktheme;
       }
     }
   }
