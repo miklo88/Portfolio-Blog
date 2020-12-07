@@ -68,7 +68,7 @@
     margin: 0 auto;
     .about-content {
       padding: 5px 0px 5px 0px;
-      width: 500px;
+      max-width: 500px;
     }
     .resume-link {
       color: $darktheme;
