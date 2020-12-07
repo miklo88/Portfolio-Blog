@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
-  background-image: url("../../stockPhotos/julep.png");
+  background-image: url("../../stockPhotos/JULEPV1.0.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
     height: 100%;
     .Design-title {
       align-items: center;
-      color: $darktheme;
+      color: white;
       font-weight: 600;
       margin-top: 10px;
     }
@@ -34,7 +34,7 @@
     }
     .design-line {
       width: 100%;
-      border-bottom: 1px solid $darktheme;
+      border-bottom: 1px solid white;
       padding: 0px 50px;
       margin-top: 10px;
       margin-bottom: 300px;
@@ -47,7 +47,8 @@
     align-items: flex-end;
     text-align: right;
     width: 100%;
-    color: $darktheme;
+    // color: $darktheme;
+    color: white;
   }
 }
 

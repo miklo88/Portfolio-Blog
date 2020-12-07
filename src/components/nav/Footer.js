@@ -22,9 +22,7 @@ function Footer() {
             <a href='https://instagram.com/miklo_a/'>
               <i className='fab fa-instagram-square'></i>
             </a>
-          </div>
-          {/* contact link icon => to contact component */}
-          <div className='charlie'>
+            {/* contact link icon => to contact component */}
             <Link className='charlie-link' to='/contact'>
               <i className='fas fa-envelope-square'></i>
             </Link>

@@ -1,16 +1,24 @@
 @import "../../index.scss";
 
-.about-container {
+.about-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 800px;
+  background-image: url("../../stockPhotos/miaMCA.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  height: auto;
+  width: 100%;
   padding: 50px;
   margin: 0 auto;
   .about-title {
+    color: white;
     font-weight: 600;
     margin-top: 10px;
+    overflow: hidden;
   }
   @include respond-to("desktop") {
     .about-title {
@@ -19,23 +27,31 @@
   }
   .about-line {
     width: 100%;
-    border-bottom: 1px solid $darktheme;
+    border-bottom: 1px solid white;
     padding: 0px 50px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .about-content {
+}
+.about-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  padding: 50px;
+  margin: 0 auto;
+  .content-title {
     padding-bottom: 5px;
   }
-  .hello-world {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .about-content {
+    padding: 5px 0px 5px 0px;
   }
+
   .resume-link {
     color: $darktheme;
     text-decoration: underline;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px 0px 10px 0px;
     &:hover {
       text-decoration: underline;
       color: $lightgrey;
