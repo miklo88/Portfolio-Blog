@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.scss";
-import desktop from "../../stockPhotos/doodle1.jpeg";
 
 function About() {
   return (
