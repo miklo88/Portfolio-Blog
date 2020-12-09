@@ -19,7 +19,7 @@ export default function Whiteboard() {
     } else {
       console.log("try again");
     }
-    console.log(key);
+    // console.log(key);
   }
 
   //   // breaking it down by values - returns an array
