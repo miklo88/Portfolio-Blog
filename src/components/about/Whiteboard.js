@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Whiteboard() {
-  const hello = "HOLA";
-
   // declaring an object
   const myObj = { a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, h: 8, i: 9, j: 10 };
   // // breaking it down into an array - getting the keys
@@ -46,14 +44,10 @@ export default function Whiteboard() {
   }
   // console.log(keys);
 
-  function sayHi() {
-    return hello;
-  }
-
   // render component. just saying hi for now.
   return (
     <>
-      <div>Hi! {sayHi()}</div>
+      <div>Hi!{keys} </div>
 
       {/* <ul>The Keys : {keys}</ul>;<ul>The Values : {values}</ul>; */}
       {/* <ul>The Entries : {entries}</ul>; */}

@@ -5,6 +5,15 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  .development-p {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+  }
+  .WIP {
+    width: 70%;
+    height: auto;
+  }
 }
 // LOADING... STYLE
 .loading-message {
@@ -26,15 +35,6 @@
     font-size: 1rem;
     font-weight: 600;
     padding: 30px 0px 10px 0px;
-  }
-  .development-p {
-    text-align: center;
-    width: 400px;
-    padding: 20px;
-  }
-  .WIP {
-    width: 70%;
-    height: auto;
   }
   // EACH INDIVIDUAL REPO
   .repo-item {

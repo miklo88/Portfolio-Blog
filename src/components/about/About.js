@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 // whiteboard playground
-import Whiteboard from "./Whiteboard";
+// import Whiteboard from "./Whiteboard";
 
 function About() {
   return (
@@ -46,7 +46,7 @@ function About() {
           </a>
         </div>
       </div>
-      <Whiteboard />
+      {/* <Whiteboard /> */}
     </>
   );
 }
