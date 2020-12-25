@@ -9,8 +9,6 @@ export default function API() {
 
   //functional componentDidMount() the useEffect will only run once
   useEffect(() => {
-    // playing with pagination and established how many repos I want to display.
-    // fetch("https://api.github.com/users/miklo88/repos?page=1&per_page=1000")
     fetch("https://api.github.com/users/miklo88/repos")
       .then((res) => res.json())
       .then(
@@ -37,26 +35,31 @@ export default function API() {
           {error.message}
         </div>
         <img className='WIP' src={WIP} alt='WIPDesktop' />
+        {console.log("error hit")}
       </div>
     );
   } else if (!isLoaded) {
-    return <div className='loading-message'>Loading...</div>;
-  } else {
     return (
-      <div className='repo-items'>
-        <h1 className='development'>Web Development Projects</h1>
-        {repos.map((repo) => (
-          <div className='repo-item' key={repo.id}>
-            <p className='item'>{repo.name}</p>
-            <img src={repo.blobs_url} alt='blob' />
-            <img src={repo.commits_url} alt='blob' />
-            <p className='item'>{repo.owner.avatar_url}</p>
-            <p className='item'>{repo.owner.html_url}</p>
-            {repo.owner.starred_url}
-            {repo.pulls_url}
-          </div>
-        ))}
+      <div className='loading-message'>
+        Loading...
+        {console.log("loading hit")}
       </div>
     );
+  } else {
+    return null;
+    // <div className='repo-items'>
+    //   <h1 className='development'>Web Development Projects</h1>
+    //   {repos.map((repo) => (
+    //     <div className='repo-item' key={repo.id}>
+    //       <p className='item'>{repo.name}</p>
+    //       <img src={repo.blobs_url} alt='blob' />
+    //       <img src={repo.commits_url} alt='blob' />
+    //       <p className='item'>{repo.owner.avatar_url}</p>
+    //       <p className='item'>{repo.owner.html_url}</p>
+    //       {repo.owner.starred_url}
+    //       {repo.pulls_url}
+    //     </div>
+    //   ))}
+    // </div>
   }
 }
