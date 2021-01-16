@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url("../../stockPhotos/missingpiece.jpg");
+  background-image: url("../../stockPhotos/Photography/missingpiece.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@
   padding: 50px;
   margin: 0 auto;
   @include respond-to("desktop") {
-    background-image: url("../../stockPhotos/plumeria.jpeg");
+    background-image: url("../../stockPhotos/Photography/plumeria.jpeg");
   }
   .about-title {
     color: white;
