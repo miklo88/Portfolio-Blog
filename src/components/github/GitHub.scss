@@ -5,6 +5,31 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  // .development-p {
+  //   text-align: center;
+  //   width: 400px;
+  //   padding: 20px;
+  // }
+  // .WIP {
+  //   width: 70%;
+  //   height: auto;
+  // }
+}
+// LOADING... STYLE
+.loading-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.dummy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
   .development-p {
     text-align: center;
     width: 400px;
@@ -14,14 +39,6 @@
     width: 70%;
     height: auto;
   }
-}
-// LOADING... STYLE
-.loading-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
 }
 // THE ENTIRE LIST OF REPOS
 .repo-items {

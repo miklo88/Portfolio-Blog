@@ -46,7 +46,17 @@ export default function API() {
       </div>
     );
   } else {
-    return null;
+    return (
+      <div className='dummy'>
+        <div className='development-p'>
+          HTTP 418 <br />
+          Oh snap! Looks like something happened behind the scenes. Hang tight
+          while my lil crew figures this hot mess out.
+        </div>
+        <img className='WIP' src={WIP} alt='WIPDesktop' />
+      </div>
+    );
+    // return null;
     // <div className='repo-items'>
     //   <h1 className='development'>Web Development Projects</h1>
     //   {repos.map((repo) => (
