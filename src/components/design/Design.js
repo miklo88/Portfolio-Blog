@@ -1,6 +1,5 @@
 import React from "react";
-//GITHUB REPOS API
-import Git from "./GitHub.js";
+import DesignCard from "./DesignCard.js";
 // STYLES
 import "./Design.scss";
 //PHOTOS
@@ -24,16 +23,18 @@ function Design() {
         Marshall's Landing <br /> DMK Restaurants <br /> Merchandise Mart -
         Chicago, IL
       </h1>
-      <div className='photos-container'>
+      <DesignCard photo={two} photoTitle='2019|Spring Cocktails Penicillin' />
+      <DesignCard photo={three} photoTitle='2019|Coffee Bar Menu' />
+      <DesignCard photo={four} photoTitle='2019|Kiosk Advertisements' />
+      {/* <div className='photos-container'>
         <img className='two' src={two} alt='two' />
         <p className='title-two'>2019|Spring Cocktails Penicillin</p>
         <img className='three' src={three} alt='three' />
         <p className='title-three'>2019|Coffee Bar Menu</p>
         <img className='four' src={four} alt='four' />
         <p className='title-four'>2019|Kiosk Advertisements</p>
-      </div>
+      </div> */}
       {/* api component */}
-      <Git />
     </>
   );
 }

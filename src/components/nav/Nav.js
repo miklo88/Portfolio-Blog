@@ -38,6 +38,10 @@ function Nav() {
         <Link className='links basic-button' to='/design'>
           design
         </Link>
+        {/* link to github page  */}
+        <Link className='links basic-button' to='/github'>
+          code
+        </Link>
         {/* contact page */}
         <Link className='links basic-button' to='/contact'>
           contact
