@@ -4,7 +4,7 @@ import DesignCard from "./DesignCard.js";
 import "./Design.scss";
 //PHOTOS
 import two from "../../stockPhotos/ML/shrimp-po-boy.jpg";
-import three from "../../stockPhotos/Photography/hopper.jpeg";
+import three from "../../stockPhotos/ML/hopper.jpg";
 import four from "../../stockPhotos/Illustration/doodle1.jpeg";
 
 function Design() {
@@ -22,11 +22,20 @@ function Design() {
 
       <h1 className='title'>Graphic Design|Photography|Illustration</h1>
       <DesignCard
+        component={"/marshallslanding"}
         photo={two}
         photoTitle="- Marshall's Landing|DMK Restaurant Group -"
       />
-      <DesignCard photo={three} photoTitle='- Freelance|Photography -' />
-      <DesignCard photo={four} photoTitle='- Freelance|Illustration -' />
+      <DesignCard
+        component={"/photography"}
+        photo={three}
+        photoTitle='- Freelance|Photography -'
+      />
+      <DesignCard
+        component={"/illustration"}
+        photo={four}
+        photoTitle='- Freelance|Illustration -'
+      />
     </>
   );
 }

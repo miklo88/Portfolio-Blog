@@ -5,6 +5,9 @@ import Landing from "../landing/Landing.js";
 import Design from "../design/Design.js";
 import GitHub from "../github/GitHub.js";
 import Contact from "../forms/Contact.js";
+import MarshallsLanding from "../design/MarshallsLanding.js";
+import Photography from "../design/Photography.js";
+import Illustration from "../design/Illustration.js";
 
 function Router() {
   return (
@@ -15,6 +18,9 @@ function Router() {
         <Route exact path='/design' component={Design} />
         <Route exact path='/github' component={GitHub} />
         <Route exact path='/contact' component={Contact} />
+        <Route exact path='/marshallslanding' component={MarshallsLanding} />
+        <Route exact path='/photography' component={Photography} />
+        <Route exact path='/illustration' component={Illustration} />
       </Switch>
     </>
   );

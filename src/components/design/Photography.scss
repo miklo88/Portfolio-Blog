@@ -1,0 +1,60 @@
+@import "../../index.scss";
+.page-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  max-width: 1200px;
+  min-width: 200px;
+  margin: 0 auto;
+  .one {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    width: 100%;
+    object-fit: none;
+    object-position: 50% 50%;
+    overflow: hidden;
+    height: 100%;
+    // place-self: center;
+  }
+  .two {
+    grid-row: 2;
+    grid-column: 4 / span 2;
+    width: 75%;
+    object-fit: none;
+    object-position: 50% 50%;
+    overflow: hidden;
+    height: 75%;
+    place-self: center;
+  }
+  .three {
+    grid-row: 3;
+    grid-column: 1 / span 5;
+    width: 100%;
+    object-fit: none;
+    object-position: 50% 50%;
+    overflow: hidden;
+    height: 600px;
+    place-self: center;
+  }
+  .four {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+    width: 75%;
+    object-fit: none;
+    object-position: 50% 50%;
+    overflow: hidden;
+    height: 75%;
+    place-self: center;
+  }
+  .five {
+    grid-row: 5;
+    grid-column: 3 / span 3;
+    place-self: center;
+    width: 100%;
+    object-fit: none;
+    object-position: 50% 50%;
+    overflow: hidden;
+    height: auto;
+  }
+}
