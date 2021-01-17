@@ -16,26 +16,30 @@
     height: auto;
     cursor: pointer;
     opacity: 0.5;
-    place-self: center;
+    // place-self: center;
     &:hover {
       opacity: 1;
       transition: 0.5s;
       object-fit: fill;
     }
   }
-  .one {
+  .title-location {
+    font-weight: 400;
+    width: 100%;
+  }
+  .alpha {
     grid-row: 1;
   }
-  .two {
+  .bravo {
     grid-row: 2;
   }
-  .three {
+  .charlie {
     grid-row: 3;
   }
-  .four {
+  .delta {
     grid-row: 4;
   }
-  .five {
+  .echo {
     grid-row: 5;
   }
 }
