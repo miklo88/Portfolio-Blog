@@ -1,45 +1,54 @@
 @import "../../index.scss";
+
 .page-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
   max-width: 1200px;
   min-width: 200px;
   margin: 0 auto;
-  img {
-    grid-column: 1 / span 5;
-    object-fit: none;
-    object-position: 50% 50%;
-    overflow: hidden;
+  .visual-container {
+    grid-column: 1 / span 3;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     cursor: pointer;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: none;
+    object-position: 50% 50%;
+    overflow: hidden;
     opacity: 0.5;
-    // place-self: center;
     &:hover {
       opacity: 1;
       transition: 0.5s;
       object-fit: fill;
     }
   }
-  .title-location {
+  p {
     font-weight: 400;
     width: 100%;
+    padding: 10px 0 10px 0;
   }
-  .alpha {
+  .one {
     grid-row: 1;
   }
-  .bravo {
+  .two {
     grid-row: 2;
   }
-  .charlie {
+  .three {
     grid-row: 3;
   }
-  .delta {
+  .four {
     grid-row: 4;
   }
-  .echo {
+  .five {
     grid-row: 5;
   }
 }

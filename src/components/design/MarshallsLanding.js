@@ -1,5 +1,6 @@
 import React from "react";
-import THIS from "../../stockPhotos/Photography/blue.jpg";
+import VisualCard from "./VisualCard";
+
 export default function MarshallsLanding() {
-  return <div>{THIS}</div>;
+  return <div className='ML-container'>Marshalls Landing</div>;
 }
