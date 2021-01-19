@@ -23,6 +23,7 @@ function Router() {
         <Route exact path='/illustration' component={Illustration} />
       </Switch>
     </>
+    
   );
 }
 export default Router;
