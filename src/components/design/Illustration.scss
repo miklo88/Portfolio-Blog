@@ -1,0 +1,66 @@
+@import "../../index.scss";
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  min-width: 200px;
+  margin: 0 auto;
+  @include respond-to("desktop") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .visual-container {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    place-self: center;
+    @include respond-to("desktop") {
+      grid-column: 1 / span 3;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: none;
+    object-position: 50% 50%;
+    overflow: hidden;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+      transition: 0.5s;
+      object-fit: fill;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px 0 10px 0;
+  }
+  .one {
+    grid-row: 1;
+  }
+  .two {
+    grid-row: 2;
+  }
+  .three {
+    grid-row: 3;
+  }
+  .four {
+    grid-row: 4;
+  }
+  .five {
+    grid-row: 5;
+  }
+  .six {
+    grid-row: 6;
+  }
+  .seven {
+    grid-row: 7;
+  }
+}
