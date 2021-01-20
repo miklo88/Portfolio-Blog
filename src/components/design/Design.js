@@ -3,8 +3,8 @@ import DesignCard from "./DesignCard.js";
 // STYLES
 import "./Design.scss";
 //PHOTOS
-import two from "../../stockPhotos/ML/shrimp-po-boy.jpg";
-import three from "../../stockPhotos/ML/hopper.jpg";
+import two from "../../stockPhotos/ML/Eat/shrimp-po-boy.jpg";
+import three from "../../stockPhotos/ML/Advertising_Print/hopper.jpg";
 import four from "../../stockPhotos/Illustration/doodle1.jpeg";
 
 function Design() {
