@@ -4,8 +4,8 @@ import "./MarshallsLanding.scss";
 // PHOTOS
 import one from "../../stockPhotos/ML/Bar/PENECILLINV1.2_1_2.jpg";
 import two from "../../stockPhotos/ML/Eat/littlegemv3.0.jpg";
-import three from "../../stockPhotos/ML/Advertising_Print/WEBSITE.png";
-import four from "../../stockPhotos/ML/Coffee/coldbrewv1.3.jpg";
+import three from "../../stockPhotos/ML/Advertising_Print/rose_day.jpg";
+import four from "../../stockPhotos/ML/Coffee/lattev2.jpg";
 
 export default function MarshallsLanding() {
   return (
