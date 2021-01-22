@@ -13,65 +13,65 @@ export default function Illustration() {
   return (
     <div className='illustration-container'>
       <VisualCard
-        divClassName='visual-container one'
-        imgClassName='alpha'
+        divClassName='illustration one'
+        imgClassName='draw alpha'
         source={one}
         alt='Illustrations'
-        pClassName='p-one'
+        pClassName='draw-title'
         title=''
         location='Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container two'
-        imgClassName='bravo'
+        divClassName='illustration two'
+        imgClassName='draw bravo'
         source={two}
         alt='Illustrations'
-        pClassName='p-two'
+        pClassName='draw-title'
         title=''
         location='Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container three'
-        imgClassName='charlie'
+        divClassName='illustration three'
+        imgClassName='draw charlie'
         source={three}
         alt='Illustrations'
-        pClassName='p-three'
+        pClassName='draw-title'
         title=''
         location='Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container four'
-        imgClassName='delta'
+        divClassName='illustration four'
+        imgClassName='draw delta'
         source={four}
         alt='Illustrations'
-        pClassName='p-four'
+        pClassName='draw-title'
         title=''
         location='Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container five'
-        imgClassName='echo'
+        divClassName='illustration five'
+        imgClassName='draw echo'
         source={five}
         alt='Illustrations'
-        pClassName='p-five'
+        pClassName='draw-title'
         title=''
         location='Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container six'
-        imgClassName='foxtrot'
+        divClassName='illustration six'
+        imgClassName='draw foxtrot'
         source={six}
         alt='Illustrations'
-        pClassName='p-six'
+        pClassName='draw-title'
         title=''
         location='Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container seven'
-        imgClassName='gulf'
+        divClassName='illustration seven'
+        imgClassName='draw gulf'
         source={seven}
         alt='Illustrations'
-        pClassName='p-seven'
+        pClassName='draw-title'
         title=''
         location='Chicago, IL'
       />

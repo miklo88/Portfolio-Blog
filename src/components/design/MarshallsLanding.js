@@ -4,45 +4,45 @@ import "./MarshallsLanding.scss";
 // PHOTOS
 import one from "../../stockPhotos/ML/Bar/PENECILLINV1.2_1_2.jpg";
 import two from "../../stockPhotos/ML/Eat/littlegemv3.0.jpg";
-import three from "../../stockPhotos/ML/Advertising_Print/rose_day.jpg";
+import three from "../../stockPhotos/ML/Advertising_Print/vdayv1.1.png";
 import four from "../../stockPhotos/ML/Coffee/lattev2.jpg";
 
 export default function MarshallsLanding() {
   return (
     <div className='ML-container'>
       <VisualCard
-        divClassName='visual-container one'
-        imgClassName='alpha'
+        divClassName='ml-card one'
+        imgClassName='ml alpha'
         source={one}
         alt='class'
-        pClassName='p-one'
+        pClassName='mlp'
         title='Bar Menu'
         location='Merchandise Mart, Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container two'
-        imgClassName='bravo'
+        divClassName='ml-card two'
+        imgClassName='ml bravo'
         source={two}
         alt='class'
-        pClassName='p-two'
+        pClassName='mlp'
         title='Eat Menu'
         location='Merchandise Mart, Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container three'
-        imgClassName='charlie'
+        divClassName='ml-card three'
+        imgClassName='ml charlie'
         source={three}
         alt='class'
-        pClassName='p-three'
+        pClassName='mlp t'
         title='Graphics'
         location='Merchandise Mart, Chicago, IL'
       />
       <VisualCard
-        divClassName='visual-container four'
-        imgClassName='delta'
+        divClassName='ml-card four'
+        imgClassName='ml delta'
         source={four}
         alt='class'
-        pClassName='p-four'
+        pClassName='mlp'
         title='Coffee Bar'
         location='Merchandise Mart, Chicago, IL'
       />

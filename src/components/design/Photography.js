@@ -10,49 +10,49 @@ import five from "../../stockPhotos/Photography/puppers.jpg";
 
 export default function Photography() {
   return (
-    <div className='page-container'>
+    <div className='photography-container'>
       <VisualCard
-        divClassName='visual-container one'
-        imgClassName='alpha'
+        divClassName='photo-container one'
+        imgClassName='photo alpha'
         source={one}
         alt='Photo, Tenerife, Canary Islands Spain'
-        pClassName='p-one'
+        pClassName='photo-title'
         title='Metropolis'
         location='Tenerife, Canary Islands Spain'
       />
       <VisualCard
-        divClassName='visual-container two'
-        imgClassName='bravo'
+        divClassName='photo-container two'
+        imgClassName='photo bravo'
         source={two}
         alt='Photo, Tiede Volcano, Canary Islands Spain'
-        pClassName='p-two'
+        pClassName='photo-title'
         title='Lunar'
         location='Tiede Volcano, Canary Islands Spain'
       />
       <VisualCard
-        divClassName='visual-container three'
-        imgClassName='charlie'
+        divClassName='photo-container three'
+        imgClassName='photo charlie'
         source={three}
         alt='Photo, Tenerife, Canary Islands Spain'
-        pClassName='p-three'
+        pClassName='photo-title'
         title='Missing Piece'
         location='Tenerife, Canary Islands Spain'
       />
       <VisualCard
-        divClassName='visual-container four'
-        imgClassName='delta'
+        divClassName='photo-container four'
+        imgClassName='photo delta'
         source={four}
         alt='Photo, Tiede Volcano, Canary Islands Spain'
-        pClassName='p-four'
+        pClassName='photo-title'
         title='Discovery'
         location='Tiede Volcano, Canary Islands Spain'
       />
       <VisualCard
-        divClassName='visual-container five'
-        imgClassName='echo'
+        divClassName='photo-container five'
+        imgClassName='photo echo'
         source={five}
         alt='Photo, Wicker Park, Chicago IL'
-        pClassName='p-five'
+        pClassName='photo-title'
         title='Clocked out'
         location='Wicker Park, Chicago IL'
       />

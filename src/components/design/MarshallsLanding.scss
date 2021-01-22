@@ -13,7 +13,8 @@
   @include respond-to("desktop") {
     grid-template-columns: repeat(3, 1fr);
   }
-  .visual-container {
+  // EACH CARD
+  .ml-card {
     grid-column: 1;
     width: 100%;
     height: auto;
@@ -23,7 +24,8 @@
       grid-column: 1 / span 3;
     }
   }
-  img {
+  // IMAGES
+  .ml {
     width: 100%;
     height: auto;
     opacity: 0.5;
@@ -33,12 +35,14 @@
       object-fit: fill;
     }
   }
-  p {
+  // PARAGRAPH
+  .mlp {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 100%;
     padding: 10px 0 10px 0;
   }
+  // EACH INDIVIDUAL CARD
   .one {
     grid-row: 1;
     @include respond-to("desktop") {
@@ -50,21 +54,21 @@
     grid-row: 2;
     @include respond-to("desktop") {
       grid-column: 2;
-      grid-row: 4 / span 2;
+      grid-row: 3 / span 2;
     }
   }
   .three {
     grid-row: 3;
     @include respond-to("desktop") {
       grid-column: 3;
-      grid-row: 1 / span 5;
+      grid-row: 1 / span 4;
     }
   }
   .four {
     grid-row: 4;
     @include respond-to("desktop") {
       grid-column: 1;
-      grid-row: 1 / span 5;
+      grid-row: 1 / span 4;
     }
   }
 }
