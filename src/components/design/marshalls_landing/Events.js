@@ -2,19 +2,58 @@ import React from "react";
 import "./Events.scss";
 
 export default function Events() {
-  console.log("Events component");
   return (
     <div className='parent'>
-      <div className='name one'>1</div>
-      <div className='name two'>2</div>
-      <div className='name three'>3</div>
-      <div className='name four'>4</div>
-      <div className='name five'>5</div>
-      <div className='name six'>6</div>
-      <div className='name seven'>7</div>
-      <div className='name eight'>8</div>
-      <div className='name nine'>9</div>
-      <div className='name ten'>10</div>
+      <div className='name one'>
+        <p className='paragraph'>1</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name two'>
+        <p className='paragraph'>2</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name three'>
+        <p className='paragraph'>3</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name four'>
+        <p className='paragraph'>4</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name five'>
+        <p className='paragraph'>5</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name six'>
+        <p className='paragraph'>6</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name seven'>
+        <p className='paragraph'>7</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name eight'>
+        <p className='paragraph'>8</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name nine'>
+        <p className='paragraph'>9</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
+      <div className='name ten'>
+        <p className='paragraph'>10</p>
+        <p className='paragraph_2'>Text</p>
+        <p className='paragraph_2'>Text_Text</p>
+      </div>
     </div>
   );
 }
