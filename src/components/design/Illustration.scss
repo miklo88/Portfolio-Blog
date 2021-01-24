@@ -14,7 +14,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .illustration {
-    background-color: $darktheme;
     grid-column: 1;
     width: 100%;
     height: auto;
@@ -26,16 +25,15 @@
   }
   .draw {
     width: 100%;
-    height: auto;
-    // object-fit: none;
+    height: 500px;
     object-fit: cover;
-    // object-position: 50% 50%;
     overflow: hidden;
     opacity: 0.5;
     &:hover {
       opacity: 1;
       transition: 0.5s;
-      // object-fit: fill;
+      height: auto;
+      object-fit: fill;
     }
   }
   .draw-title {
@@ -51,6 +49,7 @@
     grid-row: 2;
   }
   .three {
+    grid-row: 3;
   }
   .four {
     grid-row: 4;

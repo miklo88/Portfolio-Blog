@@ -18,7 +18,7 @@ export default function Illustration() {
         source={one}
         alt='Illustrations'
         pClassName='draw-title'
-        title=''
+        title='Minimalism sketches'
         location='Chicago, IL'
       />
       <VisualCard
@@ -27,7 +27,7 @@ export default function Illustration() {
         source={two}
         alt='Illustrations'
         pClassName='draw-title'
-        title=''
+        title='Questlove'
         location='Chicago, IL'
       />
       <VisualCard
@@ -36,7 +36,7 @@ export default function Illustration() {
         source={three}
         alt='Illustrations'
         pClassName='draw-title'
-        title=''
+        title='Minimalism sketches'
         location='Chicago, IL'
       />
       <VisualCard
@@ -45,7 +45,7 @@ export default function Illustration() {
         source={four}
         alt='Illustrations'
         pClassName='draw-title'
-        title=''
+        title='Minimalism sketches'
         location='Chicago, IL'
       />
       <VisualCard
@@ -54,7 +54,7 @@ export default function Illustration() {
         source={five}
         alt='Illustrations'
         pClassName='draw-title'
-        title=''
+        title='Lianne La Havas'
         location='Chicago, IL'
       />
       <VisualCard
@@ -63,7 +63,7 @@ export default function Illustration() {
         source={six}
         alt='Illustrations'
         pClassName='draw-title'
-        title=''
+        title='April in Paris'
         location='Chicago, IL'
       />
       <VisualCard
@@ -72,7 +72,7 @@ export default function Illustration() {
         source={seven}
         alt='Illustrations'
         pClassName='draw-title'
-        title=''
+        title='Billie Holiday'
         location='Chicago, IL'
       />
     </div>
