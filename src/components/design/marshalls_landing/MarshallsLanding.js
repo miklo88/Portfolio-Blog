@@ -1,11 +1,12 @@
 import React from "react";
-import VisualCard from "./VisualCard";
+import { Link } from "react-router-dom";
+import VisualCard from "../VisualCard";
 import "./MarshallsLanding.scss";
 // PHOTOS
-import one from "../../stockPhotos/ML/Bar/PENECILLINV1.2_1_2.jpg";
-import two from "../../stockPhotos/ML/Eat/littlegemv3.0.jpg";
-import three from "../../stockPhotos/ML/Advertising_Print/vdayv1.1.png";
-import four from "../../stockPhotos/ML/Coffee/lattev2.jpg";
+import one from "../../../stockPhotos/ML/Bar/PENECILLINV1.2_1_2.jpg";
+import two from "../../../stockPhotos/ML/Eat/littlegemv3.0.jpg";
+import three from "../../../stockPhotos/ML/Advertising_Print/vdayv1.1.png";
+import four from "../../../stockPhotos/ML/Coffee/lattev2.jpg";
 
 export default function MarshallsLanding() {
   return (
@@ -46,6 +47,7 @@ export default function MarshallsLanding() {
         title='Coffee Bar'
         location='Merchandise Mart, Chicago, IL'
       />
+      <Link to='/events'>Events</Link>
     </div>
   );
 }

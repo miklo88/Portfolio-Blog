@@ -5,9 +5,13 @@ import Landing from "../landing/Landing.js";
 import Design from "../design/Design.js";
 import GitHub from "../github/GitHub.js";
 import Contact from "../forms/Contact.js";
-import MarshallsLanding from "../design/MarshallsLanding.js";
-import Photography from "../design/Photography.js";
-import Illustration from "../design/Illustration.js";
+import MarshallsLanding from "../design/marshalls_landing/MarshallsLanding.js";
+import Photography from "../design/photography/Photography.js";
+import Illustration from "../design/illustration/Illustration.js";
+import Eat from "../design/marshalls_landing/Eat.js";
+import Bar from "../design/marshalls_landing/Bar.js";
+import Coffee from "../design/marshalls_landing/Coffee.js";
+import Events from "../design/marshalls_landing/Events.js";
 
 function Router() {
   return (
@@ -21,9 +25,12 @@ function Router() {
         <Route exact path='/marshallslanding' component={MarshallsLanding} />
         <Route exact path='/photography' component={Photography} />
         <Route exact path='/illustration' component={Illustration} />
+        <Route exact path='/eat' component={Eat} />
+        <Route exact path='/bar' component={Bar} />
+        <Route exact path='/coffee' component={Coffee} />
+        <Route exact path='/events' component={Events} />
       </Switch>
     </>
-    
   );
 }
 export default Router;

@@ -1,13 +1,13 @@
 import React from "react";
-import VisualCard from "./VisualCard";
+import VisualCard from "../VisualCard";
 import "./Illustration.scss";
-import one from "../../stockPhotos/Illustration/art_full.jpg";
-import two from "../../stockPhotos/Illustration/doodle2.0.jpeg";
-import three from "../../stockPhotos/Illustration/doodle1.jpeg";
-import four from "../../stockPhotos/Illustration/dame2.0.jpeg";
-import five from "../../stockPhotos/Illustration/lianne(detail).jpg";
-import six from "../../stockPhotos/Illustration/jazzsoftcolor2.png";
-import seven from "../../stockPhotos/Illustration/billie(color).jpg";
+import one from "../../../stockPhotos/Illustration/art_full.jpg";
+import two from "../../../stockPhotos/Illustration/doodle2.0.jpeg";
+import three from "../../../stockPhotos/Illustration/doodle1.jpeg";
+import four from "../../../stockPhotos/Illustration/dame2.0.jpeg";
+import five from "../../../stockPhotos/Illustration/lianne(detail).jpg";
+import six from "../../../stockPhotos/Illustration/jazzsoftcolor2.png";
+import seven from "../../../stockPhotos/Illustration/billie(color).jpg";
 
 export default function Illustration() {
   return (

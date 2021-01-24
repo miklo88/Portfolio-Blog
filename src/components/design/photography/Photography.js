@@ -1,12 +1,12 @@
 import React from "react";
 import "./Photography.scss";
-import VisualCard from "./VisualCard";
+import VisualCard from "../VisualCard";
 //Photos
-import one from "../../stockPhotos/Photography/metropolis.jpg";
-import two from "../../stockPhotos/Photography/onesmallstep.jpg";
-import three from "../../stockPhotos/Photography/missingpiece.jpg";
-import four from "../../stockPhotos/Photography/discovery.jpg";
-import five from "../../stockPhotos/Photography/puppers.jpg";
+import one from "../../../stockPhotos/Photography/metropolis.jpg";
+import two from "../../../stockPhotos/Photography/onesmallstep.jpg";
+import three from "../../../stockPhotos/Photography/missingpiece.jpg";
+import four from "../../../stockPhotos/Photography/discovery.jpg";
+import five from "../../../stockPhotos/Photography/puppers.jpg";
 
 export default function Photography() {
   return (
