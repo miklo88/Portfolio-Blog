@@ -9,32 +9,33 @@
   min-width: 200px;
   height: 100%;
   margin: 0 auto;
-  background-color: black;
   @include respond-to("desktop") {
     grid-template-columns: repeat(2, 1fr);
   }
   .illustration {
     grid-column: 1;
     place-self: center;
-    width: 600px;
-    height: 600px;
-    padding: 50px;
-    margin: 10px;
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 20px 0px;
     cursor: pointer;
+    background-color: black;
     @include respond-to("desktop") {
+      width: 600px;
+      height: 600px;
       grid-column: 1 / span 2;
+      padding: 50px 50px 100px 50px;
     }
   }
   .draw {
     width: 100%;
     height: 100%;
     object-position: 80% 50%;
-    object-fit: none;
+    object-fit: cover;
     opacity: 0.5;
     &:hover {
       opacity: 1;
       transition: 0.5s;
-      object-fit: cover;
     }
   }
   .draw-title {
@@ -43,5 +44,49 @@
     width: 100%;
     padding: 10px 0 10px 0;
     color: $offwhite;
+  }
+  .one {
+    @include respond-to("desktop") {
+      grid-row: 1;
+      grid-column: 1;
+    }
+  }
+  .two {
+    @include respond-to("desktop") {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  }
+  .three {
+    @include respond-to("desktop") {
+      grid-row: 2;
+      grid-column: 1;
+    }
+  }
+  .four {
+    @include respond-to("desktop") {
+      grid-row: 2;
+      grid-column: 2;
+    }
+  }
+  .five {
+    @include respond-to("desktop") {
+      grid-row: 3;
+      grid-column: 1;
+    }
+  }
+  .six {
+    @include respond-to("desktop") {
+      grid-row: 3;
+      grid-column: 2;
+    }
+  }
+  .seven {
+    @include respond-to("desktop") {
+      grid-row: 4;
+      grid-column: 1 / span 2;
+      height: 600px;
+      width: 100%;
+    }
   }
 }
