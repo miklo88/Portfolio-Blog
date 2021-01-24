@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  // gap: 10px;
   max-width: 1200px;
   min-width: 200px;
   height: 100%;
@@ -20,7 +19,6 @@
     padding: 0px 0px 10px 0px;
     cursor: pointer;
     background-color: black;
-
     @include respond-to("desktop") {
       width: 600px;
       height: 600px;

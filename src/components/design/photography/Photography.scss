@@ -5,10 +5,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
   max-width: 1200px;
   min-width: 200px;
+  height: 100%;
   margin: 0 auto;
   @include respond-to("desktop") {
     grid-template-columns: repeat(3, 1fr);
