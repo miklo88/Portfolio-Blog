@@ -1,0 +1,44 @@
+@import "../../../index.scss";
+
+.photography-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  max-width: 1200px;
+  min-width: 200px;
+  height: 100%;
+  margin: 0 auto;
+  @include respond-to("desktop") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .photo-container {
+    grid-column: 1;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    place-self: center;
+    @include respond-to("desktop") {
+      grid-column: 1 / span 3;
+    }
+  }
+  .photo {
+    width: 100%;
+    height: auto;
+    object-fit: none;
+    object-position: 50% 50%;
+    overflow: hidden;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+      transition: 0.5s;
+      object-fit: fill;
+    }
+  }
+  .photo-title {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px 0 10px 0;
+  }
+}

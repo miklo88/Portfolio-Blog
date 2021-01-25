@@ -1,5 +1,5 @@
 import React from "react";
-import landing from "../../stockPhotos/discovery.jpg";
+import landing from "../../stockPhotos/Photography/discovery.jpg";
 import "./Landing.scss";
 
 function Landing() {

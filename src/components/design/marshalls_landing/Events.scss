@@ -1,0 +1,66 @@
+@import "../../../index.scss";
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  min-width: 200px;
+  height: 100%;
+  background-color: navajowhite;
+  padding: 50px;
+  margin: 0 auto;
+  @include respond-to("desktop") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .name {
+    grid-column: 1;
+    place-self: center;
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    @include respond-to("desktop") {
+      grid-column: 1 / span 2;
+    }
+  }
+  .paragraph {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  .paragraph_2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .one {
+    background-color: red;
+  }
+  .two {
+    background-color: lightgreen;
+  }
+  .three {
+    background-color: lightcoral;
+  }
+  .four {
+    background-color: lightblue;
+  }
+  .five {
+    background-color: purple;
+  }
+  .six {
+    background-color: yellow;
+  }
+  .seven {
+    background-color: orange;
+  }
+  .eight {
+    background-color: green;
+  }
+  .nine {
+    background-color: blue;
+  }
+  .ten {
+    background-color: black;
+  }
+}

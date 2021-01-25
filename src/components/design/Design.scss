@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
-  background-image: url("../../stockPhotos/JULEPV1.0.jpg");
+  background-image: url("../../stockPhotos/ML/Bar/JULEPV1.0.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +47,6 @@
     align-items: flex-end;
     text-align: right;
     width: 100%;
-    // color: $darktheme;
     color: white;
   }
 }
@@ -63,7 +62,7 @@
   padding: 0px 0px 10px 0px;
   text-align: center;
 }
-//PHOTOS DESIGN MARSHALLS LANDING
+//Graphic Design|Photography|Illustration
 .photos-container {
   display: flex;
   flex-direction: column;
@@ -84,7 +83,7 @@
     height: auto;
     margin: 0 auto;
   }
-  .two {
+  .photo {
     width: 100%;
     height: auto;
     padding: 20px 0px;
@@ -92,54 +91,27 @@
       grid-column: 1;
       grid-row: 1;
       place-self: center;
-    }
-  }
-  .three {
-    width: 100%;
-    height: auto;
-    padding: 20px 0px;
-    @include respond-to("desktop") {
-      grid-column: 2;
-      grid-row: 1;
-      place-self: center;
-    }
-  }
-  .four {
-    width: 100%;
-    height: auto;
-    padding: 20px 20px;
-    @include respond-to("desktop") {
-      display: none;
     }
   }
   // P TITLES FOR PHOTOS MARSHALLS LANDING
-  .title-two {
-    text-align: left;
-    padding-bottom: 20px;
-    @include respond-to("desktop") {
-      grid-column: 1;
-      grid-row: 2;
-      text-align: left;
-      padding-left: 10px;
-      font-weight: 600;
-    }
-  }
-  .title-three {
-    text-align: left;
-    padding-bottom: 20px;
-    @include respond-to("desktop") {
-      grid-column: 2;
-      grid-row: 2;
-      text-align: left;
-      padding-left: 10px;
-      font-weight: 600;
-    }
-  }
-  .title-four {
-    text-align: left;
-    padding-bottom: 20px;
-    @include respond-to("desktop") {
-      display: none;
+  .design-link {
+    text-decoration: none;
+    color: $darktheme;
+    place-self: center;
+    font-weight: 600;
+    .title-image {
+      @include respond-to("desktop") {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 1.2rem;
+        // font-weight: 400;
+      }
+      &:hover {
+        transition: 0.2s;
+        text-decoration: underline;
+      }
     }
   }
 }

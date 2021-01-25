@@ -1,0 +1,63 @@
+// ERROR MESSAGE STYLES
+.error-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  // .development-p {
+  //   text-align: center;
+  //   width: 400px;
+  //   padding: 20px;
+  // }
+  // .WIP {
+  //   width: 70%;
+  //   height: auto;
+  // }
+}
+// LOADING... STYLE
+.loading-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.dummy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
+  .development-p {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+  }
+  .WIP {
+    width: 70%;
+    height: auto;
+  }
+}
+// THE ENTIRE LIST OF REPOS
+.repo-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  .development {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 30px 0px 10px 0px;
+  }
+  // EACH INDIVIDUAL REPO
+  .repo-item {
+    padding: 10px 10px;
+    .item {
+      padding: 10px;
+    }
+  }
+}
