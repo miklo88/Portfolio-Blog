@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import VisualCard from "../VisualCard";
 import "./MarshallsLanding.scss";
 // PHOTOS
@@ -47,7 +46,6 @@ export default function MarshallsLanding() {
         title='Coffee Bar'
         location='Merchandise Mart, Chicago, IL'
       />
-      <Link to='/events'>Events</Link>
     </div>
   );
 }

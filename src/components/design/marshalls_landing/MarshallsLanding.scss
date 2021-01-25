@@ -4,11 +4,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
   max-width: 1200px;
   min-width: 200px;
+  height: 100%;
   margin: 0 auto;
   @include respond-to("desktop") {
     grid-template-columns: repeat(3, 1fr);
@@ -17,7 +15,7 @@
   .ml-card {
     grid-column: 1;
     width: 100%;
-    height: auto;
+    height: 100%;
     cursor: pointer;
     place-self: center;
     @include respond-to("desktop") {
@@ -39,8 +37,12 @@
   .mlp {
     font-weight: 400;
     font-size: 1rem;
+    text-align: center;
     width: 100%;
-    padding: 10px 0 10px 0;
+    padding: 10px 0px 10px 0px;
+    @include respond-to("desktop") {
+      padding: 10px 0px 0px 0px;
+    }
   }
   // EACH INDIVIDUAL CARD
   .one {
