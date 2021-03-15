@@ -11,13 +11,9 @@
   margin: 0 auto;
   //////// home button - MIKLO
   .home-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
     color: $darktheme;
     border: none;
-    height: 100%;
     padding: 40px 40px;
     &:hover {
       transition: 0.2s;
@@ -67,10 +63,6 @@
       background-color: $offwhite;
       margin-top: 225px;
       .mobile-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
         padding: 40px 40px;
         cursor: pointer;
         color: $darktheme;
@@ -82,13 +74,8 @@
       }
 
       .links {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        text-align: left;
         ////////// desktop view is 40px so height is 60px aqui -
         padding: 20px 40px;
-        z-index: 1500;
         &:hover {
           text-decoration: underline;
         }
