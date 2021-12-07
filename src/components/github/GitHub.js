@@ -1,40 +1,55 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, setState } from "react";
 import "./GitHub.scss";
 import WIP from "../../stockPhotos/WIPDesktop.jpg";
-import Test from "./Test.js";
+
 export default function API() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [repos, setRepos] = useState([]);
-
+  const [items, setItems] = useState([]);
+  console.log(items);
   //functional componentDidMount() the useEffect will only run once
   useEffect(() => {
-    fetch("https://api.github.com/users/miklo88/repos")
+    const requestOptions = {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+      mode: "no-cors",
+    };
+    fetch(
+      "https://api.nasa.gov/planetary/apod?api_key=Y423QMOn9VCVOVmxkHg1ZTg8x8S3kszz7UHwXYvd"
+    )
       .then((response) => response.json())
       .then(
         (result) => {
           setIsLoaded(true);
-          setRepos(result);
-          // console.log(result);
+          setItems(result);
         },
         //handling errors
         (error) => {
-          setIsLoaded(true);
+          setIsLoaded(false);
           setError(error);
         }
       );
   }, []);
 
-  // console.log(JSON.stringify(repos));
-  // for (let line = 0; line < thing.length; i++) {
-  // const data = JSON.stringify(repos);
-  // const slicedData = data.split(",");
+  let nasaImage = items.url;
+  let nasaImageHDURL = items.hdurl;
+
+  const itemElements = (
+    <div className='repo-items'>
+      <h1 className='page-title'>NASA Astronomy Picture of the Day</h1>
+      <p className='date'>{items.date}</p>
+      <h1 className='nasa-title'>{items.title}</h1>
+      {/* <p className='repo-item'>{items.service_version}</p> */}
+      <img src={nasaImage} alt='Photo of the Day' />
+      {/* <img src={nasaImageHDURL} alt='Space Image' /> */}
+      <p className='explanation'>{items.explanation}</p>
+      <p className='copyright'>{items.copyright}</p>
+    </div>
+  );
 
   if (error) {
     return (
-      // <div className='error-message'>
-      <div className='dummy'>
-        <Test />
+      <div className='repo-items'>
         <div className='development-p'>
           HTTP 418 <br />
           Oh snap! Looks like something happened behind the scenes. Hang tight
@@ -42,34 +57,11 @@ export default function API() {
           {error.message}
         </div>
         <img className='WIP' src={WIP} alt='WIPDesktop' />
-        {console.log("error hit")}
       </div>
     );
   } else if (!isLoaded) {
-    return (
-      <div className='loading-message'>
-        Loading...
-        {console.log("loading hit")}
-      </div>
-    );
+    return <div className='repo-items'>Loading...</div>;
   } else {
-    return (
-      <>
-        <Test />
-        <div className='repo-items'>
-          <h1 className='development'>Web Development Projects</h1>
-          {/* {repos.map((repo) => (
-            <div className='repo-item' key={repo.id}>
-              <p className='item'>Title: {repo.name}</p>
-              <img src={repo.blobs_url} alt='blob' />
-              <img src={repo.commits_url} alt='blob' />
-              <p className='item'>{repo.commits_url}</p>
-            </div>
-          ))} */}
-        </div>
-      </>
-    );
+    return <>{itemElements}</>;
   }
 }
-
-// // return null;

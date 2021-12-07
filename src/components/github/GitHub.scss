@@ -1,35 +1,46 @@
-// ERROR MESSAGE STYLES
-.error-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  // .development-p {
-  //   text-align: center;
-  //   width: 400px;
-  //   padding: 20px;
-  // }
-  // .WIP {
-  //   width: 70%;
-  //   height: auto;
-  // }
-}
-// LOADING... STYLE
-.loading-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.dummy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  padding: 20px;
+// THE ENTIRE LIST OF REPOS
+.repo-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(100px, 1fr, 1fr, 1fr);
+  // justify-content: center;
+  // align-items: center;
+  // padding: 20px 10px;
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    padding: 0px 0px 30px 0px;
+  }
+  .date {
+    // padding: 10px;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  // EACH INDIVIDUAL REPO
+  .nasa-title {
+    // padding: 10px 10px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    justify-self: stretch;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+  }
+  .explanation {
+    // padding: 10px;
+    grid-column: 1 / span 3;
+    grid-row: 4;
+  }
+  .copyright {
+    // padding: 10px;
+    grid-column: 1 / span 3;
+    grid-row: 4;
+  }
   .development-p {
     text-align: center;
     width: 400px;
@@ -40,24 +51,39 @@
     height: auto;
   }
 }
-// THE ENTIRE LIST OF REPOS
-.repo-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 10px;
-  .development {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 30px 0px 10px 0px;
-  }
-  // EACH INDIVIDUAL REPO
-  .repo-item {
-    padding: 10px 10px;
-    .item {
-      padding: 10px;
-    }
-  }
-}
+
+// // THE ENTIRE LIST OF REPOS
+// .repo-items {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 20px 10px;
+//   .development {
+//     text-align: center;
+//     font-size: 1rem;
+//     font-weight: 600;
+//     padding: 30px 0px 10px 0px;
+//   }
+//   // EACH INDIVIDUAL REPO
+//   .repo-item {
+//     padding: 10px 10px;
+//     .item {
+//       padding: 10px;
+//     }
+//   }
+//   .development-p {
+//     text-align: center;
+//     width: 400px;
+//     padding: 20px;
+//   }
+//   .WIP {
+//     width: 70%;
+//     height: auto;
+//   }
+
+//   img {
+//     max-width: 100%;
+//     height: auto;
+//   }
+// }
