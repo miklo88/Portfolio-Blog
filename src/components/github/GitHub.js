@@ -35,7 +35,7 @@ export default function API() {
   let nasaImageHDURL = items.hdurl;
 
   const itemElements = (
-    <div className='repo-items'>
+    <div className='repo-item'>
       <h1 className='page-title'>NASA Astronomy Picture of the Day</h1>
       <p className='date'>{items.date}</p>
       <h1 className='nasa-title'>{items.title}</h1>
@@ -43,13 +43,13 @@ export default function API() {
       <img src={nasaImage} alt='Photo of the Day' />
       {/* <img src={nasaImageHDURL} alt='Space Image' /> */}
       <p className='explanation'>{items.explanation}</p>
-      <p className='copyright'>{items.copyright}</p>
+      <p className='copyright'>copyright: {items.copyright}</p>
     </div>
   );
 
   if (error) {
     return (
-      <div className='repo-items'>
+      <div className='repo-item'>
         <div className='development-p'>
           HTTP 418 <br />
           Oh snap! Looks like something happened behind the scenes. Hang tight
@@ -60,7 +60,7 @@ export default function API() {
       </div>
     );
   } else if (!isLoaded) {
-    return <div className='repo-items'>Loading...</div>;
+    return <div className='repo-item'>Loading...</div>;
   } else {
     return <>{itemElements}</>;
   }

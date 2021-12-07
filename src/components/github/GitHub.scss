@@ -1,8 +1,9 @@
+@import "../../index.scss";
 // THE ENTIRE LIST OF REPOS
-.repo-items {
+.repo-item {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(100px, 1fr, 1fr, 1fr);
+  grid-template-rows: repeat(100px, 1fr, 1fr, 1fr, 1fr, 1fr);
   // justify-content: center;
   // align-items: center;
   // padding: 20px 10px;
@@ -12,15 +13,22 @@
     grid-column: 1 / span 3;
     grid-row: 1;
     padding: 0px 0px 30px 0px;
+    justify-items: start;
+  }
+  @include respond-to("desktop") {
+    .page-title {
+      padding: 30px 0px 30px 0px;
+    }
   }
   .date {
-    // padding: 10px;
+    padding: 10px;
     grid-column: 3;
     grid-row: 2;
+    text-align: right;
   }
   // EACH INDIVIDUAL REPO
   .nasa-title {
-    // padding: 10px 10px;
+    padding: 10px;
     grid-column: 1;
     grid-row: 2;
   }
@@ -29,17 +37,18 @@
     height: auto;
     justify-self: stretch;
     grid-column: 1 / span 3;
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
+    padding: 10px;
   }
   .explanation {
-    // padding: 10px;
+    padding: 10px;
     grid-column: 1 / span 3;
-    grid-row: 4;
+    grid-row: 5;
   }
   .copyright {
-    // padding: 10px;
+    padding: 10px;
     grid-column: 1 / span 3;
-    grid-row: 4;
+    grid-row: 6;
   }
   .development-p {
     text-align: center;
