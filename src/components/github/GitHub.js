@@ -7,13 +7,14 @@ export default function API() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   console.log(items);
+
   //functional componentDidMount() the useEffect will only run once
   useEffect(() => {
-    const requestOptions = {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-      mode: "no-cors",
-    };
+    // const requestOptions = {
+    //   method: "GET",
+    //   headers: { "Content-Type": "application/json" },
+    //   mode: "no-cors",
+    // };
     fetch(
       "https://api.nasa.gov/planetary/apod?api_key=Y423QMOn9VCVOVmxkHg1ZTg8x8S3kszz7UHwXYvd"
     )
@@ -32,20 +33,12 @@ export default function API() {
   }, []);
 
   let nasaImage = items.url;
-  let nasaImageHDURL = items.hdurl;
-
-  const itemElements = (
-    <div className='repo-item'>
-      <h1 className='page-title'>NASA Astronomy Picture of the Day</h1>
-      <p className='date'>{items.date}</p>
-      <h1 className='nasa-title'>{items.title}</h1>
-      {/* <p className='repo-item'>{items.service_version}</p> */}
-      <img src={nasaImage} alt='Photo of the Day' />
-      {/* <img src={nasaImageHDURL} alt='Space Image' /> */}
-      <p className='explanation'>{items.explanation}</p>
-      <p className='copyright'>copyright: {items.copyright}</p>
-    </div>
-  );
+  // let nasaImageHDURL = items.hdurl;
+  let nasaDate = items.date;
+  let nasaTitle = items.title;
+  let nasaExplanation = items.explanation;
+  let nasaCopyright = items.copyright;
+  // let nasaServiceVersion = items.serviceVersion;
 
   if (error) {
     return (
@@ -62,6 +55,17 @@ export default function API() {
   } else if (!isLoaded) {
     return <div className='repo-item'>Loading...</div>;
   } else {
-    return <>{itemElements}</>;
+    return (
+      <div className='repo-item'>
+        <h1 className='page-title'>NASA Astronomy Picture of the Day</h1>
+        <p className='date'>{nasaDate}</p>
+        <h1 className='nasa-title'>{nasaTitle}</h1>
+        {/* <p className='repo-item'>{nasaServiceVersion}</p> */}
+        <img src={nasaImage} alt='Nasa Picture' />
+        {/* <img src={nasaImageHDURL} alt='Space Image' /> */}
+        <p className='explanation'>{nasaExplanation}</p>
+        <p className='copyright'>copyright: {nasaCopyright}</p>
+      </div>
+    );
   }
 }

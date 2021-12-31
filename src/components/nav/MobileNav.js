@@ -34,9 +34,6 @@ export default function MobileNav() {
         <Link className='links basic-button' to='/github'>
           code
         </Link>
-        <Link className='links basic-button' to='/contact'>
-          contact
-        </Link>
       </nav>
     </header>
   );
