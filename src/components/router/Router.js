@@ -4,7 +4,6 @@ import About from "../about/About.js";
 import Landing from "../landing/Landing.js";
 import Design from "../design/Design.js";
 import GitHub from "../github/GitHub.js";
-import Contact from "../forms/Contact.js";
 import MarshallsLanding from "../design/marshalls_landing/MarshallsLanding.js";
 import Photography from "../design/photography/Photography.js";
 import Illustration from "../design/illustration/Illustration.js";
@@ -21,7 +20,6 @@ function Router() {
         <Route exact path='/about' component={About} />
         <Route exact path='/design' component={Design} />
         <Route exact path='/github' component={GitHub} />
-        <Route exact path='/contact' component={Contact} />
         <Route exact path='/marshallslanding' component={MarshallsLanding} />
         <Route exact path='/photography' component={Photography} />
         <Route exact path='/illustration' component={Illustration} />

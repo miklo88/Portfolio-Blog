@@ -1,108 +1,63 @@
 @import "../../index.scss";
 
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-  height: 80px;
-  margin: 0 auto;
-  //////// home button - MIKLO
-  .home-link {
-    text-decoration: none;
-    color: $darktheme;
-    border: none;
-    padding: 40px 40px;
-    &:hover {
-      transition: 0.2s;
-      text-decoration: underline;
-    }
-  }
-  // mobile styling
-  @include respond-to("mobile") {
-    //////// mobile/tablet menu with dropdown
-    .toggle-nav {
-      -webkit-appearance: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      padding: 40px 40px;
-      border: none;
-      cursor: pointer;
-      background: none;
+@include respond-to("mobile") {
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4 repeat(4, 1fr);
+    .home-link {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      text-align: center;
+      text-decoration: none;
       color: $darktheme;
-      font-family: inherit;
-      font-size: 1em;
       border: none;
-      transition: 0.2s;
+      padding: 40px 40px;
       &:hover {
+        transition: 0.2s;
         text-decoration: underline;
       }
-      &:active {
-        color: $lightgrey;
-      }
     }
     .nav-tabs {
-      display: none;
-    }
-    //////////// on toggle hide toggle-nav button
-    .change {
-      display: none;
-    }
-    // DISPLAY DROPDOWN ////////////////////////////// DISPLAY DROPDOWN
-    // SHOWING THE DROPDOWN MENU
-    .show {
-      z-index: 1500;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: $offwhite;
-      margin-top: 225px;
-      .mobile-nav {
-        padding: 40px 40px;
-        cursor: pointer;
-        color: $darktheme;
-        background-color: $offwhite;
-        font-family: inherit;
-        font-size: 1em;
-        border: none;
-        margin-top: auto;
-      }
-
-      .links {
-        ////////// desktop view is 40px so height is 60px aqui -
-        padding: 20px 40px;
+      grid-column: 1;
+      grid-row: 4;
+      padding: 0px 0px 40px 0px;
+      text-align: center;
+      a {
+        padding: 0px 20px 0px 20px;
         &:hover {
+          transition: 0.2s;
           text-decoration: underline;
         }
       }
     }
   }
-  ////////////// desktop navigation /// nav tabs
-  @include respond-to("desktop") {
-    .toggle-nav {
-      display: none;
+}
+@include respond-to("desktop") {
+  .nav-container {
+    grid-template-columns: 2 repeat(2, fr);
+    .home-link {
+      grid-column: 1;
+      grid-row: 1 / span 3;
+      text-align: left;
+      text-decoration: none;
+      color: $darktheme;
+      border: none;
+      padding: 40px 40px;
+      &:hover {
+        transition: 0.2s;
+        text-decoration: underline;
+      }
     }
     .nav-tabs {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      .mobile-nav {
-        display: none;
-      }
-      .links {
-        color: $darktheme;
-        padding: 40px 40px;
-        transition: 0.2s;
+      grid-column: 2;
+      grid-row: 1 / span 3;
+      padding: 40px 40px;
+      text-align: right;
+      a {
+        padding: 0px 20px 0px 20px;
         &:hover {
-          text-decoration: underline;
-        }
-        &:active {
+          transition: 0.2s;
           text-decoration: underline;
         }
       }
