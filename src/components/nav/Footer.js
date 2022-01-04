@@ -20,10 +20,6 @@ function Footer() {
             <a href='https://instagram.com/miklo_a/'>
               <i className='fab fa-instagram-square'></i>
             </a>
-            {/* contact link icon => to contact component */}
-            {/* <Link className='charlie-link' to='/contact'>
-              <i className='fas fa-envelope-square'></i>
-            </Link> */}
           </div>
         </div>
       </div>

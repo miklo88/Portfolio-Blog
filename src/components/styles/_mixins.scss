@@ -15,6 +15,7 @@ $breakpoints: (
   "tablet": 800px,
   "desktop": 1000px,
   "large": 1200px,
+  "xlarge": 2000px,
 ) !default;
 // media breakpoints.
 @mixin respond-to($breakpoint) {
