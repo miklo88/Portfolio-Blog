@@ -1,112 +1,46 @@
 @import "../../index.scss";
 
-.about-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  background-image: url("../../stockPhotos/Photography/missingpiece.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1200px;
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(200px, 200px, 200px, 1fr, 1fr);
   height: auto;
   width: 100%;
-  padding: 50px;
-  margin: 0 auto;
-  @include respond-to("desktop") {
-    background-image: url("../../stockPhotos/Photography/plumeria.jpg");
-  }
+  // @include respond-to("desktop") {
+  // }
   .about-title {
-    color: white;
-    font-weight: 600;
-    margin-top: 10px;
-    overflow: hidden;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    padding: 20px 0px 20px 40px;
+    color: $darktheme;
+    text-align: left;
   }
-  @include respond-to("desktop") {
-    .about-title {
-      margin-top: 30px;
-    }
-  }
-  .about-line {
-    width: 100%;
-    border-bottom: 1px solid white;
-    padding: 0px 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-}
-.body-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: $lightgrey;
+
+  // @include respond-to("desktop") {
+  //   .about-title {
+  //     // margin-top: 30px;
+  //   }
+
   .content-title {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2;
     font-size: 6rem;
-    padding: 25px;
     color: white;
     text-align: center;
+    background-color: $forestGreen;
     @include respond-to("desktop") {
       padding: 50px;
     }
   }
-  .about-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    // max-width: 1200px;
-    padding: 50px;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    .about-content {
-      padding: 10px 0px 10px 0px;
-      max-width: 500px;
-    }
-  }
-}
 
-// MOBILE FIRST CONTACT FORM
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: white;
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    label {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: left;
-      padding: 10px;
-    }
-    .miklo-info {
-      font-size: 1.5rem;
-      color: black;
-      text-align: left;
-    }
-    label {
-      padding: 10px 20px;
-    }
-    p {
-      padding: 10px 20px;
-    }
-    input {
-      padding: 10px 30px;
-    }
+  .about-content {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    color: white;
+    background-color: $forestGreen;
+    text-align: center;
+    padding: 50px;
+    height: auto;
+    width: 100%;
   }
 }
