@@ -7,11 +7,26 @@ function About() {
     <section className='about-container'>
       {/* page title */}
       <h1 className='about-title'>About</h1>
+
       <p className='content-title'>MIKLO</p>
       <p className='about-content'>
-        I'm Carl Redding. I created Miklo so I can have a platform to showcase
-        my passion for design and creating stolen moments. My simplicity in
-        approach is understanding the rules and knowing when to break them.
+        Getting you stop what you are doing. That has been my high since I first
+        fell in love with art in high school.
+        <br />
+        <br />
+        The name Miklo comes from the movie "Blood in, Blood Out". It was given
+        to me as a nickname when I worked with la raza at the most chingon
+        restaurant in Chicago. mk the restaurant. Talk wine to me.
+        <br />
+        <br />
+        Most importantly, the place that gave me that nick-name, taught me that
+        working hard will bring you success when you truly love what you do.
+        <br />
+        <br />
+        Salud,
+        <br />
+        <br />
+        Carl Redding
       </p>
     </section>
   );

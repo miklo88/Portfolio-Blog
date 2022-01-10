@@ -9,11 +9,15 @@
   h1 {
     grid-column: 1 / span 4;
     grid-row: 1;
-    padding: 20px 0px 20px 40px;
+    padding: 40px 40px 40px 40px;
     color: $darktheme;
     text-align: left;
   }
-
+  @include respond-to("desktop") {
+    h1 {
+      text-align: left;
+    }
+  }
   img {
     grid-column: 1 / span 4;
     grid-row: 2 / span 2;

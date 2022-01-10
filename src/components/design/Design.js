@@ -24,13 +24,14 @@ function Design() {
   return (
     <div className='container'>
       {/* <div className='design-container'> */}
+      <h1 className='title'>
+        Design : Graphic Design - Photography - Illustration
+      </h1>
       <img src={one} alt='' />
       <p className='design-footnote'>
         Marshalls Landing<br></br>2019|Spring Cocktails<br></br>Mint Julep
       </p>
       {/* </div> */}
-
-      <h1 className='title'>Graphic Design - Photography - Illustration</h1>
       {/* <DesignCard
         component={"/marshallslanding"}
         photo={two}
