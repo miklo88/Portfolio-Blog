@@ -32,22 +32,14 @@ export default function API() {
       );
   }, []);
 
-  let nasaImage = items.url;
-  // let nasaImageHDURL = items.hdurl;
-  let nasaDate = items.date;
-  let nasaTitle = items.title;
-  let nasaExplanation = items.explanation;
-  let nasaCopyright = items.copyright;
-  // let nasaServiceVersion = items.serviceVersion;
-
   if (error) {
     return (
       <div className='repo-item'>
-        <div className='development-p'>
+        <div className='explanation'>
           HTTP 418 <br />
           Oh snap! Looks like something happened behind the scenes. Hang tight
-          while my lil crew figures this hot mess out.
-          {error.message}
+          while my lil crew figures this hot mess out. Error message:
+          {error.message}.
         </div>
         <img className='WIP' src={WIP} alt='WIPDesktop' />
       </div>
@@ -55,16 +47,34 @@ export default function API() {
   } else if (!isLoaded) {
     return <div className='repo-item'>Loading...</div>;
   } else {
+    let nasaImage;
+    // let nasaImage = items.url;
+    let nasaDate = items.date;
+    let nasaTitle = items.title;
+    let nasaExplanation = items.explanation;
+    // let nasaCopyright = items.copyright;
+    let nasaCopyright;
+    console.log(items.copyright);
+    if (items.copyright === "") {
+      nasaCopyright = "N/A";
+    } else {
+      nasaCopyright = items.copyright;
+    }
+
+    console.log(items.url);
+    if (items.media_type !== "image") {
+      nasaImage = WIP;
+    } else {
+      nasaImage = items.url;
+    }
     return (
       <div className='repo-item'>
         <h1 className='page-title'>NASA Astronomy Picture of the Day</h1>
         <p className='date'>{nasaDate}</p>
         <h1 className='nasa-title'>{nasaTitle}</h1>
-        {/* <p className='repo-item'>{nasaServiceVersion}</p> */}
         <img src={nasaImage} alt='Nasa Picture' />
-        {/* <img src={nasaImageHDURL} alt='Space Image' /> */}
         <p className='explanation'>{nasaExplanation}</p>
-        <p className='copyright'>copyright: {nasaCopyright}</p>
+        <p className='copyright'>© {nasaCopyright}</p>
       </div>
     );
   }

@@ -8,7 +8,7 @@ function Footer() {
     <>
       <div className='footer-container'>
         <div className='alpha'>
-          MIKLO: A creative portfolio by Carl Redding.
+          MIKLO: A creative visual portfolio by Carl Redding.
         </div>
         {/* linkedin, github and instagram links */}
         <div className='bravo'>

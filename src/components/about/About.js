@@ -10,8 +10,9 @@ function About() {
 
       <p className='content-title'>MIKLO</p>
       <p className='about-content'>
-        Getting you stop what you are doing. That has been my high since I first
-        fell in love with art in high school.
+        Getting you stop what you are doing, and to pay attention to what I have
+        created. That has been my high since I first fell in love with art in
+        high school.
         <br />
         <br />
         The name Miklo comes from the movie "Blood in, Blood Out". It was given
