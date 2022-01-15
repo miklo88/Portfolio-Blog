@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+// import React, { useState, useEffect } from "react";
 // STYLES
 import "./Design.scss";
 //PHOTOS
@@ -26,19 +27,10 @@ randomPhoto =
   paginationPhotos[Math.floor(Math.random() * paginationPhotos.length)];
 
 function Design() {
-  //useEffect acting as page render.
-  const [photo, setPhoto] = useState();
-  useEffect(() => {
-    // const element = <img className='loaded-photo' src={ten} alt='' />;
-    setPhoto(ten);
-    return photo;
-  });
-
   return (
     <section className='container'>
       <h1 className='title'>Design</h1>
       <img className='random-photos' src={randomPhoto} alt='' />
-      <img className='loaded-photo' src={photo} alt='' />
     </section>
   );
 }

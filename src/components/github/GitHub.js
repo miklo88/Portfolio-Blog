@@ -1,4 +1,4 @@
-import React, { useState, useEffect, setState } from "react";
+import React, { useState, useEffect } from "react";
 import "./GitHub.scss";
 import WIP from "../../stockPhotos/WIPDesktop.jpg";
 
@@ -32,6 +32,46 @@ export default function API() {
       );
   }, []);
 
+  // successful response render
+  const nA = "N/A";
+  let nasaCopyright;
+  let nasaDate;
+  let nasaExplanation;
+  let nasaTitle;
+  let nasaImage; //media type dictates the img shown
+
+  //nasaDate
+  if (!items.date) {
+    nasaDate = nA;
+  } else {
+    nasaDate = items.date;
+  }
+  //nasaTitle
+  if (!items.title) {
+    nasaTitle = nA;
+  } else {
+    nasaTitle = items.title;
+  }
+  //nasaExplanation
+  if (!items.explanation) {
+    nasaExplanation = nA;
+  } else {
+    nasaExplanation = items.explanation;
+  }
+  //nasaCopyright
+  if (items.copyright === "") {
+    nasaCopyright = nA;
+  } else {
+    nasaCopyright = items.copyright;
+  }
+  //nasaImage aka media_type
+  if (items.media_type !== "image") {
+    nasaImage = WIP;
+  } else {
+    nasaImage = items.url;
+  }
+  // end of successful response render
+
   if (error) {
     return (
       <div className='repo-item'>
@@ -47,26 +87,6 @@ export default function API() {
   } else if (!isLoaded) {
     return <div className='repo-item'>Loading...</div>;
   } else {
-    let nasaImage;
-    // let nasaImage = items.url;
-    let nasaDate = items.date;
-    let nasaTitle = items.title;
-    let nasaExplanation = items.explanation;
-    // let nasaCopyright = items.copyright;
-    let nasaCopyright;
-    console.log(items.copyright);
-    if (items.copyright === "") {
-      nasaCopyright = "N/A";
-    } else {
-      nasaCopyright = items.copyright;
-    }
-
-    console.log(items.url);
-    if (items.media_type !== "image") {
-      nasaImage = WIP;
-    } else {
-      nasaImage = items.url;
-    }
     return (
       <div className='repo-item'>
         <h1 className='page-title'>NASA Astronomy Picture of the Day</h1>

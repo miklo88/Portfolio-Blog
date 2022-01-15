@@ -9,15 +9,15 @@
   background-color: $forestGreen;
 
   .about-title {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-    padding: 40px 40px 40px 40px;
-    color: $offwhite;
-    text-align: center;
+    display: none;
   }
 
   @include respond-to("desktop") {
     .about-title {
+      grid-column: 1 / span 4;
+      grid-row: 1;
+      padding: 40px 40px 40px 40px;
+      color: $offwhite;
       text-align: left;
     }
   }
@@ -27,8 +27,9 @@
     font-size: 6rem;
     color: white;
     text-align: center;
+    padding: 50px;
     @include respond-to("desktop") {
-      padding: 50px;
+      padding: 50px 50px 50px 50px;
     }
   }
 
